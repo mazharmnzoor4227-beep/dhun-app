@@ -503,7 +503,7 @@ private fun PlaylistCoverBackdrop(
     }
     // before android 12 the whole frame can't blur, so the picture alone goes soft from a copy blurred once off the main thread
     val frameBlur = rememberElementBlurAvailable()
-    val (elementBlur) = rememberPreference(com.mazharansari.dhun.constants.ElementBlurKey, defaultValue = true)
+    val (elementBlur) = rememberPreference(com.mazharansari.dhun.constants.ElementBlurKey, defaultValue = com.mazharansari.dhun.ui.component.HeavyEffectsDefault)
     val softRequest = remember(coverUrl, frameBlur, elementBlur, cover != null) {
         // a drawn cover is soft already, and with element blur off the cover stays sharp
         if (frameBlur || !elementBlur || cover != null) {

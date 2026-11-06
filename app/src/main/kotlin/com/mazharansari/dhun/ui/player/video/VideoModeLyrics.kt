@@ -182,7 +182,7 @@ internal fun rememberVideoLyrics(): VideoLyrics {
 internal fun rememberVideoLyricLook(): VideoLyricLook {
     val (motion) = rememberEnumPreference(LyricsMotionStyleKey, defaultValue = LyricsMotionStyle.MOTION)
     val (highBloom) = rememberPreference(LyricsHighBloomKey, defaultValue = true)
-    val (blurAllowed) = rememberPreference(com.mazharansari.dhun.constants.ElementBlurKey, defaultValue = true)
+    val (blurAllowed) = rememberPreference(com.mazharansari.dhun.constants.ElementBlurKey, defaultValue = com.mazharansari.dhun.ui.component.HeavyEffectsDefault)
     val status by LyricsTranslationHelper.status.collectAsState()
     val translating = status is LyricsTranslationHelper.TranslationStatus.Translating
     return remember(motion, highBloom, blurAllowed, translating) {

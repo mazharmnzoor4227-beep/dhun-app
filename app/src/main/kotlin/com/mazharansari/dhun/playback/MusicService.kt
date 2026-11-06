@@ -770,6 +770,7 @@ class MusicService :
         player = createExoPlayer()
         player.addListener(this@MusicService)
         SponsorBlockSkipper(scope, dataStore, { player }).start()
+        com.mazharansari.dhun.rooms.RoomsSync(scope, { player }, { q, pw -> playQueue(q, pw) }).start()
         observeOutputSettings()
         sleepTimer = SleepTimer(scope, player)
         player.addListener(sleepTimer)

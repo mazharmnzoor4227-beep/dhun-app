@@ -49,7 +49,7 @@ fun rememberCoverBlurAvailable(): Boolean {
 // whether a thing can blur itself (the cover zooming away, a ring fading out): android 12 and up, with element blur on
 @Composable
 fun rememberElementBlurAvailable(): Boolean {
-    val (elementBlur) = rememberPreference(ElementBlurKey, defaultValue = true)
+    val (elementBlur) = rememberPreference(ElementBlurKey, defaultValue = com.mazharansari.dhun.ui.component.HeavyEffectsDefault)
     return elementBlur && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
 }
 

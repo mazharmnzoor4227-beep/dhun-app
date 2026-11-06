@@ -187,6 +187,7 @@ private fun generalItems(navController: NavController): List<SettingsItem> {
     }
     return listOf(
         languageItem(),
+        roomsItem(),
         switchItem(
             key = "Disable App Updates notice",
             title = stringResource(R.string.settings_updates_notice),
@@ -262,6 +263,17 @@ private fun generalItems(navController: NavController): List<SettingsItem> {
         ),
     )
 }
+
+@Composable
+private fun roomsItem(): SettingsItem = SettingsItem(
+    title = { Text(stringResource(R.string.rooms_menu)) },
+    highlightKey = "Rooms",
+    descriptionText = stringResource(R.string.rooms_settings_desc),
+    searchText = stringResource(R.string.rooms_menu),
+    icon = painterResource(R.drawable.group),
+    iconShape = CircleShape,
+    onClick = { com.mazharansari.dhun.ui.player.menu.RoomsUi.show() },
+)
 
 // the app's own language, apart from the phone's; android 13+ keeps it in the system's per-app setting too
 @Composable

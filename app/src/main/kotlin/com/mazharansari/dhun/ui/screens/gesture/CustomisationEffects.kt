@@ -92,7 +92,7 @@ private val PillTextStyle = TextStyle(
 @Composable
 internal fun BlurSection(modifier: Modifier = Modifier) {
     val (disableBlur, onDisableBlur) = rememberPreference(DisableBlurKey, defaultValue = false)
-    val (progressive, onProgressive) = rememberPreference(EnableProgressiveBlurKey, defaultValue = true)
+    val (progressive, onProgressive) = rememberPreference(EnableProgressiveBlurKey, defaultValue = com.mazharansari.dhun.ui.component.HeavyEffectsDefault)
     val (quality, onQuality) = rememberEnumPreference(BlurQualityKey, com.mazharansari.dhun.ui.component.DefaultBlurQuality)
     val (strength, onStrength) = rememberPreference(BlurStrengthPxKey, defaultValue = DefaultBlurStrength)
     val haptic = LocalHapticFeedback.current
@@ -169,7 +169,7 @@ internal fun BlurSection(modifier: Modifier = Modifier) {
 // blur on things themselves, apart from the glass: lyric lines, the cover zooming away, title morphs, menus, page wipes
 @Composable
 internal fun ElementBlurSection(modifier: Modifier = Modifier) {
-    val (elementBlur, onElementBlur) = rememberPreference(ElementBlurKey, defaultValue = true)
+    val (elementBlur, onElementBlur) = rememberPreference(ElementBlurKey, defaultValue = com.mazharansari.dhun.ui.component.HeavyEffectsDefault)
     EffectCard(
         title = stringResource(R.string.customise_element_blur),
         checked = elementBlur,
@@ -188,7 +188,7 @@ internal fun ElementBlurSection(modifier: Modifier = Modifier) {
 // every animation in the app: off stops them all, the speed sits on top of android's own animation scale
 @Composable
 internal fun AnimationSection(modifier: Modifier = Modifier) {
-    val (enabled, onEnabled) = rememberPreference(EnableElementBlurAnimatorKey, defaultValue = true)
+    val (enabled, onEnabled) = rememberPreference(EnableElementBlurAnimatorKey, defaultValue = com.mazharansari.dhun.ui.component.HeavyEffectsDefault)
     val (speed, onSpeed) = rememberPreference(AnimationSpeedKey, defaultValue = 1f)
     val haptic = LocalHapticFeedback.current
     val stops = AnimationSpeeds

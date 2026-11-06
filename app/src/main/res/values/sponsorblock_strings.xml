@@ -13,4 +13,6 @@
     <string name="sponsorblock_nonmusic">Non-music sections</string>
     <string name="sponsorblock_nonmusic_desc">Talking, skits and other parts of a music video that are not the song</string>
     <string name="comments_menu">Comments</string>
+    <string name="rooms_menu">Rooms (listen together)</string>
+    <string name="rooms_settings_desc">Create or join a room and listen in sync with friends</string>
 </resources>

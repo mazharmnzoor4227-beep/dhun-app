@@ -1306,3 +1306,8 @@ val DonateOpenPromptAtKey = longPreferencesKey("donateOpenPromptAt")
 // one-off lyrics cache clears (App.kt). raise LyricsCacheWipeGeneration to clear it again in a later release
 val LyricsCacheWipeKey = intPreferencesKey("lyricsCacheWipe")
 const val LyricsCacheWipeGeneration = 1
+
+// Rooms (listen together): the relay the person runs, its optional key, and the name shown to others
+val RoomsServerUrlKey = stringPreferencesKey("roomsServerUrl")
+val RoomsServerKeyKey = stringPreferencesKey("roomsServerKey")
+val RoomsNameKey = stringPreferencesKey("roomsName")

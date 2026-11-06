@@ -11,13 +11,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Reassemble and verify the APK
-        run: |
-          cat releases/Dhun-1.0.0.apk.part* > Dhun-1.0.0.apk
-          sha256sum -c releases/Dhun-1.0.0.apk.sha256
-      - name: Create the release
+      - name: Reassemble, verify and publish every APK that has no release yet
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release delete v1.0.0 --yes --cleanup-tag 2>/dev/null || true
-          gh release create v1.0.0 Dhun-1.0.0.apk --title "Dhun 1.0.0" --notes "Dhun 1.0.0 (arm64). Signed release build." --target "${{ github.sha }}"
+          for sumfile in releases/Dhun-*.apk.sha256; do
+            [ -e "$sumfile" ] || continue
+            apk=$(basename "$sumfile" .sha256)
+            ver=${apk#Dhun-}; ver=${ver%.apk}
+            if gh release view "v$ver" >/dev/null 2>&1; then echo "v$ver already released"; continue; fi
+            cat releases/$apk.part* > "$apk"
+            sha256sum -c "$sumfile"
+            gh release create "v$ver" "$apk" --title "Dhun $ver" --notes "Dhun $ver (arm64), signed release build." --target "${{ github.sha }}"
+          done

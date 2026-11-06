@@ -186,7 +186,7 @@ private fun MovesThePlayhead(session: SongShareSession) {
 private fun ReadLyricsLook(session: SongShareSession) {
     val (motionStyle) = rememberEnumPreference(LyricsMotionStyleKey, defaultValue = LyricsMotionStyle.MOTION)
     val (highBloom) = rememberPreference(LyricsHighBloomKey, defaultValue = true)
-    val (lineBlur) = rememberPreference(ElementBlurKey, defaultValue = true)
+    val (lineBlur) = rememberPreference(ElementBlurKey, defaultValue = com.mazharansari.dhun.ui.component.HeavyEffectsDefault)
     LaunchedEffect(motionStyle, highBloom, lineBlur) {
         session.lyricsLook = ShareLyricsLook(motionStyle, highBloom, lineBlur)
     }

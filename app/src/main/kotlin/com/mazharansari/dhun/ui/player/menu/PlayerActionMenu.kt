@@ -364,6 +364,12 @@ fun PlayerActionMenu(
                         }
                     },
                 )
+                Spacer(modifier = Modifier.height(8.dp))
+                MenuRow(
+                    icon = R.drawable.group,
+                    title = androidx.compose.ui.res.stringResource(R.string.rooms_menu),
+                    onClick = { onDismiss(); RoomsUi.show() },
+                )
                 // read-only YouTube comments, only for songs that are YouTube videos
                 currentMetadata?.id
                     ?.takeIf { Regex("^[A-Za-z0-9_-]{11}$").matches(it) }

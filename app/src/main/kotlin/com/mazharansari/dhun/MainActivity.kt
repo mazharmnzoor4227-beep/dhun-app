@@ -455,6 +455,7 @@ class MainActivity : ComponentActivity() {
         val enableDynamicTheme by rememberPreference(DynamicThemeKey, defaultValue = true)
         val enableHighRefreshRate by rememberPreference(EnableHighRefreshRateKey, defaultValue = true)
         val context = LocalContext.current
+        com.mazharansari.dhun.ui.player.menu.RoomsDialogHost()
 
         LaunchedEffect(Unit) {
             if (getAutoUpdateCheckSetting(context)) {
@@ -1416,9 +1417,9 @@ class MainActivity : ComponentActivity() {
             dataStore.data
                 .map { prefs ->
                     LookSettings(
-                        animations = prefs[com.mazharansari.dhun.constants.EnableElementBlurAnimatorKey] ?: true,
+                        animations = prefs[com.mazharansari.dhun.constants.EnableElementBlurAnimatorKey] ?: com.mazharansari.dhun.ui.component.HeavyEffectsDefault,
                         speed = prefs[com.mazharansari.dhun.constants.AnimationSpeedKey] ?: 1f,
-                        elementBlur = prefs[com.mazharansari.dhun.constants.ElementBlurKey] ?: true,
+                        elementBlur = prefs[com.mazharansari.dhun.constants.ElementBlurKey] ?: com.mazharansari.dhun.ui.component.HeavyEffectsDefault,
                         coverRadius = prefs[com.mazharansari.dhun.constants.ThumbnailCornerRadiusKey] ?: 25f,
                     )
                 }

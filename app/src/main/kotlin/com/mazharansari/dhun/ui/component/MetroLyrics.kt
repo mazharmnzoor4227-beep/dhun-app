@@ -132,7 +132,7 @@ fun MetroLyricsLine(
     expressiveAccent: Color,
     modifier: Modifier = Modifier
 ) {
-    val (appleMusicLyricsBlur) = rememberPreference(AppleMusicLyricsBlurKey, true)
+    val (appleMusicLyricsBlur) = rememberPreference(AppleMusicLyricsBlurKey, com.mazharansari.dhun.ui.component.HeavyEffectsDefault)
     val (romanizeAsMain) = rememberPreference(LyricsRomanizeAsMainKey, false)
 
     val romanizedTextState by entry.romanizedTextFlow.collectAsState()

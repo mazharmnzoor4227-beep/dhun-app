@@ -254,6 +254,9 @@ val DefaultBlurQuality: com.mazharansari.dhun.constants.BlurQuality by lazy {
     if (strong) com.mazharansari.dhun.constants.BlurQuality.HIGH else com.mazharansari.dhun.constants.BlurQuality.LOW
 }
 
+/** the heavy extras (element blur, progressive blur, blur animations, lyric blur) start on only where the glass itself starts on high */
+val HeavyEffectsDefault: Boolean by lazy { DefaultBlurQuality == com.mazharansari.dhun.constants.BlurQuality.HIGH }
+
 /** Lays its content out [margin] px bigger on every side, centred over the space it takes. */
 private fun Modifier.bleed(margin: () -> Int): Modifier = layout { measurable, constraints ->
     val m = margin().coerceAtLeast(0)
@@ -511,7 +514,7 @@ const val FlatBarScrimAlpha = 0.45f
 // whether bars blur progressively; off, they're flat with a hairline, and their own fading scrims turn into one tint
 @Composable
 fun rememberProgressiveBlur(): Boolean {
-    val (enabled) = rememberPreference(com.mazharansari.dhun.constants.EnableProgressiveBlurKey, defaultValue = true)
+    val (enabled) = rememberPreference(com.mazharansari.dhun.constants.EnableProgressiveBlurKey, defaultValue = HeavyEffectsDefault)
     return enabled
 }
 

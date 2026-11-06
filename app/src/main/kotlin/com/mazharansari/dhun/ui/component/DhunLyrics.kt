@@ -70,7 +70,7 @@ fun DhunLyricsLine(
     expressiveAccent: Color,
     modifier: Modifier = Modifier
 ) {
-    val (appleMusicLyricsBlur) = rememberPreference(AppleMusicLyricsBlurKey, true)
+    val (appleMusicLyricsBlur) = rememberPreference(AppleMusicLyricsBlurKey, com.mazharansari.dhun.ui.component.HeavyEffectsDefault)
 
     val targetBlur = if (!appleMusicLyricsBlur || !isAutoScrollActive || isActive || !isSynced || isSelectionModeActive) {
         0f
