@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sponsorblock">SponsorBlock</string>
+    <string name="sponsorblock_desc">Skip sponsor reads, intros and other non-music parts of YouTube songs, using community-submitted timestamps</string>
+    <string name="sponsorblock_sponsor">Sponsors</string>
+    <string name="sponsorblock_sponsor_desc">Paid promotion inside the video</string>
+    <string name="sponsorblock_selfpromo">Self promotion</string>
+    <string name="sponsorblock_selfpromo_desc">Plugs for the artist\'s own merch, channels or other work</string>
+    <string name="sponsorblock_interaction">Like and subscribe reminders</string>
+    <string name="sponsorblock_interaction_desc">Short reminders to like, subscribe or follow</string>
+    <string name="sponsorblock_introoutro">Intros and outros</string>
+    <string name="sponsorblock_introoutro_desc">Intro animations and end cards without music</string>
+    <string name="sponsorblock_nonmusic">Non-music sections</string>
+    <string name="sponsorblock_nonmusic_desc">Talking, skits and other parts of a music video that are not the song</string>
+    <string name="comments_menu">Comments</string>
+</resources>

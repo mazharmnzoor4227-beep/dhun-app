@@ -1,0 +1,23 @@
+name: Publish APK release
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'releases/**'
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reassemble and verify the APK
+        run: |
+          cat releases/Dhun-1.0.0.apk.part* > Dhun-1.0.0.apk
+          sha256sum -c releases/Dhun-1.0.0.apk.sha256
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete v1.0.0 --yes --cleanup-tag 2>/dev/null || true
+          gh release create v1.0.0 Dhun-1.0.0.apk --title "Dhun 1.0.0" --notes "Dhun 1.0.0 (arm64). Signed release build." --target "${{ github.sha }}"
