@@ -98,7 +98,7 @@ data class TrackQuery @JvmOverloads constructor(
 
 /**
  * How a module's account is signed into: Dhun opens [startUrl] in its sign-in browser and
- * passes every request header the service's own web page sends to [DhunModule.onSignInHeader].
+ * passes every request header the service's own web page sends to [MochyModule.onSignInHeader].
  */
 data class SignInSpec(
     val startUrl: String,
@@ -182,7 +182,7 @@ sealed interface ResolveResult {
 data class DiagnosticStep(val name: String, val ok: Boolean?, val detail: String)
 
 /** every module: its name, what it adds, and its account when it needs one */
-interface DhunModule {
+interface MochyModule {
     val info: ModuleInfo
 
     /** dhun only asks a module for the things listed here */
@@ -211,7 +211,7 @@ interface DhunModule {
 const val NO_ACCOUNT_LABEL = "No account needed"
 
 /** a place songs play from */
-interface SourceModule : DhunModule {
+interface SourceModule : MochyModule {
     override val adds: Set<ModuleFeature> get() = setOf(ModuleFeature.AudioSource)
 
     /** [picks]: choice id to option id, for the choices the user changed */
@@ -228,7 +228,7 @@ data class ModuleServer(val url: String, val name: String, val builtIn: Boolean)
 enum class ServerProblem { NotALink, Unreachable, NotAServer, AlreadyAdded }
 
 /** a module that plays from several servers, people can add the ones they find */
-interface ServerListModule : DhunModule {
+interface ServerListModule : MochyModule {
     val servers: List<ModuleServer>
 
     /** checks the link, a server's own or a site that plays from one, and adds what it finds; null once it's in */
@@ -257,7 +257,7 @@ sealed interface ItemsAdded {
 }
 
 /** a module that holds things people bring as zips or links, as many as they like: scripts, packs */
-interface ItemListModule : DhunModule {
+interface ItemListModule : MochyModule {
     /** what the module calls them, the heading of their list on its page */
     val itemsLabel: String
 
@@ -276,7 +276,7 @@ interface ItemListModule : DhunModule {
 }
 
 /** a lyrics source, it joins the ones dhun already asks while the module is on */
-interface LyricsModule : DhunModule {
+interface LyricsModule : MochyModule {
     override val adds: Set<ModuleFeature> get() = setOf(ModuleFeature.Lyrics)
 
     /** the song's lyrics as lrc ("[01:02.34] a line"), or plain lines when they aren't timed; null when it has none */
