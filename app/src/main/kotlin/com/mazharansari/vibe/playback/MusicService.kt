@@ -250,7 +250,7 @@ import com.mazharansari.vibe.constants.CrossmixAlwaysMixKey
 import com.mazharansari.vibe.utils.dataStore
 import com.mazharansari.vibe.utils.get
 import com.mazharansari.vibe.utils.reportException
-import com.mazharansari.vibe.widget.DhunWidgetManager
+import com.mazharansari.vibe.widget.MochyWidgetManager
 import com.mazharansari.vibe.widget.MusicWidgetReceiver
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
@@ -353,7 +353,7 @@ class MusicService :
     lateinit var sourceModules: com.mazharansari.vibe.modules.SourceModules
 
     @Inject
-    lateinit var widgetManager: DhunWidgetManager
+    lateinit var widgetManager: MochyWidgetManager
 
     private lateinit var audioManager: AudioManager
     private var audioFocusRequest: AudioFocusRequest? = null
