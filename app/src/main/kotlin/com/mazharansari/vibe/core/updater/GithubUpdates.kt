@@ -286,27 +286,6 @@ suspend fun downloadApk(
                         output.write(buffer, 0, read)
                         if (declaredTotal > 0) onProgress((written.toFloat() / declaredTotal).coerceIn(0f, 1f))
                     }
-||||||| /tmp/base.f
-        val connection = (URL(url).openConnection() as HttpURLConnection).apply {
-            connectTimeout = 15_000
-            readTimeout = 30_000
-            instanceFollowRedirects = true
-            setRequestProperty("User-Agent", "mochy-android")
-        }
-        val total = release.apkSizeBytes.takeIf { it > 0 }
-            ?: connection.contentLengthLong.takeIf { it > 0 }
-            ?: -1L
-
-        connection.inputStream.use { input ->
-            target.outputStream().use { output ->
-                val buffer = ByteArray(64 * 1024)
-                var written = 0L
-                while (true) {
-                    val read = input.read(buffer)
-                    if (read == -1) break
-                    output.write(buffer, 0, read)
-                    written += read
-                    if (total > 0) onProgress((written.toFloat() / total).coerceIn(0f, 1f))
                 }
             }
         } finally {
@@ -328,8 +307,6 @@ suspend fun downloadApk(
 
 fun apkFileFor(context: Context, release: GithubRelease): File =
     ApkVerifier.safeApkFile(context, release.apkName)
-||||||| /tmp/base.f
-    File(context.cacheDir, release.apkName ?: "mochy-update.apk")
 
 fun isDownloaded(context: Context, release: GithubRelease): Boolean {
     val f = apkFileFor(context, release)

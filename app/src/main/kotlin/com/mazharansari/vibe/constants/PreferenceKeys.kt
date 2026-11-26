@@ -55,7 +55,7 @@ val SwipeLeftActionKey = stringPreferencesKey("swipeLeftAction")
 
 // the top layout of the home tab, picked in customisation settings
 enum class HomeStyle(val displayName: String) {
-    DHUN("Vibe"),
+    DHUN("Dhun"),
     LISTEN_NOW("Listen now"),
     HOP_IN("Hop in"),
 }
@@ -1441,7 +1441,6 @@ val AppFontModeKey = stringPreferencesKey("appFontMode")
 val CustomFontIdKey = stringPreferencesKey("customFontId")
 val CustomFontNameKey = stringPreferencesKey("customFontName")
 val FontCustomizerConfigKey = stringPreferencesKey("fontCustomizerConfig")
-||||||| /tmp/base.f
 
 // Rooms (listen together): the relay the person runs, its optional key, and the name shown to others
 val RoomsServerUrlKey = stringPreferencesKey("roomsServerUrl")

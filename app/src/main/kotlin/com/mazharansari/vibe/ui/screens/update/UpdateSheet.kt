@@ -316,12 +316,6 @@ private fun ColumnScope.UpdateSheetContent(
                     label = stringResource(R.string.update_help_us),
                     onClick = { popup.showSupportSheet() },
                 )
-||||||| /tmp/base.f
-                ActionRow(
-                    icon = R.drawable.favorite,
-                    label = "Help us!",
-                    onClick = { popup.showSupportSheet() },
-                )
             }
             Spacer(Modifier.height(6.dp))
         }
@@ -539,8 +533,6 @@ private fun ColumnScope.UpdateDetailContent(
     val startInstall: (java.io.File) -> Unit = { file ->
         if (!installApk(context, file)) {
             error = context.getString(R.string.update_allow_unknown_apps)
-||||||| /tmp/base.f
-            error = "Allow \"Install unknown apps\" for mochy, then tap Install here again."
         }
     }
 

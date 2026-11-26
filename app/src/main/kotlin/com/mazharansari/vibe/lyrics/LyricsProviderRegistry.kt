@@ -13,8 +13,6 @@ object LyricsProviderRegistry {
         "BetterLyrics"    to BetterLyricsProvider,
         "Unison"          to UnisonLyricsProvider,
         "SimpMusic"       to SimpMusicLyricsProvider,
-||||||| /tmp/base.f
-        "SimpMusic"       to SimpMusicLyricsProvider,
         "LrcLib"          to LrcLibLyricsProvider,
         "Kugou"           to KuGouLyricsProvider,
         "NetEase"         to NetEaseLyricsProvider,
@@ -91,8 +89,6 @@ object LyricsProviderRegistry {
         "Paxsenix"        -> "PaxSenix"
         "BetterLyrics"    -> "Apple Music"
         "Unison"          -> "Unison"
-        "SimpMusic"       -> "SimpMusic"
-||||||| /tmp/base.f
         "SimpMusic"       -> "SimpMusic"
         "LrcLib"          -> "LrcLib"
         "Kugou"           -> "KuGou"

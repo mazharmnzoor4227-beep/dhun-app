@@ -995,7 +995,6 @@ class MusicService :
         scope.launch {
             audioLab.eightD.collect(::updateEightDReverb)
         }
-||||||| /tmp/base.f
         SponsorBlockSkipper(scope, dataStore, { player }).start()
         com.mazharansari.vibe.rooms.RoomsSync(scope, { player }, { q, pw -> playQueue(q, pw) }).start()
         observeOutputSettings()

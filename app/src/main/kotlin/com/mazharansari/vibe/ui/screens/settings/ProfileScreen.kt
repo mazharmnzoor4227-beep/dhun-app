@@ -204,9 +204,6 @@ private object MochyGreeting {
         R.string.profile_greeting_welcome_back,
         R.string.profile_greeting_good_to_see_you,
     ).random()
-||||||| /tmp/base.f
-private object MochyGreeting {
-    private fun pick() = listOf("Hello again", "Hey", "Welcome back", "Good to see you").random()
 
     // a string id, so the greeting follows the app language
     private val greetingState = mutableIntStateOf(R.string.profile_greeting_hello_again)
@@ -586,10 +583,6 @@ fun ProfileScreen(navController: NavController) {
                         // greeting (in the header; its scrolled-away twin lives in the top bar); on its side it heads the cards at the right
                         if (!landscape) Text(
                             text = stringResource(R.string.profile_greeting_format, stringResource(MochyGreeting.currentRes), accountName.ifBlank { stringResource(R.string.profile_greeting_fallback) }),
-||||||| /tmp/base.f
-                        // greeting (in the header; its scrolled-away twin lives in the top bar)
-                        Text(
-                            text = "${MochyGreeting.current}, ${accountName.ifBlank { "there" }}!",
                             style = PageTitle,
                             maxLines = 1,
                             overflow = TextOverflow.Ellipsis,
@@ -821,11 +814,6 @@ fun ProfileScreen(navController: NavController) {
                         Spacer(Modifier.height(28.dp))
                         Text(stringResource(R.string.profile_settings_title), style = PageTitle.copy(fontSize = 15.sp), modifier = Modifier.padding(start = 2.dp, bottom = 10.dp))
                         OpenSettingsRow(onClick = { navController.navigate("mochy_settings") })
-||||||| /tmp/base.f
-                        DiscordCard(onClick = { context.openDevUrl(DiscordUrl) })
-                        Spacer(Modifier.height(28.dp))
-                        Text("Settings", style = PageTitle.copy(fontSize = 15.sp), modifier = Modifier.padding(start = 2.dp, bottom = 10.dp))
-                        OpenSettingsRow(onClick = { navController.navigate("mochy_settings") })
                         Spacer(Modifier.height(180.dp))
                     }
                     },
@@ -890,8 +878,6 @@ fun ProfileScreen(navController: NavController) {
             if (showTopBarGreeting) {
                 Text(
                     text = stringResource(R.string.profile_greeting_format, stringResource(MochyGreeting.currentRes), accountName.ifBlank { stringResource(R.string.profile_greeting_fallback) }),
-||||||| /tmp/base.f
-                    text = "${MochyGreeting.current}, ${accountName.ifBlank { "there" }}!",
                     style = PageTitle.copy(fontSize = 18.sp),
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis,
@@ -1238,8 +1224,6 @@ private fun DeveloperCard(onClick: () -> Unit) {
         Spacer(Modifier.width(12.dp))
         Text(
             stringResource(R.string.profile_meet_dev_contributors),
-||||||| /tmp/base.f
-            "meet da dev and contributors :3",
             style = TextStyle(fontFamily = InterFontFamily, fontWeight = FontWeight.Bold, fontSize = 15.sp, letterSpacing = (-0.6).sp, color = Color(0xFF9A9A9A)),
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
@@ -1272,38 +1256,6 @@ private fun DiscordCard(onClick: () -> Unit) {
         Spacer(Modifier.width(12.dp))
         Text(
             stringResource(R.string.profile_join_discord),
-            style = TextStyle(fontFamily = InterFontFamily, fontWeight = FontWeight.Bold, fontSize = 15.sp, letterSpacing = (-0.6).sp, color = Color.White),
-            maxLines = 1,
-            overflow = TextOverflow.Ellipsis,
-            modifier = Modifier.weight(1f),
-        )
-    }
-}
-||||||| /tmp/base.f
-@Composable
-private fun DiscordCard(onClick: () -> Unit) {
-    val face = 30.dp
-    Row(
-        verticalAlignment = Alignment.CenterVertically,
-        modifier = Modifier
-            .fillMaxWidth()
-            .clip(RoundedCornerShape(22.dp))
-            .background(PageCard)
-            .clickable(onClick = onClick)
-            .padding(horizontal = 16.dp, vertical = 12.dp),
-    ) {
-        Image(
-            painter = painterResource(R.drawable.mochy_discord),
-            contentDescription = "Discord",
-            contentScale = ContentScale.Crop,
-            modifier = Modifier
-                .size(face)
-                .clip(CircleShape)
-                .background(Color.White),
-        )
-        Spacer(Modifier.width(12.dp))
-        Text(
-            "Join mochy’s discord server!",
             style = TextStyle(fontFamily = InterFontFamily, fontWeight = FontWeight.Bold, fontSize = 15.sp, letterSpacing = (-0.6).sp, color = Color.White),
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,

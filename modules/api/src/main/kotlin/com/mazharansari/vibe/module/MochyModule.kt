@@ -49,9 +49,6 @@ interface ModuleFields : MochyModule {
     /** every field's value, once before the first call and again each time one changes */
     fun onFields(values: Map<String, String>) {}
 }
-||||||| /tmp/base.f
-/** what a module brings to mochy, one module can bring several */
-enum class ModuleFeature { AudioSource, Lyrics, Look }
 
 /** What Dhun gives a module. */
 interface ModuleHost {
@@ -90,9 +87,6 @@ class HttpResponse(val code: Int, val body: ByteArray, val headers: Map<String, 
 
 /** The track Mochy wants to play, as Mochy knows it. */
 data class TrackQuery @JvmOverloads constructor(
-||||||| /tmp/base.f
-/** The track Mochy wants to play, as Mochy knows it. */
-data class TrackQuery(
     val title: String,
     val artists: List<String>,
     val album: String? = null,
@@ -315,9 +309,6 @@ interface MetadataModule : MochyModule {
 
 /** a look: values for mochy's look settings, put in place while the module is on and given back when it goes off */
 interface LookModule : MochyModule {
-||||||| /tmp/base.f
-/** a look: values for mochy's look settings, put in place while the module is on and given back when it goes off */
-interface LookModule : MochyModule {
     override val adds: Set<ModuleFeature> get() = setOf(ModuleFeature.Look)
 
     /** a [LookSetting] name to its value, anything else is ignored */
@@ -347,8 +338,6 @@ interface SurfaceModule : MochyModule {
     fun surfaceLastError(): String
 }
 
-/** the only settings a look may change, so a module can restyle mochy but never touch accounts, network or playback */
-||||||| /tmp/base.f
 /** the only settings a look may change, so a module can restyle mochy but never touch accounts, network or playback */
 object LookSetting {
     /** a player style's name: FLAGSHIP, CLASSIC, TURNTABLE, VIDEO, IPOD, POSTER, TIMELINE, LYRICS */

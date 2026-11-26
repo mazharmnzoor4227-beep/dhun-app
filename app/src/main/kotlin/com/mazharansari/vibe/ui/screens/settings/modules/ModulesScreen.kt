@@ -1,6 +1,4 @@
 // settings → modules: a word on what modules are, mochy's bar, then the looks and the js and source modules, each list held to sort and swiped to delete
-||||||| /tmp/base.f
-// settings → modules: every module mochy has, what each adds, and ways to find more
 
 package com.mazharansari.vibe.ui.screens.settings.modules
 
@@ -93,18 +91,6 @@ fun ModulesScreen(navController: NavController, viewModel: ModulesViewModel = hi
         BackHandler(enabled = sortingLooks || sortingSources) {
             sortingLooks = false
             sortingSources = false
-||||||| /tmp/base.f
-        // mochy's bar is where people share modules, so it leads the page
-        ModulesBarBanner { context.openDevUrl(DiscordUrl) }
-        Spacer(Modifier.height(16.dp))
-        Text(
-            stringResource(R.string.modules_intro),
-            fontFamily = InterFontFamily, fontSize = 14.sp, lineHeight = 19.sp, color = LabColors.Secondary,
-        )
-        Spacer(Modifier.height(16.dp))
-        entries.forEach { entry ->
-            ModuleRow(entry) { navController.navigate(moduleRoute(entry.id)) }
-            Spacer(Modifier.height(10.dp))
         }
         ThirdPartyCard { context.openDevUrl(ModuleDocsUrl) }
         Spacer(Modifier.height(22.dp))
@@ -210,33 +196,5 @@ private fun TwoPhones(modifier: Modifier) {
             drawRoundRect(color = Color(0xFF161618), topLeft = Offset(left, 0f), size = phone, cornerRadius = corner)
             drawRoundRect(color = Color.White.copy(alpha = 0.16f), topLeft = Offset(left, 0f), size = phone, cornerRadius = corner, style = outline)
         }
-    }
-}
-||||||| /tmp/base.f
-/** mochy peeking up from the bottom of the card, leading to the discord server where people share modules */
-@Composable
-private fun ModulesBarBanner(onClick: () -> Unit) {
-    Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(100.dp)
-            .clip(RowShape)
-            .background(LabColors.Card)
-            .clickable(onClick = onClick)
-            .padding(start = 24.dp, end = 16.dp),
-        verticalAlignment = Alignment.CenterVertically,
-    ) {
-        // the drawing ends at her jacket, so sitting on the card's bottom edge cuts her off there like the design
-        Image(
-            painterResource(R.drawable.modules_bar_mochy), null,
-            contentScale = ContentScale.Fit,
-            modifier = Modifier.align(Alignment.Bottom).padding(top = 8.dp).fillMaxHeight(),
-        )
-        Spacer(Modifier.width(22.dp))
-        Text(
-            stringResource(R.string.modules_bar),
-            fontFamily = InterFontFamily, fontWeight = FontWeight.Bold, fontSize = 20.sp, lineHeight = 22.sp,
-            letterSpacing = (-0.6).sp, color = Color.White, modifier = Modifier.weight(1f),
-        )
     }
 }

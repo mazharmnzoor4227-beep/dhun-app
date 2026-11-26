@@ -250,14 +250,6 @@ private fun libraryItems(): List<SettingsItem> {
     val (albumsFromLikes, onAlbumsFromLikesChange) = rememberPreference(AlbumsFromLikedSongsKey, defaultValue = false)
     val (autoMetadata, onAutoMetadataChange) = rememberPreference(LocalSongAutoMetadataKey, defaultValue = true)
     val (pauseSearchHistory, onPauseSearchHistoryChange) = rememberPreference(PauseSearchHistoryKey, defaultValue = false)
-||||||| /tmp/base.f
-private fun playerBehaviourItems(): List<SettingsItem> {
-    val (disableVideoAutoplay, onDisableVideoAutoplayChange) = rememberPreference(DisableVideoAutoplayKey, defaultValue = false)
-    val (youtubeTranslations, onYoutubeTranslationsChange) = rememberPreference(YouTubeCaptionTranslationKey, defaultValue = true)
-    val (syncLyricsToVideo, onSyncLyricsToVideoChange) = rememberPreference(SyncLyricsToVideoKey, defaultValue = true)
-    val (dontSkipOnFailure, onDontSkipOnFailureChange) = rememberPreference(DontSkipOnFailureKey, defaultValue = false)
-    val (failureTimeout, onFailureTimeoutChange) = rememberPreference(StreamFailureTimeoutKey, defaultValue = 6)
-    val (skipSilence, onSkipSilenceChange) = rememberPreference(SkipSilenceKey, defaultValue = false)
     val (sponsorBlock, onSponsorBlockChange) = rememberPreference(SponsorBlockEnabledKey, defaultValue = false)
     val (sbSponsor, onSbSponsor) = rememberPreference(SponsorBlockCategories[0].key, defaultValue = SponsorBlockCategories[0].defaultOn)
     val (sbSelfPromo, onSbSelfPromo) = rememberPreference(SponsorBlockCategories[1].key, defaultValue = SponsorBlockCategories[1].defaultOn)

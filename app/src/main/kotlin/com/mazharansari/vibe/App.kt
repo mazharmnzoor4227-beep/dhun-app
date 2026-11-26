@@ -349,8 +349,6 @@ class App : Application(), SingletonImageLoader.Factory {
             memoryCache {
                 MemoryCache.Builder()
                     .maxSizePercent(context, 0.15)
-||||||| /tmp/base.f
-                    .maxSizePercent(context, 0.30)
                     .build()
             }
             if (cacheSize == 0) {
