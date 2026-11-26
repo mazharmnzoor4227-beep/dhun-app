@@ -1,9 +1,8 @@
-// about app, upstream credits and license sheets pushed from the version sheet or the dhun page
+// about app, upstream credits and license sheets pushed from the version sheet or the mochy page
 
 package com.mazharansari.vibe.ui.screens.update
 
 import androidx.annotation.DrawableRes
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -469,16 +468,22 @@ private fun ColumnScope.AboutSheetContent(
     popup: PopupSheetState,
     onOpenDevSpace: (Int) -> Unit,
 ) {
+    val context = LocalContext.current
     val installed = shortVersion(BuildConfig.VERSION_NAME)
     val scrollState = rememberScrollState()
     val ringScrollRangePx = with(LocalDensity.current) { 180.dp.toPx() }
+    var contributors by remember { mutableStateOf(cachedContributors ?: FallbackContributors) }
+
+    LaunchedEffect(Unit) {
+        contributors = fetchContributors()
+    }
 
     // the page starts under the sheet's handle now, so the ring and the first row sit that much lower
     val room = sheetHandleRoom()
     Box(Modifier.fillMaxWidth()) {
         // zero-size layout places the spinning ring behind the top icon without pushing the column down
         VersionRing(
-            text = "VIBE $installed",
+            text = "MOCHY $installed",
             scrollProgress = { scrollState.value / ringScrollRangePx },
             modifier =
                 Modifier
@@ -520,7 +525,7 @@ private fun ColumnScope.AboutSheetContent(
                     contentAlignment = Alignment.Center,
                 ) {
                     Icon(
-                        painter = painterResource(R.drawable.ic_dhun_mark),
+                        painter = painterResource(R.drawable.ic_mochy_mark),
                         contentDescription = null,
                         tint = Color.White,
                         modifier = Modifier.size(38.dp),
@@ -587,12 +592,16 @@ private fun ColumnScope.AboutSheetContent(
                         .background(MenuRowSurface)
                         .padding(vertical = 6.dp),
             ) {
-                PersonRow(
-                    name = DeveloperName,
-                    subtitle = "Developer",
-                    showArrow = true,
-                    onClick = { onOpenDevSpace(0) },
-                )
+                LeadDevs.forEach { dev ->
+                    PersonRow(
+                        name = dev.name,
+                        subtitle = null,
+                        avatarUrl = githubAvatarUrl(dev.githubUser),
+                        fallbackRes = dev.fallbackAvatar,
+                        showArrow = true,
+                        onClick = { onOpenDevSpace(dev.devSpaceIndex) },
+                    )
+                }
             }
 
             Spacer(Modifier.height(18.dp))
@@ -680,13 +689,8 @@ private fun ColumnScope.AboutSheetContent(
 }
 
 @Composable
-private fun ColumnScope.LicenseSheetContent() {
+private fun ColumnScope.CreditsSheetContent() {
     val context = LocalContext.current
-    val licenceText = remember {
-        runCatching {
-            context.resources.openRawResource(R.raw.license_gpl3).bufferedReader().use { it.readText() }
-        }.getOrDefault("GNU General Public License v3.0")
-    }
     Column(
         modifier =
             Modifier
@@ -895,11 +899,13 @@ private fun AboutPillRow(
                 .clickable(interactionSource = interaction, indication = RemoteFocus, onClick = onClick)
                 .padding(horizontal = 18.dp),
     ) {
-        Icon(
-            painter = painterResource(R.drawable.arrow_forward),
-            contentDescription = null,
-            tint = Color.White.copy(alpha = 0.85f),
-            modifier = Modifier.size(12.dp),
+        Text(
+            text = text,
+            fontSize = 15.sp,
+            fontWeight = FontWeight.Bold,
+            letterSpacing = (-0.4).sp,
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis,
         )
     }
 }
@@ -922,13 +928,13 @@ private fun AboutCardButton(
                 .clickable(interactionSource = interaction, indication = RemoteFocus, onClick = onClick)
                 .padding(horizontal = 18.dp),
     ) {
-        AsyncImage(
-            model = request,
-            contentDescription = null,
-            placeholder = fallback,
-            error = fallback,
-            contentScale = ContentScale.Crop,
-            modifier = Modifier.fillMaxSize(),
+        Text(
+            text = text,
+            fontSize = 15.sp,
+            fontWeight = FontWeight.Bold,
+            letterSpacing = (-0.4).sp,
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis,
         )
     }
 }
@@ -937,8 +943,10 @@ private fun AboutCardButton(
 private fun PersonRow(
     name: String,
     subtitle: String?,
+    avatarUrl: String,
     showArrow: Boolean,
     onClick: () -> Unit,
+    @DrawableRes fallbackRes: Int? = null,
 ) {
     val interaction = remember { MutableInteractionSource() }
     Row(
@@ -950,11 +958,10 @@ private fun PersonRow(
                 .clickable(interactionSource = interaction, indication = RemoteFocus, onClick = onClick)
                 .padding(horizontal = 16.dp, vertical = 10.dp),
     ) {
-        Image(
-            painter = painterResource(R.drawable.dev_mazhar),
-            contentDescription = null,
-            contentScale = ContentScale.Crop,
-            modifier = Modifier.size(44.dp).clip(CircleShape).background(Color(0xFFD9D9D9)),
+        GithubAvatar(
+            url = avatarUrl,
+            size = 44.dp,
+            fallbackRes = fallbackRes,
         )
         Spacer(Modifier.width(14.dp))
         Column(modifier = Modifier.weight(1f)) {
