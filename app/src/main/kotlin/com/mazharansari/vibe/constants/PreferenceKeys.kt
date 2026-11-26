@@ -55,7 +55,7 @@ val SwipeLeftActionKey = stringPreferencesKey("swipeLeftAction")
 
 // the top layout of the home tab, picked in customisation settings
 enum class HomeStyle(val displayName: String) {
-    DHUN("Dhun"),
+    MOCHYY("Vibe"),
     LISTEN_NOW("Listen now"),
     HOP_IN("Hop in"),
 }

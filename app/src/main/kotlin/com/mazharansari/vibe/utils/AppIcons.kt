@@ -1,4 +1,4 @@
-// every launcher icon dhun can wear, ready-made or on a custom colour, each an activity-alias in the manifest with exactly one switched on
+// every launcher icon mochy can wear, ready-made or on a custom colour, each an activity-alias in the manifest with exactly one switched on
 
 package com.mazharansari.vibe.utils
 
@@ -17,7 +17,7 @@ import com.mazharansari.vibe.R
 enum class AppIconFamily(@StringRes val title: Int) {
     Mark(R.string.app_icon_family_mark),
     Outline(R.string.app_icon_family_outline),
-    Wave(R.string.app_icon_family_wave),
+    Anime(R.string.app_icon_family_anime),
     ;
 
     // the art this family wears on a custom colour: the outline goes dark on a pale one, like on white
@@ -25,7 +25,7 @@ enum class AppIconFamily(@StringRes val title: Int) {
     fun artOn(color: AppIconColor): Int = when (this) {
         Mark -> R.drawable.ic_launcher_mark
         Outline -> if (color.pale) R.drawable.ic_launcher_outline_dark else R.drawable.ic_launcher_monochrome
-        Wave -> R.drawable.ic_launcher_wave
+        Anime -> R.drawable.ic_launcher_anime
     }
 }
 
@@ -71,10 +71,10 @@ class AppIcon private constructor(
             AppIcon("OutlineBlack", "IconOutlineBlack", AppIconFamily.Outline, R.drawable.ic_launcher_monochrome, R.color.app_icon_black, R.string.app_icon_outline_black),
             AppIcon("OutlineMaterial", "IconOutlineMaterial", AppIconFamily.Outline, R.drawable.ic_launcher_monochrome, R.color.app_icon_material, R.string.app_icon_outline_material),
             AppIcon("OutlineTransparent", "IconOutlineTransparent", AppIconFamily.Outline, R.drawable.ic_launcher_monochrome, null, R.string.app_icon_outline_transparent),
-            AppIcon("WaveWhite", "IconWaveWhite", AppIconFamily.Wave, R.drawable.ic_launcher_wave, R.color.app_icon_white, R.string.app_icon_wave_white),
-            AppIcon("WaveDark", "IconWaveDark", AppIconFamily.Wave, R.drawable.ic_launcher_wave, R.color.app_icon_black, R.string.app_icon_wave_dark),
-            AppIcon("WaveMaterial", "IconWaveMaterial", AppIconFamily.Wave, R.drawable.ic_launcher_wave, R.color.app_icon_material, R.string.app_icon_wave_material),
-            AppIcon("WaveTransparent", "IconWaveTransparent", AppIconFamily.Wave, R.drawable.ic_launcher_wave, null, R.string.app_icon_wave_transparent),
+            AppIcon("AnimeWhite", "IconAnimeWhite", AppIconFamily.Anime, R.drawable.ic_launcher_anime, R.color.app_icon_white, R.string.app_icon_anime_white),
+            AppIcon("AnimeDark", "IconAnimeDark", AppIconFamily.Anime, R.drawable.ic_launcher_anime, R.color.app_icon_black, R.string.app_icon_anime_dark),
+            AppIcon("AnimeMaterial", "IconAnimeMaterial", AppIconFamily.Anime, R.drawable.ic_launcher_anime, R.color.app_icon_material, R.string.app_icon_anime_material),
+            AppIcon("AnimeTransparent", "IconAnimeTransparent", AppIconFamily.Anime, R.drawable.ic_launcher_anime, null, R.string.app_icon_anime_transparent),
         )
 
         // every family on every custom colour, named MarkRed with the alias IconMarkRed, as the manifest has them
@@ -109,13 +109,13 @@ object AppIcons {
         return AppIcon.entries.firstOrNull { started.endsWith(".${it.alias}") }
     }
 
-    /** whether this launch's splash showed [icon] itself: only an wave one, and only on android 13+, which can pick a splash per launch */
-    fun splashShows(icon: AppIcon?): Boolean = icon?.family == AppIconFamily.Wave && Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU
+    /** whether this launch's splash showed [icon] itself: only an anime one, and only on android 13+, which can pick a splash per launch */
+    fun splashShows(icon: AppIcon?): Boolean = icon?.family == AppIconFamily.Anime && Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU
 
-    // the next launch's splash: the launcher icon for an wave one to bounce out of, the bare mark for the rest
+    // the next launch's splash: the launcher icon for an anime one to bounce out of, the bare mark for the rest
     fun syncSplash(activity: Activity, icon: AppIcon = current(activity)) {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return
-        val theme = if (icon.family == AppIconFamily.Wave) R.style.Theme_App_Starting_Icon else R.style.Theme_App_Starting
+        val theme = if (icon.family == AppIconFamily.Anime) R.style.Theme_App_Starting_Icon else R.style.Theme_App_Starting
         runCatching { activity.splashScreen.setSplashScreenTheme(theme) }
     }
 
