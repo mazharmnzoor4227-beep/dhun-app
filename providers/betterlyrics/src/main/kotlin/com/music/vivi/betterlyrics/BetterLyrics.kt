@@ -1,6 +1,6 @@
-package com.mazharansari.dhun.betterlyrics
+package com.mazharansari.vibe.betterlyrics
 
-import com.mazharansari.dhun.betterlyrics.models.TTMLResponse
+import com.mazharansari.vibe.betterlyrics.models.TTMLResponse
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.engine.cio.CIO
@@ -37,7 +37,7 @@ object BetterLyrics {
             }
 
             // says who's asking so the server owner can reach us instead of blocking us
-            install(UserAgent) { agent = "Dhun/1.0.0" }
+            install(UserAgent) { agent = "Mochy (+https://github.com/realidkroo/Mochy-Music)" }
 
             expectSuccess = false
         }

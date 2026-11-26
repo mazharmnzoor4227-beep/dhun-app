@@ -3,7 +3,7 @@
 <!-- Upstream InnerTune strings -->
 <!-- Do not add new features here -->
 <!-- Try to re-use strings here, but be careful on its usage e.g. verb vs noun -->
-<!-- "InnerTune" is replaced with "dhun" -->
+<!-- "InnerTune" is replaced with "mochy" -->
 <!-- Translators: Do not modify this file for translations, use InnerTune's Weblate instead. -->
 
 <resources>
@@ -22,6 +22,7 @@
 
     <!-- Home -->
     <string name="history">History</string>
+    <string name="queue_next_in_queue">Next in Queue</string>
     <string name="stats">Stats</string>
     <string name="mood_and_genres">Mood and Genres</string>
     <string name="account">Account</string>
@@ -113,6 +114,7 @@
     <string name="saving">Saving</string>
     <string name="saved">Saved</string>
     <string name="remove_download">Remove download</string>
+    <string name="player_menu_delete_download">Delete download</string>
     <string name="import_playlist">Import playlist</string>
     <string name="add_to_playlist">Add to playlist</string>
     <string name="start_an_radio">Radio</string>
@@ -227,17 +229,47 @@
     <string name="undo">Undo</string>
 
     <!-- Player -->
-    <string name="lyrics_not_found">Lyrics not found</string>
+    <string name="lyrics_not_found">No lyrics found</string>
     <string name="sleep_timer">Sleep timer</string>
     <string name="end_of_song">End of song</string>
     <plurals name="minute">
         <item quantity="one">1 minute</item>
         <item quantity="other">%d minutes</item>
     </plurals>
+    <string name="sleep_timer_ready">Ready</string>
+    <string name="sleep_timer_running">Running</string>
+    <string name="sleep_timer_paused">Paused</string>
+    <string name="sleep_timer_until_song_ends">Stops when this song ends</string>
+    <string name="sleep_timer_start">Start</string>
+    <string name="sleep_timer_pause">Pause</string>
+    <string name="sleep_timer_resume">Resume</string>
+    <string name="sleep_timer_minus_minute">−1 min</string>
+    <string name="sleep_timer_plus_minute">+1 min</string>
+    <string name="sleep_timer_quick_set">Quick set</string>
+    <plurals name="sleep_timer_preset_minutes">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <string name="sleep_timer_preset_hour">1 hr</string>
+    <string name="sleep_timer_custom">Custom time</string>
+    <string name="sleep_timer_custom_desc">Type your own hours, minutes and seconds</string>
+    <string name="sleep_timer_hours">Hours</string>
+    <string name="sleep_timer_minutes">Minutes</string>
+    <string name="sleep_timer_seconds">Seconds</string>
+    <string name="sleep_timer_enter_time">Enter a time</string>
+    <string name="sleep_timer_set_custom">Set %1$s</string>
+    <string name="sleep_timer_end_after_song">End after this song</string>
+    <string name="sleep_timer_cancel">CANCEL TIMER</string>
+    <string name="sleep_timer_paused_left">paused, %1$s left</string>
     <string name="error_no_stream">No stream available</string>
     <string name="error_no_internet">No network connection</string>
+    <string name="no_internet_next_on_phone">No internet, so here\'s the next song saved on your phone</string>
     <string name="error_timeout">Timeout</string>
     <string name="error_unknown">Unknown error</string>
+    <string name="error_bot_check">YouTube wants a bot check from this network right now. Try again in a few minutes, switch between Wi-Fi and mobile data, or log in to your YouTube account.</string>
+    <string name="error_premium_only_login">YouTube only plays this song for Music Premium members. Log in with a Premium account to play it.</string>
+    <string name="error_premium_only">YouTube only plays this song for Music Premium members, and it wouldn\'t play it for your account.</string>
+    <string name="error_rate_limited">YouTube is limiting requests from this network. Try again in a few minutes.</string>
 
     <!-- Player action -->
     <string name="action_like">Like</string>
@@ -370,7 +402,7 @@
     <string name="restore_failed">Failed to restore backup</string>
 
     <string name="discord_integration">Discord Integration</string>
-    <string name="discord_information">dhun uses the KizzyRPC library to set your Discord account\'s status. This involves using the Discord Gateway connection, which may be considered a violation of Discord\'s TOS. However, there are no known cases of user accounts being suspended for this reason. Use at your own risk.\n\dhun will only extract your token, and everything else is stored locally.</string>
+    <string name="discord_information">mochy uses the KizzyRPC library to set your Discord account\'s status. This involves using the Discord Gateway connection, which may be considered a violation of Discord\'s TOS. However, there are no known cases of user accounts being suspended for this reason. Use at your own risk.\n\mochy will only extract your token, and everything else is stored locally.</string>
     <string name="dismiss">Dismiss</string>
     <string name="options">Options</string>
     <string name="preview">Preview</string>
@@ -400,4 +432,76 @@
     <string name="error_stream_unavailable_title">Couldn\'t play this track</string>
     <string name="playback_error_channel_name">Playback errors</string>
     <string name="playing_music_video_audio">YouTube wouldn\'t play this song, so you\'re hearing its music video instead</string>
+    <string name="storage_clear_canvas_gifs">Clear Canvas GIFs</string>
+    <string name="storage_clear_canvas_gifs_title">Clear Canvas GIFs?</string>
+    <string name="storage_clear_canvas_gifs_message">The saved canvas GIFs for Discord and the videos they were made from are deleted. They get made again the next time a song plays.</string>
+    <string name="storage_clear_canvas_gifs_action">Clear</string>
+    <string name="storage_canvas_gifs_none">No GIFs saved</string>
+    <string name="storage_canvas_gifs_detail">%1$s · %2$d GIFs</string>
+    <string name="eight_d_title">8D Audio</string>
+    <string name="eight_d_description">Rotating spatial sound that moves around you</string>
+    <string name="eight_d_reset">Reset 8D Audio settings</string>
+    <string name="eight_d_rotation_speed">Rotation speed</string>
+    <string name="eight_d_rotation_value">%1$.2f Hz (~%2$.1fs/round)</string>
+    <string name="eight_d_spatial_depth">Spatial depth</string>
+    <string name="eight_d_room_reverb">Room reverb</string>
+    <string name="eight_d_room_small">Small</string>
+    <string name="eight_d_room_medium">Medium</string>
+    <string name="eight_d_room_large">Large</string>
+    <string name="eight_d_preset_chill">Chill</string>
+    <string name="eight_d_preset_balanced">Balanced</string>
+    <string name="eight_d_preset_extreme">Extreme</string>
+
+    <!-- Mix It DJ transitions -->
+    <string name="mixit_title">Mix It</string>
+    <string name="mixit_beta">BETA</string>
+    <string name="mixit_menu_desc">Be your own DJ — customize every song transition</string>
+    <string name="mixit_menu_active_desc">Active · %1$d custom transitions</string>
+    <string name="mixit_menu_active_default_desc">Active · Using %1$s for unconfigured</string>
+    <string name="mixit_editor_title">Transition\nEditor</string>
+    <string name="mixit_presets">Presets</string>
+    <string name="mixit_presets_title">DJ Presets</string>
+    <string name="mixit_presets_desc">Start from a curated DJ transition, then tweak freely</string>
+    <string name="mixit_smart_pick">Smart Auto Pick</string>
+    <string name="mixit_smart_pick_desc">Finds a musical spot and matches beats automatically</string>
+    <string name="mixit_effects_title">Effects</string>
+    <string name="mixit_select">Select</string>
+    <string name="mixit_edit_point">Edit Point</string>
+    <string name="mixit_reset">Reset</string>
+    <string name="mixit_save">Save</string>
+    <string name="mixit_preview">Preview transition</string>
+    <string name="mixit_reading_audio">Reading…</string>
+    <string name="mixit_edit_transition">Edit transition</string>
+    <string name="mixit_edit_custom">Customised</string>
+    <string name="mixit_edit_pill">Edit</string>
+    <string name="mixit_active_banner_count">Mix It active · %1$d custom mixes</string>
+    <string name="mixit_active_banner_default">Mix It active · Unconfigured uses %1$s</string>
+    <string name="mixit_saved_toast">Transition saved</string>
+    <string name="mixit_reset_toast">Transition reset to default</string>
+    <string name="mixit_hint_drag_waves">Drag waves anywhere · Yellow dots = fade · Fx &amp; Mix = sound</string>
+    <string name="mixit_hint_edit_point">Drag &lt; &gt; to resize window · Drag waves to shift cue</string>
+    <string name="mixit_beatmatch_title">Beat-Match</string>
+    <string name="mixit_auto_align_beats">Align Beats</string>
+    <string name="mixit_auto_align_beats_desc">Lock nearest downbeats</string>
+    <string name="mixit_tempo_sync_mode">Sync Mode</string>
+    <string name="mixit_snap_to_beat">Snap to Beat</string>
+    <string name="mixit_snap_to_beat_desc">Lock drags to beats</string>
+    <string name="mixit_bass_swap">Bass Swap</string>
+    <string name="mixit_bass_swap_desc">Swap kick on crossover</string>
+    <string name="mixit_beat_nudge">Beat Nudge</string>
+    <string name="mixit_custom_tempo">Song 2 Speed</string>
+    <string name="mixit_mix_title">Sound Mix</string>
+    <string name="mixit_mix_song1">Song 1 · Out</string>
+    <string name="mixit_mix_song2">Song 2 · In</string>
+    <string name="mixit_stem_voice">Voice</string>
+    <string name="mixit_stem_bass">Bass &amp; Drums</string>
+    <string name="mixit_stem_instruments">Instruments</string>
+    <string name="mixit_reset_levels">Reset Levels</string>
+    <string name="mixit_playlist_settings_title">Mix It Options</string>
+    <string name="mixit_enable_for_playlist">Enable Mix It on this playlist</string>
+    <string name="mixit_enable_for_playlist_desc">Turn off anytime without losing your saved custom mixes</string>
+    <string name="mixit_unconfigured_heading">Unconfigured Transitions</string>
+    <string name="mixit_clear_all">Reset all %1$d custom transitions</string>
+    <string name="mixit_clear_all_confirm">Tap again to reset all %1$d custom transitions</string>
+    <string name="mixit_need_two_songs">Add at least 2 songs to customize transitions</string>
 </resources>

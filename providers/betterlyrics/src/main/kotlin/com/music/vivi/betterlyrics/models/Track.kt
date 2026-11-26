@@ -1,4 +1,4 @@
-package com.mazharansari.dhun.betterlyrics.models
+package com.mazharansari.vibe.betterlyrics.models
 
 import kotlinx.serialization.Serializable
 

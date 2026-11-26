@@ -1,4 +1,4 @@
-package com.mazharansari.dhun.betterlyrics
+package com.mazharansari.vibe.betterlyrics
 
 import org.w3c.dom.Element
 import org.w3c.dom.Node

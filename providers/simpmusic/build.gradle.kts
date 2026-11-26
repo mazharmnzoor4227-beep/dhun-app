@@ -4,8 +4,8 @@ plugins {
 }
 
 android {
-    namespace = "com.music.communitylyrics"
-    compileSdk = 36
+    namespace = "com.music.simpmusic"
+    compileSdk = 37
 
     defaultConfig {
         minSdk = 24

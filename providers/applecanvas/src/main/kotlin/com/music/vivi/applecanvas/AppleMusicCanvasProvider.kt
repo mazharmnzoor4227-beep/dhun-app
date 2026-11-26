@@ -1,7 +1,7 @@
-package com.mazharansari.dhun.applecanvas
+package com.mazharansari.vibe.applecanvas
 
-import com.mazharansari.dhun.canvas.CanvasArtwork
-import com.mazharansari.dhun.canvas.CanvasMatch
+import com.mazharansari.vibe.canvas.CanvasArtwork
+import com.mazharansari.vibe.canvas.CanvasMatch
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.engine.okhttp.OkHttp

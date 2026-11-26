@@ -1,4 +1,4 @@
-package com.mazharansari.dhun.canvas
+package com.mazharansari.vibe.canvas
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

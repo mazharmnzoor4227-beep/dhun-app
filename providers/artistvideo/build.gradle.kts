@@ -5,8 +5,8 @@ plugins {
 }
 
 android {
-    namespace = "com.mazharansari.dhun.artistvideo"
-    compileSdk = 36
+    namespace = "com.mazharansari.vibe.artistvideo"
+    compileSdk = 37
 
     defaultConfig {
         minSdk = 24

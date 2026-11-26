@@ -6,20 +6,20 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # WEB_REMIX Streaming - WebView JavaScript interfaces
--keepclassmembers class com.mazharansari.dhun.utils.sabr.EjsNTransformSolver$SolverWebView {
+-keepclassmembers class com.mazharansari.vibe.utils.sabr.EjsNTransformSolver$SolverWebView {
     @android.webkit.JavascriptInterface public *;
 }
--keepclassmembers class com.mazharansari.dhun.utils.cipher.CipherWebView {
+-keepclassmembers class com.mazharansari.vibe.utils.cipher.CipherWebView {
     @android.webkit.JavascriptInterface public *;
 }
--keepclassmembers class com.mazharansari.dhun.utils.potoken.PoTokenWebView {
+-keepclassmembers class com.mazharansari.vibe.utils.potoken.PoTokenWebView {
     @android.webkit.JavascriptInterface public *;
 }
 
 # Keep streaming utility classes
--keep class com.mazharansari.dhun.utils.cipher.** { *; }
--keep class com.mazharansari.dhun.utils.sabr.** { *; }
--keep class com.mazharansari.dhun.utils.potoken.** { *; }
+-keep class com.mazharansari.vibe.utils.cipher.** { *; }
+-keep class com.mazharansari.vibe.utils.sabr.** { *; }
+-keep class com.mazharansari.vibe.utils.potoken.** { *; }
 
 # Keep coroutine continuation for WebView callbacks
 -keepclassmembers class * {
@@ -112,16 +112,16 @@
 -dontwarn java.beans.Introspector
 -dontwarn java.beans.PropertyDescriptor
 
-# Keep all classes within the kuromoji package
+# Keep all classes within the kuromoji package so Japanese kanji tokenization and dictionary loading work in release builds
 -keep class com.atilika.kuromoji.** { *; }
 
 ## Queue Persistence Rules
 # Keep queue-related classes to prevent serialization issues in release builds
--keep class com.mazharansari.dhun.models.PersistQueue { *; }
--keep class com.mazharansari.dhun.models.PersistPlayerState { *; }
--keep class com.mazharansari.dhun.models.QueueData { *; }
--keep class com.mazharansari.dhun.models.QueueType { *; }
--keep class com.mazharansari.dhun.playback.queues.** { *; }
+-keep class com.mazharansari.vibe.models.PersistQueue { *; }
+-keep class com.mazharansari.vibe.models.PersistPlayerState { *; }
+-keep class com.mazharansari.vibe.models.QueueData { *; }
+-keep class com.mazharansari.vibe.models.QueueType { *; }
+-keep class com.mazharansari.vibe.playback.queues.** { *; }
 
 # Keep serialization methods for queue persistence
 -keepclassmembers class * implements java.io.Serializable {
@@ -129,13 +129,8 @@
     private void readObject(java.io.ObjectInputStream);
 }
 
-## UCrop Rules
--dontwarn com.yalantis.ucrop**
--keep class com.yalantis.ucrop** { *; }
--keep interface com.yalantis.ucrop** { *; }
-
 ## Google Cast Rules
--keep class com.mazharansari.dhun.cast.** { *; }
+-keep class com.mazharansari.vibe.cast.** { *; }
 -keep class com.google.android.gms.cast.** { *; }
 -keep class androidx.mediarouter.** { *; }
 
@@ -143,23 +138,23 @@
 -dontwarn com.google.re2j.**
 
 # Vibra fingerprint library
--keep class com.mazharansari.dhun.recognition.VibraSignature { *; }
--keepclassmembers class com.mazharansari.dhun.recognition.VibraSignature {
+-keep class com.mazharansari.vibe.recognition.VibraSignature { *; }
+-keepclassmembers class com.mazharansari.vibe.recognition.VibraSignature {
+    native <methods>;
+}
+
+# Module store native signing bridge
+-keep class com.mazharansari.vibe.modules.browser.StoreSignature { *; }
+-keepclassmembers class com.mazharansari.vibe.modules.browser.StoreSignature {
     native <methods>;
 }
 
 ## Modules from a zip
-# a zip module's own code reaches dhun only through these, by their original names
--keep class com.mazharansari.dhun.module.bridge.shared.** { *; }
+# a zip module's own code reaches mochy only through these, by their original names
+-keep class com.mazharansari.vibe.module.bridge.shared.** { *; }
 
-## Kotlin Reflection Fix
--keep class kotlin.Metadata { *; }
--keep class kotlin.reflect.** { *; }
--dontwarn kotlin.reflect.**
-
-## Ktor Serialization
--keep class io.ktor.** { *; }
--keepclassmembers class io.ktor.** { *; }
+## Ktor client engine (let r8 strip unused ktor openapi, network, and server packages)
+-keep class io.ktor.client.engine.okhttp.** { *; }
 -dontwarn io.ktor.**
 
 ## Shazam Models

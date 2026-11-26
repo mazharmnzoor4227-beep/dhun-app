@@ -11,6 +11,7 @@ import android.webkit.SslErrorHandler
 import android.webkit.WebResourceError
 import android.webkit.WebResourceRequest
 import android.webkit.WebResourceResponse
+import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import kotlinx.coroutines.CoroutineScope
@@ -81,11 +82,11 @@ internal object MusixmatchBrowser {
     // true once the new page has fully arrived and [ready] holds on it; false when it failed, hit the sign-in wall, or ran out of time
     private suspend fun load(view: WebView, url: String, ready: String): Boolean {
         // the tab is reused: a mark on the old page tells it apart from the new one, even when musixmatch redirects
-        if (view.url != null) evaluate(view, "window.dhunOld=true")
+        if (view.url != null) evaluate(view, "window.mochyOld=true")
         val host = Uri.parse(url).host
         tabClient.failedHost = null
         view.loadUrl(url)
-        val script = "(function(){if(window.dhunOld)return 'wait';var h=location.hostname;if(h=='auth.musixmatch.com')return 'wall';" +
+        val script = "(function(){if(window.mochyOld)return 'wait';var h=location.hostname;if(h=='auth.musixmatch.com')return 'wall';" +
             "return h==${JsonPrimitive(host)}&&document.readyState!='loading'&&($ready)?'ready':'wait';})()"
         val outcome = withTimeoutOrNull(LoadTimeoutMs) {
             var state = "wait"
@@ -115,6 +116,13 @@ internal object MusixmatchBrowser {
         return WebView(context.applicationContext).apply {
             settings.javaScriptEnabled = true
             settings.domStorageEnabled = true
+            settings.allowFileAccess = false
+            settings.allowContentAccess = false
+            @Suppress("DEPRECATION")
+            settings.allowFileAccessFromFileURLs = false
+            @Suppress("DEPRECATION")
+            settings.allowUniversalAccessFromFileURLs = false
+            settings.mixedContentMode = WebSettings.MIXED_CONTENT_NEVER_ALLOW
             webViewClient = tabClient
             // never shown, but a zero-size view with paused timers can stall the check's script
             layout(0, 0, 360, 640)
@@ -145,10 +153,24 @@ internal object MusixmatchBrowser {
         @Volatile
         var failedHost: String? = null
 
+        private fun isAllowedHost(uri: Uri?): Boolean {
+            if (uri == null || !uri.scheme.equals("https", ignoreCase = true)) return false
+            val host = uri.host?.lowercase()?.trimEnd('.') ?: return false
+            return host == "musixmatch.com" || host.endsWith(".musixmatch.com") ||
+                host == "awswaf.com" || host.endsWith(".awswaf.com")
+        }
+
+        override fun shouldOverrideUrlLoading(view: WebView, request: WebResourceRequest): Boolean =
+            !isAllowedHost(request.url)
+
         // only the page itself and the bot check's script get through; the site's pictures, scripts and ads would just slow the tab
-        override fun shouldInterceptRequest(view: WebView, request: WebResourceRequest): WebResourceResponse? =
-            if (request.isForMainFrame || request.url.host.orEmpty().endsWith("awswaf.com")) null
-            else WebResourceResponse("text/plain", "utf-8", ByteArrayInputStream(ByteArray(0)))
+        override fun shouldInterceptRequest(view: WebView, request: WebResourceRequest): WebResourceResponse? {
+            val uri = request.url
+            val host = uri?.host?.lowercase()?.trimEnd('.').orEmpty()
+            val isAwsWaf = uri?.scheme.equals("https", ignoreCase = true) && (host == "awswaf.com" || host.endsWith(".awswaf.com"))
+            val allow = (request.isForMainFrame && isAllowedHost(uri)) || isAwsWaf
+            return if (allow) null else WebResourceResponse("text/plain", "utf-8", ByteArrayInputStream(ByteArray(0)))
+        }
 
         override fun onReceivedError(view: WebView, request: WebResourceRequest, error: WebResourceError) {
             if (request.isForMainFrame) failedHost = request.url.host

@@ -1,4 +1,4 @@
-package com.mazharansari.dhun.canvas
+package com.mazharansari.vibe.canvas
 
 import java.text.Normalizer
 import kotlin.math.abs
