@@ -17,10 +17,10 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
       - name: Add swap and show resources
         run: |
-          sudo fallocate -l 6G /swapfile || sudo dd if=/dev/zero of=/swapfile bs=1M count=6144
-          sudo chmod 600 /swapfile
-          sudo mkswap /swapfile
-          sudo swapon /swapfile
+          sudo fallocate -l 6G /swapfile2 || sudo dd if=/dev/zero of=/swapfile2 bs=1M count=6144
+          sudo chmod 600 /swapfile2
+          sudo mkswap /swapfile2
+          sudo swapon /swapfile2
           free -h
           df -h
       - name: Decode signing keystore
