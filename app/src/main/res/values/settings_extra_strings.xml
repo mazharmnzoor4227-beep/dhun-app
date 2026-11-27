@@ -43,7 +43,7 @@
     <string name="cipher_status_not_loaded">Not loaded</string>
     <string name="cipher_status_stale">Stale — refreshes on next playback</string>
     <string name="cipher_status_ready">Ready</string>
-    <string name="cipher_card_description">YouTube signs its stream URLs with a player script that changes periodically. mochy caches that script and re-downloads it automatically.</string>
+    <string name="cipher_card_description">YouTube signs its stream URLs with a player script that changes periodically. Vibe caches that script and re-downloads it automatically.</string>
     <string name="cipher_player_id">Player ID</string>
     <string name="cipher_last_updated">Last updated</string>
     <string name="cipher_script_size">Script size</string>

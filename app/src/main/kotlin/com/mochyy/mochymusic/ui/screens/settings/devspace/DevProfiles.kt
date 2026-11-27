@@ -47,12 +47,9 @@ import coil3.compose.AsyncImage
 import coil3.request.ImageRequest
 import coil3.request.transformations
 import com.mochyy.mochymusic.R
-import com.mochyy.mochymusic.core.updater.DiscordUrl
+import com.mochyy.mochymusic.core.updater.GithubRepoUrl
 import com.mochyy.mochymusic.core.updater.InstagramUrl
-import com.mochyy.mochymusic.core.updater.ThreadsUrl
-import com.mochyy.mochymusic.ui.component.LocalZoomOutOverlayState
 import com.mochyy.mochymusic.ui.component.pressBounce
-import com.mochyy.mochymusic.ui.screens.donate.showDonateSheet
 import com.mochyy.mochymusic.ui.utils.SoftBlurTransformation
 import com.mochyy.mochymusic.ui.component.RemoteFocus
 import com.mochyy.mochymusic.ui.component.rememberResourcePainter
@@ -63,27 +60,18 @@ internal data class DevPerson(
     val name: String,
     val bio: String,
     @DrawableRes val avatar: Int,
-    /** the main dev takes donations, the donate section only shows for them */
-    val takesDonations: Boolean = false,
     val socials: List<DevSocial> = emptyList(),
 )
 
 internal val DevPeople = listOf(
     DevPerson(
-        name = "idkroo",
-        bio = "ui ux guy here uhh idk what to write here, pls star the repo",
-        avatar = R.drawable.frame_51_3,
-        takesDonations = true,
+        name = "Mazhar Ansari",
+        bio = "Vibe developer. Star the repo and follow along.",
+        avatar = R.drawable.vibe_logo,
         socials = listOf(
+            DevSocial("GitHub", GithubRepoUrl),
             DevSocial("Instagram", InstagramUrl),
-            DevSocial("Discord", DiscordUrl),
-            DevSocial("Threads", ThreadsUrl),
-        ).filter { it.url.isNotBlank() },
-    ),
-    DevPerson(
-        name = "Keycii",
-        bio = "Hi hello hi",
-        avatar = R.drawable.dev_keycii,
+        ),
     ),
 )
 
@@ -140,14 +128,8 @@ internal fun DevProfilePage(
                 Rule()
             }
 
-            if (person.takesDonations || person.socials.isNotEmpty()) {
+            if (person.socials.isNotEmpty()) {
                 Column(Modifier.rise(2).padding(top = 22.dp)) {
-                    if (person.takesDonations) {
-                        val popup = LocalZoomOutOverlayState.current
-                        SectionTitle("Donate")
-                        DevLinkRow("Donate me!") { popup.showDonateSheet() }
-                        Spacer(Modifier.height(14.dp))
-                    }
                     if (person.socials.isNotEmpty()) {
                         val context = LocalContext.current
                         SectionTitle("Socials")

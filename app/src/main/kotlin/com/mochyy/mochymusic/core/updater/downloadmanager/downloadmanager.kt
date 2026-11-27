@@ -32,7 +32,7 @@ class CustomDownloadManager {
                 }
 
                 val downloadDir = ApkVerifier.updatesDir(context)
-                val outputFile = File(downloadDir, "mochy.apk")
+                val outputFile = File(downloadDir, "vibe.apk")
                 if (outputFile.exists()) outputFile.delete()
 
                 try {

@@ -58,7 +58,7 @@ import androidx.navigation.NavController
 import com.mochyy.mochymusic.R
 import com.mochyy.mochymusic.constants.ModuleStoreTermsKey
 import com.mochyy.mochymusic.constants.UsernameKey
-import com.mochyy.mochymusic.core.updater.DiscordUrl
+import com.mochyy.mochymusic.core.updater.GithubRepoUrl
 import com.mochyy.mochymusic.modules.ModuleEntry
 import com.mochyy.mochymusic.modules.ModuleRegistry.LinkCheck
 import com.mochyy.mochymusic.modules.browser.FeedInstall
@@ -178,7 +178,7 @@ fun ModuleBrowserScreen(
                         titleAlpha = { 1f - searchShown.value * (1f - stick.value) },
                     )
                     else -> item(key = "note", contentType = "note") {
-                        StoreMessage(current, onSignIn = { if (termsAccepted < StoreTermsVersion) welcome() else signIn() }, onRetry = viewModel::reload, onJoin = { link -> context.openDevUrl(link ?: DiscordUrl) })
+                        StoreMessage(current, onSignIn = { if (termsAccepted < StoreTermsVersion) welcome() else signIn() }, onRetry = viewModel::reload, onJoin = { link -> context.openDevUrl(link ?: GithubRepoUrl) })
                     }
                 }
                 if (person != null) {

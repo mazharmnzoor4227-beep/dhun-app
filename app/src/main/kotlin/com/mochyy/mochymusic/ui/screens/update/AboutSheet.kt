@@ -60,6 +60,7 @@ import com.mochyy.mochymusic.BuildConfig
 import com.mochyy.mochymusic.R
 import com.mochyy.mochymusic.core.updater.GithubOwner
 import com.mochyy.mochymusic.core.updater.GithubRepo
+import com.mochyy.mochymusic.core.updater.GithubProfileUrl
 import com.mochyy.mochymusic.core.updater.GithubRepoUrl
 import com.mochyy.mochymusic.ui.component.PopupSheetState
 import com.mochyy.mochymusic.ui.component.RemoteFocus
@@ -79,14 +80,6 @@ private data class LeadDevEntry(
     val githubUser: String,
     val devSpaceIndex: Int,
     @DrawableRes val fallbackAvatar: Int,
-)
-
-@Immutable
-private data class CreditEntry(
-    val name: String,
-    val subtitle: String,
-    val githubUser: String,
-    val url: String,
 )
 
 @Immutable
@@ -115,102 +108,10 @@ private data class ContributorEntry(
 private val LeadDevs =
     listOf(
         LeadDevEntry(
-            name = "Roo",
-            githubUser = "realidkroo",
+            name = "Mazhar Ansari",
+            githubUser = GithubOwner,
             devSpaceIndex = 0,
-            fallbackAvatar = R.drawable.frame_51_3,
-        ),
-        LeadDevEntry(
-            name = "key",
-            githubUser = "realkeichi",
-            devSpaceIndex = 1,
-            fallbackAvatar = R.drawable.dev_keycii,
-        ),
-    )
-
-private val BaseCredits =
-    listOf(
-        CreditEntry(
-            name = "vivizzz007",
-            subtitle = "Vivimusic dev, The base of this app",
-            githubUser = "vivizzz007",
-            url = "https://github.com/vivizzz007/vivi-music",
-        ),
-        CreditEntry(
-            name = "Mostafa Alagamy",
-            subtitle = "Metrolist dev, The base of vivmusic too",
-            githubUser = "mostafaalagamy",
-            url = "https://github.com/mostafaalagamy/Metrolist",
-        ),
-    )
-
-private val MoreCredits =
-    listOf(
-        CreditEntry(
-            name = "maxrave-dev",
-            subtitle = "SimpMusic · lyrics API provider",
-            githubUser = "maxrave-dev",
-            url = "https://github.com/maxrave-dev/SimpMusic",
-        ),
-        CreditEntry(
-            name = "Rukamori",
-            subtitle = "ArchiveTune · design & architecture inspiration",
-            githubUser = "rukamori",
-            url = "https://github.com/rukamori/ArchiveTune",
-        ),
-        CreditEntry(
-            name = "fast4x",
-            subtitle = "RiMusic · YouTube Music InnerTube service wrapper",
-            githubUser = "fast4x",
-            url = "https://github.com/fast4x/RiMusic",
-        ),
-        CreditEntry(
-            name = "tranxuanthang",
-            subtitle = "LRCLIB · synchronized LRC lyrics provider",
-            githubUser = "tranxuanthang",
-            url = "https://github.com/tranxuanthang/lrclib",
-        ),
-        CreditEntry(
-            name = "monochrome-music",
-            subtitle = "Monochrome Music · lossless FLAC streams",
-            githubUser = "monochrome-music",
-            url = "https://github.com/monochrome-music/monochrome",
-        ),
-        CreditEntry(
-            name = "Jaakko Pasanen",
-            subtitle = "AutoEq · headphone equalizer database",
-            githubUser = "jaakkopasanen",
-            url = "https://github.com/jaakkopasanen/AutoEq",
-        ),
-        CreditEntry(
-            name = "Ibra Al Tabian",
-            subtitle = "LyricsPlus · open source lyrics server",
-            githubUser = "ibratabian17",
-            url = "https://github.com/ibratabian17/LyricsPlus",
-        ),
-        CreditEntry(
-            name = "Boidushya",
-            subtitle = "Better Lyrics API · synced syllable lyrics",
-            githubUser = "boidushya",
-            url = "https://github.com/better-lyrics/api",
-        ),
-        CreditEntry(
-            name = "James Fung",
-            subtitle = "JamesDSP · Liveprog's EEL2 engine and the Progenitor reverb",
-            githubUser = "james34602",
-            url = "https://github.com/james34602/JamesDSPManager",
-        ),
-        CreditEntry(
-            name = "Tim Schneeberger",
-            subtitle = "JDSP4Linux & RootlessJamesDSP · Liveprog scripts and knobs",
-            githubUser = "ThePBone",
-            url = "https://github.com/Audio4Linux/JDSP4Linux",
-        ),
-        CreditEntry(
-            name = "tryptz",
-            subtitle = "Tryptify · mixer, FX chain, decay graph & USB DAC inspiration",
-            githubUser = "tryptz",
-            url = "https://github.com/tryptz/Tryptify",
+            fallbackAvatar = R.drawable.vibe_logo,
         ),
     )
 
@@ -218,7 +119,7 @@ private val Licenses =
     listOf(
         LicenseEntry(
             tag = "GPL-3.0 · Offline",
-            title = "Mochy Music · GNU General Public License v3.0",
+            title = "Vibe · GNU General Public License v3.0",
             subtitle = "Free and open source software, full license bundled offline",
             url = "$GithubRepoUrl/blob/main/LICENSE",
             assetPath = Gpl3Asset,
@@ -363,29 +264,14 @@ private val Licenses =
         ),
     )
 
-//  this guy promote the app
-private val ExtraContributors =
-    listOf(
-        ContributorEntry(
-            login = "swtstvn",
-            avatarUrl = githubAvatarUrl("swtstvn"),
-            profileUrl = "https://github.com/swtstvn",
-        ),
-    )
-
 private val FallbackContributors =
     listOf(
         ContributorEntry(
-            login = "realidkroo",
-            avatarUrl = githubAvatarUrl("realidkroo"),
-            profileUrl = "https://github.com/realidkroo",
+            login = GithubOwner,
+            avatarUrl = githubAvatarUrl(GithubOwner),
+            profileUrl = GithubProfileUrl,
         ),
-        ContributorEntry(
-            login = "realkeichi",
-            avatarUrl = githubAvatarUrl("realkeichi"),
-            profileUrl = "https://github.com/realkeichi",
-        ),
-    ) + ExtraContributors
+    )
 
 // kept in memory for the session so reopening the about sheet never hits github twice
 @Volatile
@@ -404,7 +290,7 @@ private suspend fun fetchContributors(): List<ContributorEntry> {
                     connectTimeout = 8_000
                     readTimeout = 8_000
                     setRequestProperty("Accept", "application/vnd.github+json")
-                    setRequestProperty("User-Agent", "mochy-android")
+                    setRequestProperty("User-Agent", "vibe-android")
                 }
             try {
                 val arr = JSONArray(conn.inputStream.bufferedReader().use { it.readText() })
@@ -420,7 +306,6 @@ private suspend fun fetchContributors(): List<ContributorEntry> {
                         add(ContributorEntry(login = login, avatarUrl = avatar, profileUrl = html))
                     }
                 }.ifEmpty { FallbackContributors }
-                    .plus(ExtraContributors)
                     .distinctBy { it.login.lowercase() }
                     .also { cachedContributors = it }
             } finally {
@@ -434,13 +319,6 @@ fun PopupSheetState.showAboutSheet(onOpenDevSpace: (Int) -> Unit = {}) {
     val popup = this
     show(buttonBar = { SheetPrimaryButton(text = stringResource(R.string.done), onClick = popup::dismiss) }) {
         AboutSheetContent(popup = popup, onOpenDevSpace = onOpenDevSpace)
-    }
-}
-
-private fun PopupSheetState.showCreditsSheet() {
-    val popup = this
-    show(buttonBar = { SheetPrimaryButton(text = stringResource(R.string.done), onClick = popup::dismiss) }) {
-        CreditsSheetContent()
     }
 }
 
@@ -483,7 +361,7 @@ private fun ColumnScope.AboutSheetContent(
     Box(Modifier.fillMaxWidth()) {
         // zero-size layout places the spinning ring behind the top icon without pushing the column down
         VersionRing(
-            text = "MOCHY $installed",
+            text = "VIBE $installed",
             scrollProgress = { scrollState.value / ringScrollRangePx },
             modifier =
                 Modifier
@@ -527,7 +405,7 @@ private fun ColumnScope.AboutSheetContent(
                     Icon(
                         painter = painterResource(R.drawable.ic_mochy_mark),
                         contentDescription = null,
-                        tint = Color.White,
+                        tint = Color.Unspecified,
                         modifier = Modifier.size(38.dp),
                     )
                 }
@@ -605,34 +483,6 @@ private fun ColumnScope.AboutSheetContent(
             }
 
             Spacer(Modifier.height(18.dp))
-            SectionHeader(stringResource(R.string.about_we_wont_exist))
-            Spacer(Modifier.height(8.dp))
-            Column(
-                modifier =
-                    Modifier
-                        .fillMaxWidth()
-                        .clip(RoundedCornerShape(24.dp))
-                        .background(MenuRowSurface)
-                        .padding(vertical = 6.dp),
-            ) {
-                BaseCredits.forEach { credit ->
-                    PersonRow(
-                        name = credit.name,
-                        subtitle = credit.subtitle,
-                        avatarUrl = githubAvatarUrl(credit.githubUser),
-                        showArrow = false,
-                        onClick = { context.openUrl(credit.url) },
-                    )
-                }
-            }
-
-            Spacer(Modifier.height(8.dp))
-            AndMoreRow(
-                avatars = remember { MoreCredits.take(3).map { githubAvatarUrl(it.githubUser) } },
-                onClick = { popup.showCreditsSheet() },
-            )
-
-            Spacer(Modifier.height(18.dp))
             SectionHeader(stringResource(R.string.about_license))
             Spacer(Modifier.height(8.dp))
             val offlineGplTitle = stringResource(R.string.about_license_offline_title)
@@ -685,47 +535,6 @@ private fun ColumnScope.AboutSheetContent(
             }
             Spacer(Modifier.height(8.dp))
         }
-    }
-}
-
-@Composable
-private fun ColumnScope.CreditsSheetContent() {
-    val context = LocalContext.current
-    Column(
-        modifier =
-            Modifier
-                .fillMaxWidth()
-                .verticalScroll(rememberScrollState())
-                .padding(top = sheetHandleRoom()),
-    ) {
-        Spacer(Modifier.height(8.dp))
-        Text(
-            text = stringResource(R.string.about_credits),
-            fontSize = 36.sp,
-            lineHeight = 38.sp,
-            fontWeight = FontWeight.Bold,
-            letterSpacing = (-1.4).sp,
-        )
-        Spacer(Modifier.height(16.dp))
-        Column(
-            modifier =
-                Modifier
-                    .fillMaxWidth()
-                    .clip(RoundedCornerShape(24.dp))
-                    .background(MenuRowSurface)
-                    .padding(vertical = 6.dp),
-        ) {
-            (BaseCredits + MoreCredits).forEach { credit ->
-                PersonRow(
-                    name = credit.name,
-                    subtitle = credit.subtitle,
-                    avatarUrl = githubAvatarUrl(credit.githubUser),
-                    showArrow = true,
-                    onClick = { context.openUrl(credit.url) },
-                )
-            }
-        }
-        Spacer(Modifier.height(8.dp))
     }
 }
 
@@ -989,52 +798,6 @@ private fun PersonRow(
             Spacer(Modifier.width(10.dp))
             ArrowBadge()
         }
-    }
-}
-
-@Composable
-private fun AndMoreRow(
-    avatars: List<String>,
-    onClick: () -> Unit,
-) {
-    val interaction = remember { MutableInteractionSource() }
-    val circleSize = 22.dp
-    val step = 13.dp
-    val stackWidth = circleSize + step * (avatars.size - 1).coerceAtLeast(0)
-    Row(
-        verticalAlignment = Alignment.CenterVertically,
-        modifier =
-            Modifier
-                .pressBounce(interaction, pressedScale = 0.97f)
-                .fillMaxWidth()
-                .height(54.dp)
-                .clip(RoundedCornerShape(20.dp))
-                .background(MenuRowSurface)
-                .clickable(interactionSource = interaction, indication = RemoteFocus, onClick = onClick)
-                .padding(horizontal = 16.dp),
-    ) {
-        Box(
-            contentAlignment = Alignment.CenterStart,
-            modifier = Modifier.width(stackWidth).height(circleSize),
-        ) {
-            avatars.forEachIndexed { index, url ->
-                GithubAvatar(
-                    url = url,
-                    size = circleSize,
-                    modifier =
-                        Modifier
-                            .offset(x = step * index)
-                            .border(1.5.dp, MenuRowSurface, CircleShape),
-                )
-            }
-        }
-        Spacer(Modifier.width(12.dp))
-        Text(
-            text = stringResource(R.string.about_and_more),
-            fontSize = 15.sp,
-            fontWeight = FontWeight.Bold,
-            letterSpacing = (-0.4).sp,
-        )
     }
 }
 

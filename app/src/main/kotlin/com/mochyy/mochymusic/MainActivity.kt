@@ -1547,7 +1547,7 @@ class MainActivity : ComponentActivity() {
                 }
             }
             com.mochyy.mochymusic.ui.component.TopToaster.show(
-                if (done == 0) "Couldn't import that" else "Imported $done song${if (done != 1) "s" else ""} to Mochy",
+                if (done == 0) "Couldn't import that" else "Imported $done song${if (done != 1) "s" else ""} to Vibe",
             )
         }
         return true

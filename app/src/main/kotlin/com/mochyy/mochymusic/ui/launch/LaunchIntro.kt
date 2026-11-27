@@ -471,13 +471,13 @@ private class LaunchMarkArt {
     private val mask = Path().apply { addCircle(Pivot.x, Pivot.y, SplashMaskRadius, Path.Direction.CW) }
 
     // ic_splash_mark: a white shape with a dark outline and a dark face
-    private val fill = paint(android.graphics.Color.WHITE) { style = Paint.Style.FILL }
-    private val darkOutline = paint(0xFF212121.toInt()) {
+    private val fill = paint(0xFFE8F1FF.toInt()) { style = Paint.Style.FILL }
+    private val darkOutline = paint(0xFF101820.toInt()) {
         style = Paint.Style.STROKE
         strokeWidth = 19f
         strokeJoin = Paint.Join.ROUND
     }
-    private val darkFace = paint(0xFF212121.toInt()) {
+    private val darkFace = paint(0xFF101820.toInt()) {
         style = Paint.Style.STROKE
         strokeWidth = 11f
         strokeCap = Paint.Cap.ROUND
@@ -485,12 +485,12 @@ private class LaunchMarkArt {
     }
 
     // ic_mochy_mark: the same outline and face, white, nothing filled
-    private val lightOutline = paint(android.graphics.Color.WHITE) {
+    private val lightOutline = paint(0xFFE8F1FF.toInt()) {
         style = Paint.Style.STROKE
         strokeWidth = 19f
         strokeJoin = Paint.Join.ROUND
     }
-    private val lightFace = paint(android.graphics.Color.WHITE) {
+    private val lightFace = paint(0xFFE8F1FF.toInt()) {
         style = Paint.Style.STROKE
         strokeWidth = 11f
         strokeCap = Paint.Cap.ROUND

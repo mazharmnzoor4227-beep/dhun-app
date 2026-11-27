@@ -12,7 +12,7 @@
     <string name="onb_selected">Seleccionado</string>
 
     <!-- bienvenida -->
-    <string name="onb_welcome_title">¡Te damos la bienvenida a\nmochy!</string>
+    <string name="onb_welcome_title">¡Te damos la bienvenida a\nVibe!</string>
     <string name="onb_welcome_subtitle">Una forma de escuchar y ser dueño de tu\nmúsica, totalmente diferente.</string>
 
     <!-- recortador de foto -->
@@ -28,16 +28,16 @@
     <string name="onb_import">Importar</string>
     <string name="onb_import_desc">importar música, listas y álbumes desde proveedores como Apple Music, Spotify, Tidal y YouTube Music</string>
     <string name="onb_import_backup_title">Importar desde copia de seguridad</string>
-    <string name="onb_import_backup_desc">si tienes una copia de seguridad previa de Mochy</string>
+    <string name="onb_import_backup_desc">si tienes una copia de seguridad previa de Vibe</string>
 
     <!-- restauración -->
     <string name="onb_all_set">¡Todo listo!</string>
     <string name="onb_bringing_over">Trayendo tu música</string>
-    <string name="onb_restart_once">Mochy se reiniciará para finalizar. ¡Nos vemos en un segundo!</string>
+    <string name="onb_restart_once">Vibe se reiniciará para finalizar. ¡Nos vemos en un segundo!</string>
     <string name="onb_restore_counts">%1$s, %2$s y %3$s de tu app anterior.</string>
     <string name="onb_reading_export">Leyendo tu exportación…</string>
     <string name="onb_restarting">Reiniciando…</string>
-    <string name="onb_restore_progress">%1$d%% · mantén Mochy abierto, se reiniciará automáticamente</string>
+    <string name="onb_restore_progress">%1$d%% · mantén Vibe abierto, se reiniciará automáticamente</string>
     <plurals name="onb_songs">
         <item quantity="one">%1$,d canción</item>
         <item quantity="many">%1$,d canciones</item>
@@ -99,21 +99,21 @@
 
     <!-- opciones de sincronización -->
     <string name="onb_sync_title">¿Mantener sincronizado?</string>
-    <string name="onb_sync_subtitle">YouTube Music puede mantenerse al día con Mochy: tus listas, me gusta e historial.</string>
+    <string name="onb_sync_subtitle">YouTube Music puede mantenerse al día con Vibe: tus listas, me gusta e historial.</string>
     <string name="onb_import_and_sync">Importar y sincronizar</string>
     <string name="onb_just_import">Solo importar</string>
     <string name="onb_sync_launch_title">Sincronizar biblioteca al iniciar</string>
-    <string name="onb_sync_launch_desc">Me gusta, biblioteca y listas elegidas al abrir Mochy</string>
+    <string name="onb_sync_launch_desc">Me gusta, biblioteca y listas elegidas al abrir Vibe</string>
     <string name="onb_sync_new_playlists_title">Las nuevas listas van a YouTube</string>
     <string name="onb_sync_new_playlists_desc">Las listas creadas aquí también se crean en YouTube</string>
     <string name="onb_sync_push_plays_title">Enviar reproducciones al historial de YouTube</string>
     <string name="onb_sync_push_plays_desc">Lo que escuches aquí aparecerá en tu historial de YouTube</string>
     <string name="onb_sync_bring_history_title">Traer historial de YouTube aquí</string>
-    <string name="onb_sync_bring_history_desc">Las reproducciones de otros dispositivos se unen al historial de Mochy</string>
+    <string name="onb_sync_bring_history_desc">Las reproducciones de otros dispositivos se unen al historial de Vibe</string>
 
     <!-- perfil -->
     <string name="onb_profile_title">¡Creemos tu perfil!</string>
-    <string name="onb_never_store">¡Mochy nunca almacenará tus datos en línea!</string>
+    <string name="onb_never_store">¡Vibe nunca almacenará tus datos en línea!</string>
     <string name="onb_username_prompt">¿cuál es tu nombre de usuario?</string>
     <string name="onb_username_hint">usuario</string>
     <string name="onb_set_photo">¡Elige una foto de perfil aquí!</string>
@@ -125,7 +125,7 @@
 
     <!-- inicio / listo -->
     <string name="onb_hello">¡Hola!</string>
-    <string name="onb_welcome_to_mochy">¡te damos la bienvenida a mochy!</string>
+    <string name="onb_welcome_to_mochy">¡te damos la bienvenida a Vibe!</string>
     <string name="onb_all_good">Todo listo para comenzar</string>
 
     <!-- aviso de desenfoque -->

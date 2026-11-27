@@ -185,7 +185,7 @@
     <string name="pc_stat_speed">Velocidad</string>
     <string name="pc_stat_pitch">Tono</string>
     <string name="pc_stat_semitones">%1$s semitonos</string>
-    <string name="pc_stat_rs_mochy">Mochy Hi-Fi, ventana sinc (Kaiser)</string>
+    <string name="pc_stat_rs_mochy">Vibe Hi-Fi, ventana sinc (Kaiser)</string>
     <string name="pc_stat_passband">Banda de paso</string>
     <string name="pc_stat_flat_to">plano hasta %1$s</string>
     <string name="pc_stat_stopband">−%1$d dB banda atenuada, 32-bit flotante</string>

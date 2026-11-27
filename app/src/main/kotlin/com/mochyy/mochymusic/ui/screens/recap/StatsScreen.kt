@@ -374,7 +374,7 @@ fun StatsScreen(navController: NavController) {
             Box(contentAlignment = Alignment.CenterStart) {
                 Icon(
                     painter = painterResource(R.drawable.ic_mochy_mark),
-                    contentDescription = "Mochy",
+                    contentDescription = "Vibe",
                     tint = Color.White,
                     modifier =
                         Modifier

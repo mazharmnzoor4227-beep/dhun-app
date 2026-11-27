@@ -2,11 +2,11 @@
 <resources>
     <!-- About Sheet -->
     <string name="about_app">Sobre o app</string>
-    <string name="about_mochy_music_version">Mochy Music | %1$s</string>
-    <string name="about_app_description">O Mochy Music é um app de música, mas\ncom um toque especial.</string>
+    <string name="about_mochy_music_version">Vibe | %1$s</string>
+    <string name="about_app_description">O Vibe é um app de música, mas\ncom um toque especial.</string>
     <string name="about_actions">Ações</string>
     <string name="about_support_me">Apoie o desenvolvedor :3 →</string>
-    <string name="about_github">GitHub do Mochy Music →</string>
+    <string name="about_github">GitHub do Vibe →</string>
     <string name="about_meet_lead_dev">Conheça o desenvolvedor principal</string>
     <string name="about_we_wont_exist">Não existiríamos sem estas pessoas</string>
     <string name="about_and_more">E mais →</string>
@@ -31,7 +31,7 @@
     <string name="update_status_failed">Não foi possível verificar atualizações</string>
     <string name="update_status_offline">Sem conexão?</string>
     <string name="update_action_try_again">TENTAR NOVAMENTE</string>
-    <string name="update_install_permission_error">Permita \"Instalar apps desconhecidos\" para o Mochy e toque em Instalar aqui novamente.</string>
+    <string name="update_install_permission_error">Permita \"Instalar apps desconhecidos\" para o Vibe e toque em Instalar aqui novamente.</string>
     <string name="update_back_desc">Voltar</string>
     <string name="update_changelog">Registro de alterações</string>
     <string name="update_to_be_installed">A ser instalado -</string>
@@ -99,14 +99,6 @@
     <string name="suggestion_selected_desc">Selecionado</string>
 
     <!-- Donate Sheet -->
-    <string name="donate_dismiss_button">não, obrigado</string>
-    <string name="donate_thank_you_title">Arigatou! :3</string>
-    <string name="donate_subtitle">Veja como apoiar e fazer uma doação!</string>
-    <string name="donate_kofi">Apoiar pelo Ko-fi</string>
-    <string name="donate_sociabuzz">Apoiar pelo SociaBuzz</string>
-    <string name="donate_sociabuzz_desc">Recomendado para alguns países do Sudeste Asiático e da América Latina</string>
-    <string name="donate_buymeacoffee">Apoiar pelo Buy Me a Coffee</string>
-    <string name="donate_note">sua doação, por menor que seja, será sempre muito útil para nós :3</string>
 
     <!-- Album Screen -->
     <string name="album_more_by_artist">Mais de %1$s</string>

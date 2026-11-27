@@ -38,7 +38,7 @@
     <string name="spotify_canvas_row_off">Desactivado</string>
     <string name="spotify_canvas_subtitle">Videos de artistas detrás de tus canciones</string>
     <string name="spotify_canvas_what_title">¿Qué es esto?</string>
-    <string name="spotify_canvas_what">Spotify Canvas es el video corto en bucle que los artistas ponen en sus canciones. Inicia sesión en Spotify y Mochy también lo buscará allí. Las canciones sin Canvas conservan su portada.</string>
+    <string name="spotify_canvas_what">Spotify Canvas es el video corto en bucle que los artistas ponen en sus canciones. Inicia sesión en Spotify y Vibe también lo buscará allí. Las canciones sin Canvas conservan su portada.</string>
     <string name="spotify_canvas_use">Usar Spotify Canvas</string>
     <string name="spotify_canvas_use_desc">Buscar también Canvas en Spotify</string>
     <string name="spotify_canvas_account">Cuenta</string>
@@ -46,7 +46,7 @@
     <string name="spotify_canvas_signed_out">Sesión no iniciada</string>
     <string name="spotify_canvas_sign_in">Iniciar sesión en Spotify</string>
     <string name="spotify_canvas_sign_out">Cerrar sesión</string>
-    <string name="spotify_canvas_sign_in_subtitle">En la página oficial de Spotify. Mochy solo la usa para obtener Canvas</string>
+    <string name="spotify_canvas_sign_in_subtitle">En la página oficial de Spotify. Vibe solo la usa para obtener Canvas</string>
     <string name="spotify_canvas_note">Tu inicio de sesión se guarda en este teléfono y la importación de Spotify usa el mismo. Usar bajo tu propia responsabilidad.</string>
     <string name="appearance_global">Apariencia global</string>
     <string name="appearance_blur">Desenfoque</string>
@@ -66,7 +66,7 @@
     <string name="playback_keep_playing_detail">Continuar la reproducción en segundo plano cuando la app se elimina de recientes</string>
     <string name="playback_mix_other_apps">Reproducir junto a otras aplicaciones</string>
     <string name="playback_mix_other_apps_desc">No pausar la música cuando otra aplicación emita sonido</string>
-    <string name="playback_mix_other_apps_detail">Mochy no se pausará cuando un video, juego u otra app de música comience a sonar. Las llamadas telefónicas seguirán pausando la música y se reanudará al finalizar la llamada.</string>
+    <string name="playback_mix_other_apps_detail">Vibe no se pausará cuando un video, juego u otra app de música comience a sonar. Las llamadas telefónicas seguirán pausando la música y se reanudará al finalizar la llamada.</string>
     <string name="playback_resume_bluetooth">Reanudar al conectar Bluetooth</string>
     <string name="playback_resume_bluetooth_desc">Continuar la reproducción al conectar audífonos o el vehículo</string>
     <string name="pause_music_when_muted_desc">Pausar cuando el volumen llegue a cero y reanudar al subirlo</string>
@@ -157,9 +157,9 @@
     <string name="customise_cover_rounding">Bordes de\nportada</string>
     <string name="customise_icons">Íconos</string>
     <string name="customise_icons_caption">Tu pantalla de inicio puede tardar unos segundos en mostrar el nuevo ícono.</string>
-    <string name="app_icon_family_mark">Mochy</string>
-    <string name="app_icon_family_outline">Mochy contorno</string>
-    <string name="app_icon_family_anime">Anime Mochy</string>
+    <string name="app_icon_family_mark">Vibe</string>
+    <string name="app_icon_family_outline">Vibe contorno</string>
+    <string name="app_icon_family_anime">Anime Vibe</string>
     <string name="app_icon_default">Predeterminado</string>
     <string name="app_icon_white">Blanco</string>
     <string name="app_icon_black">Negro</string>
@@ -170,10 +170,10 @@
     <string name="app_icon_outline_black">Negro</string>
     <string name="app_icon_outline_material">Material You</string>
     <string name="app_icon_outline_transparent">Transparente</string>
-    <string name="app_icon_anime_white">Mochy blanco</string>
-    <string name="app_icon_anime_dark">Mochy oscuro</string>
-    <string name="app_icon_anime_material">Mochy Material You</string>
-    <string name="app_icon_anime_transparent">Mochy transparente</string>
+    <string name="app_icon_anime_white">Vibe blanco</string>
+    <string name="app_icon_anime_dark">Vibe oscuro</string>
+    <string name="app_icon_anime_material">Vibe Material You</string>
+    <string name="app_icon_anime_transparent">Vibe transparente</string>
     <string name="customise_icons_show_all">Mostrar todos los íconos</string>
     <string name="customise_icons_show_less">Mostrar menos íconos</string>
     <string name="app_icon_customize">Personalizar</string>
@@ -238,5 +238,5 @@
     <string name="customise_lyrics_preview_translation">si yo fuera una piedra</string>
     <string name="settings_floating_lyrics">Letras flotantes</string>
     <string name="settings_floating_lyrics_desc">Mantener la línea que se canta en una burbuja flotante sobre otras apps</string>
-    <string name="settings_floating_lyrics_detail">Toca la portada para reproducir y pausar, o mantenla presionada para abrir Mochy. Arrástrala a un borde o al icono de cerrar.</string>
+    <string name="settings_floating_lyrics_detail">Toca la portada para reproducir y pausar, o mantenla presionada para abrir Vibe. Arrástrala a un borde o al icono de cerrar.</string>
 </resources>

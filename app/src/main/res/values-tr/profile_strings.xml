@@ -20,12 +20,10 @@
     <string name="profile_capsule_about">Uygulama hakkında</string>
     <string name="profile_capsule_update">Güncelle</string>
     <string name="profile_meet_dev_contributors">geliştirici ve katkıda bulunanlarla tanış :3</string>
-    <string name="profile_join_discord">mochy\'nin discord sunucusuna katıl!</string>
-    <string name="profile_discord_cd">Discord</string>
     <string name="profile_settings_title">Ayarlar</string>
     <string name="profile_open_settings">Ayarları aç</string>
     <string name="profile_edit_title">Profili düzenle</string>
-    <string name="profile_data_privacy_hint">Mochy verilerini asla çevrimiçi saklamaz!</string>
+    <string name="profile_data_privacy_hint">Vibe verilerini asla çevrimiçi saklamaz!</string>
     <string name="profile_done">Bitti</string>
     <string name="profile_username_label">kullanıcı adı</string>
     <string name="profile_username_placeholder">kullanıcı adı</string>

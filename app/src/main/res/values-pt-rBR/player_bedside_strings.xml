@@ -29,6 +29,6 @@
     <string name="bedside_lock_screen">Mostrar na tela de bloqueio</string>
     <string name="bedside_lock_screen_caption">Bloqueie o celular com esta tela aberta; ela continuará aqui quando a tela acender</string>
     <string name="bedside_lock_blocked">Seu celular está bloqueando esse recurso</string>
-    <string name="bedside_lock_blocked_caption">Toque para ativar “Mostrar na tela de bloqueio” para o Mochy</string>
+    <string name="bedside_lock_blocked_caption">Toque para ativar “Mostrar na tela de bloqueio” para o Vibe</string>
     <string name="bedside_lock_blocked_tag">CORRIGIR</string>
 </resources>

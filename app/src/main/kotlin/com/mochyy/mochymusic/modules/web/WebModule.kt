@@ -210,8 +210,8 @@ internal class WebModule(
             asTiered
         }
         if (stream == null) {
-            report(DiagnosticStep("Stream", false, "$siteName gave no stream Mochy can play"))
-            return ResolveResult.Unavailable("$siteName gave no stream Mochy can play")
+            report(DiagnosticStep("Stream", false, "$siteName gave no stream Vibe can play"))
+            return ResolveResult.Unavailable("$siteName gave no stream Vibe can play")
         }
         report(DiagnosticStep("Stream", true, stream.qualityLabel))
         return ResolveResult.Found(
@@ -421,7 +421,7 @@ internal class WebModule(
     private companion object {
         const val MissMemoryMs = 30L * 60 * 1000
         const val UnreachableRetryMs = 10L * 60 * 1000
-        val headers = mapOf("Accept" to "application/json", "User-Agent" to "Mochy")
+        val headers = mapOf("Accept" to "application/json", "User-Agent" to "Vibe")
 
         // the id the audio quality page looks for to list a module's qualities
         const val ChoiceQuality = "quality"

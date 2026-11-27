@@ -53,7 +53,7 @@ object ApkVerifier {
             .trimStart('.')
             .take(120)
         val withExt = when {
-            base.isEmpty() -> "mochy-update.apk"
+            base.isEmpty() -> "vibe-update.apk"
             base.endsWith(".apk", ignoreCase = true) -> base
             else -> "$base.apk"
         }
@@ -107,7 +107,7 @@ object ApkVerifier {
                 connectTimeout = connectTimeoutMs
                 readTimeout = readTimeoutMs
                 instanceFollowRedirects = false
-                setRequestProperty("User-Agent", "mochy-android")
+                setRequestProperty("User-Agent", "vibe-android")
             }
             val code = conn.responseCode
             if (code in listOf(301, 302, 303, 307, 308)) {

@@ -27,6 +27,6 @@
     <string name="bedside_lock_screen">Mostrar en pantalla de bloqueo</string>
     <string name="bedside_lock_screen_caption">Bloquea el teléfono con esta vista activa</string>
     <string name="bedside_lock_blocked">Tu teléfono está bloqueando esta función</string>
-    <string name="bedside_lock_blocked_caption">Toca para activar \"Mostrar en pantalla de bloqueo\" para Mochy</string>
+    <string name="bedside_lock_blocked_caption">Toca para activar \"Mostrar en pantalla de bloqueo\" para Vibe</string>
     <string name="bedside_lock_blocked_tag">SOLUCIONAR</string>
 </resources>

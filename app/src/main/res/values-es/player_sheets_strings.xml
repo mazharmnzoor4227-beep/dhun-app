@@ -199,7 +199,7 @@
     <string name="ps_action_download">Descargar</string>
     <string name="ps_action_add_to_playlist">Añadir a lista de reproducción</string>
     <string name="ps_extras_screen_can_sleep">La pantalla puede suspenderse de nuevo</string>
-    <string name="ps_extras_screen_stays_on">La pantalla permanece encendida mientras Mochy esté abierto</string>
+    <string name="ps_extras_screen_stays_on">La pantalla permanece encendida mientras Vibe esté abierto</string>
     <string name="ps_extras_download_removed">Se eliminó la descarga</string>
     <string name="ps_extras_download_stopped">Descarga detenida</string>
     <string name="ps_extras_downloading">Descargando \"%1$s\"</string>

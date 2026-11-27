@@ -2,13 +2,13 @@
 <resources>
     <!-- almacenamiento -->
     <string name="storage_overall">General</string>
-    <string name="storage_legend_mochy">Mochy</string>
+    <string name="storage_legend_mochy">Vibe</string>
     <string name="storage_legend_yours">Tu almacenamiento</string>
     <string name="storage_free">%1$s libre</string>
-    <string name="storage_measuring">Calculando cuánto espacio ocupa Mochy…</string>
-    <string name="storage_uses">Mochy usa %1$s de tu almacenamiento (%2$s), dividido en</string>
-    <string name="storage_uses_drives">Mochy usa %1$s en %2$d unidades, dividido en</string>
-    <string name="storage_breakdown_title">Uso de datos de la app Mochy</string>
+    <string name="storage_measuring">Calculando cuánto espacio ocupa Vibe…</string>
+    <string name="storage_uses">Vibe usa %1$s de tu almacenamiento (%2$s), dividido en</string>
+    <string name="storage_uses_drives">Vibe usa %1$s en %2$d unidades, dividido en</string>
+    <string name="storage_breakdown_title">Uso de datos de la app Vibe</string>
     <string name="storage_legend_cache">Caché</string>
     <string name="storage_legend_downloads">Música descargada y local</string>
     <string name="storage_legend_database">Base de datos</string>
@@ -25,7 +25,7 @@
     <string name="storage_cache_off">Desactivado</string>
     <string name="storage_cache_mb">%1$d MB</string>
     <string name="storage_cache_gb">%1$d GB</string>
-    <string name="storage_cache_applies_later">El nuevo límite se aplicará la próxima vez que abras Mochy.</string>
+    <string name="storage_cache_applies_later">El nuevo límite se aplicará la próxima vez que abras Vibe.</string>
     <string name="storage_remove_downloads">Eliminar todas las descargas</string>
     <string name="storage_remove_downloads_title">¿Eliminar todas las descargas?</string>
     <string name="storage_remove_downloads_message">Se eliminarán las canciones descargadas de este teléfono. Se mantendrán en tu biblioteca y se transmitirán por internet.</string>
@@ -50,12 +50,12 @@
     <string name="storage_place_card">Tarjeta de memoria (SD)</string>
     <string name="storage_place_sheet_downloads">Dónde se guardan las descargas</string>
     <string name="storage_place_sheet_cache">Dónde se guarda la caché</string>
-    <string name="storage_place_note_downloads">Todas las canciones descargadas se moverán. Mochy se reiniciará al finalizar.</string>
-    <string name="storage_place_note_cache">La caché comenzará limpia en la nueva ubicación. Mochy se reiniciará al finalizar.</string>
-    <string name="storage_place_card_note">En una tarjeta SD, Mochy guarda en su propia carpeta.</string>
+    <string name="storage_place_note_downloads">Todas las canciones descargadas se moverán. Vibe se reiniciará al finalizar.</string>
+    <string name="storage_place_note_cache">La caché comenzará limpia en la nueva ubicación. Vibe se reiniciará al finalizar.</string>
+    <string name="storage_place_card_note">En una tarjeta SD, Vibe guarda en su propia carpeta.</string>
     <string name="storage_place_choose_folder">Seleccionar una carpeta</string>
-    <string name="storage_place_folder_note">Mochy guardará dentro de una carpeta Mochy dedicada.</string>
-    <string name="storage_place_access_needed">Para guardar en %1$s, Mochy requiere acceso a todos los archivos.</string>
+    <string name="storage_place_folder_note">Vibe guardará dentro de una carpeta Vibe dedicada.</string>
+    <string name="storage_place_access_needed">Para guardar en %1$s, Vibe requiere acceso a todos los archivos.</string>
     <string name="storage_place_allow_access">Permitir acceso</string>
     <string name="storage_place_no_access">Sin acceso concedido. Otorga el permiso o elige otra carpeta.</string>
     <string name="storage_place_folder_unsupported">Esa carpeta no puede ser utilizada.</string>
@@ -65,12 +65,12 @@
     <string name="storage_place_move">Mover aquí</string>
     <string name="storage_place_move_downloads_title">¿Mover descargas a %1$s?</string>
     <string name="storage_place_move_cache_title">¿Mover la caché a %1$s?</string>
-    <string name="storage_place_move_downloads_message">Las descargas se pausarán mientras se copia a %1$s. Mochy se reiniciará al terminar.</string>
-    <string name="storage_place_move_cache_message">La caché actual se limpiará y Mochy se reiniciará.</string>
+    <string name="storage_place_move_downloads_message">Las descargas se pausarán mientras se copia a %1$s. Vibe se reiniciará al terminar.</string>
+    <string name="storage_place_move_cache_message">La caché actual se limpiará y Vibe se reiniciará.</string>
     <string name="storage_place_move_action">Mover y reiniciar</string>
 
     <string name="storage_export_sheet_title">Exportar canciones descargadas</string>
-    <string name="storage_export_note">Se copiarán en la carpeta mochy-preserve en la ubicación que elijas.</string>
+    <string name="storage_export_note">Se copiarán en la carpeta Vibe-preserve en la ubicación que elijas.</string>
     <string name="storage_export_layout_playlists">Música y listas de reproducción</string>
     <string name="storage_export_layout_playlists_detail">Una carpeta por cada lista y canciones preferidas, el resto va a Música</string>
     <string name="storage_export_layout_albums">Álbumes</string>
@@ -97,11 +97,11 @@
     <string name="storage_import_user_data">Importar datos de usuario</string>
     <string name="storage_transfer_exporting">Exportando…</string>
     <string name="storage_transfer_exporting_percent">Exportando… %1$d%%</string>
-    <string name="storage_transfer_exported">¡Exportado! Importa el .zip en Mochy en el nuevo teléfono</string>
+    <string name="storage_transfer_exported">¡Exportado! Importa el .zip en Vibe en el nuevo teléfono</string>
     <string name="storage_transfer_importing">Importando…</string>
-    <string name="storage_transfer_importing_percent">Importando… %1$d%%, Mochy se reiniciará al terminar</string>
+    <string name="storage_transfer_importing_percent">Importando… %1$d%%, Vibe se reiniciará al terminar</string>
     <string name="storage_transfer_restarting">¡Listo! Reiniciando…</string>
     <string name="storage_import_title">¿Reemplazar tu biblioteca?</string>
-    <string name="storage_import_message">Todo en Mochy se reemplazará con los datos de la exportación (biblioteca, historial, descargas y ajustes). Mochy se reiniciará al finalizar.</string>
+    <string name="storage_import_message">Todo en Vibe se reemplazará con los datos de la exportación (biblioteca, historial, descargas y ajustes). Vibe se reiniciará al finalizar.</string>
     <string name="storage_import_action">Elegir el .zip</string>
 </resources>

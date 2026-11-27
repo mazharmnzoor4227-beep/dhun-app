@@ -72,7 +72,7 @@
     <string name="storage_place_move_action">Move and restart</string>
 
     <string name="storage_export_sheet_title">Export downloaded songs</string>
-    <string name="storage_export_note">They\'re copied into a mochy-preserve folder wherever you pick. Your downloads stay where they are.</string>
+    <string name="storage_export_note">They\'re copied into a Vibe-preserve folder wherever you pick. Your downloads stay where they are.</string>
     <string name="storage_export_layout_playlists">Music and playlists</string>
     <string name="storage_export_layout_playlists_detail">A folder for each playlist and your liked songs, the rest go in Music</string>
     <string name="storage_export_layout_albums">Albums</string>
@@ -82,7 +82,7 @@
     <string name="storage_export_pick">Pick a folder</string>
     <string name="storage_export_destination">Where to export</string>
     <string name="storage_export_to_card">Export to %1$s</string>
-    <string name="storage_export_card_detail">Saves into mochy-preserve on your memory card</string>
+    <string name="storage_export_card_detail">Saves into Vibe-preserve on your memory card</string>
     <string name="storage_export_pick_folder">Another folder</string>
     <string name="storage_export_pick_folder_detail">Choose any folder on this phone or a memory card</string>
     <string name="storage_export_progress">Exporting… %1$d of %2$d</string>

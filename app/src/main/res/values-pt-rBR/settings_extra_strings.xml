@@ -17,7 +17,7 @@
     <string name="experimental_force_yt_blur_desc">Substituir o padrão de 120 px; pode aumentar o uso da GPU</string>
     <string name="experimental_force_recap_title">Forçar exibição da retrospectiva mensal</string>
     <string name="experimental_force_recap_desc">Desbloquear a retrospectiva antecipadamente</string>
-    <string name="experimental_force_recap_detail">Desbloquear agora a retrospectiva que fica atrás do cartão do Mochy, antes da 3ª ou da 10ª música</string>
+    <string name="experimental_force_recap_detail">Desbloquear agora a retrospectiva que fica atrás do cartão do Vibe, antes da 3ª ou da 10ª música</string>
     <string name="experimental_big_disc_title">Estilos de disco grande</string>
     <string name="experimental_big_disc_desc">Inacabado — discos grandes que ultrapassam os limites da tela</string>
     <string name="experimental_music_haptics_title">Resposta tátil da música</string>
@@ -43,7 +43,7 @@
     <string name="cipher_status_not_loaded">Não carregado</string>
     <string name="cipher_status_stale">Desatualizado — será atualizado na próxima reprodução</string>
     <string name="cipher_status_ready">Pronto</string>
-    <string name="cipher_card_description">O YouTube assina as URLs de transmissão usando um script do reprodutor que muda periodicamente. O Mochy armazena esse script em cache e faz o download novamente de forma automática.</string>
+    <string name="cipher_card_description">O YouTube assina as URLs de transmissão usando um script do reprodutor que muda periodicamente. O Vibe armazena esse script em cache e faz o download novamente de forma automática.</string>
     <string name="cipher_player_id">ID do reprodutor</string>
     <string name="cipher_last_updated">Última atualização</string>
     <string name="cipher_script_size">Tamanho do script</string>
@@ -118,10 +118,10 @@
     <string name="discord_no_browser_toast">Não há navegador disponível para abrir a página de login do Discord.</string>
     <string name="discord_settings_title">Discord</string>
     <string name="discord_subtitle_rich_presence">Presença avançada no seu perfil</string>
-    <string name="discord_status_not_configured">Não configurado nesta compilação do Mochy</string>
+    <string name="discord_status_not_configured">Não configurado nesta compilação do Vibe</string>
     <string name="discord_status_signing_in">Conectando…</string>
     <string name="discord_status_login_below">Faça login abaixo para ativar</string>
-    <string name="discord_status_off">Desativado; seu perfil não exibirá nada do Mochy</string>
+    <string name="discord_status_off">Desativado; seu perfil não exibirá nada do Vibe</string>
     <string name="discord_status_live">Ativo no seu perfil agora</string>
     <string name="discord_status_connecting">Conectando ao Discord…</string>
     <string name="discord_status_retrying">Não foi possível acessar o Discord. Tentando novamente…</string>
@@ -158,7 +158,7 @@
     <string name="discord_cd_close">Fechar</string>
     <string name="discord_spin_full_turn">Uma volta completa</string>
     <string name="discord_spin_smoothness">Suavidade</string>
-    <string name="discord_spin_note">Gira continuamente. O Discord só consegue exibir imagens da Web, então o Mochy cria um GIF da arte e o envia para um serviço gratuito de hospedagem de arquivos (uguu.se, que o exclui após três horas). Giros mais lentos e suaves criam GIFs maiores, que demoram um pouco mais para aparecer; enquanto isso, a imagem estática é exibida. 50 fps é o máximo de suavidade que um GIF pode reproduzir.</string>
+    <string name="discord_spin_note">Gira continuamente. O Discord só consegue exibir imagens da Web, então o Vibe cria um GIF da arte e o envia para um serviço gratuito de hospedagem de arquivos (uguu.se, que o exclui após três horas). Giros mais lentos e suaves criam GIFs maiores, que demoram um pouco mais para aparecer; enquanto isso, a imagem estática é exibida. 50 fps é o máximo de suavidade que um GIF pode reproduzir.</string>
     <string name="discord_placeholder_list_title">Lista de variáveis</string>
     <string name="discord_placeholder_example_title">Por exemplo, este nome de atividade</string>
     <string name="discord_placeholder_shows_up_as">aparece como</string>
@@ -170,7 +170,7 @@
     <string name="discord_image_artwork">Arte da música</string>
     <string name="discord_image_artist">Imagem do artista</string>
     <string name="discord_image_playback_status">Status da reprodução</string>
-    <string name="discord_image_app_logo">Logotipo do Mochy</string>
+    <string name="discord_image_app_logo">Logotipo do Vibe</string>
     <string name="discord_image_spinning_artist">Imagem giratória do artista</string>
     <string name="discord_image_spinning_artwork">Arte giratória da música</string>
     <string name="discord_image_custom">Sua própria imagem</string>
@@ -179,7 +179,7 @@
     <string name="discord_image_canvas_or_apple">Spotify Canvas ou capa animada do Apple Music</string>
     <string name="discord_canvas_smoothness">Suavidade</string>
     <string name="discord_canvas_size">Tamanho da imagem</string>
-    <string name="discord_canvas_note">O Discord não reproduz vídeos, então o Mochy cria um GIF em loop e o envia para um serviço gratuito de hospedagem de arquivos (uguu.se, que o exclui após três horas). Mais quadros por segundo e imagens maiores geram GIFs maiores, que demoram mais para aparecer; enquanto isso, a imagem estática é exibida. Um GIF com mais de 4 MB perde um quadro a cada dois. Se a música terminar antes de o GIF ficar pronto, ele continuará sendo criado em segundo plano para estar disponível na próxima vez.</string>
+    <string name="discord_canvas_note">O Discord não reproduz vídeos, então o Vibe cria um GIF em loop e o envia para um serviço gratuito de hospedagem de arquivos (uguu.se, que o exclui após três horas). Mais quadros por segundo e imagens maiores geram GIFs maiores, que demoram mais para aparecer; enquanto isso, a imagem estática é exibida. Um GIF com mais de 4 MB perde um quadro a cada dois. Se a música terminar antes de o GIF ficar pronto, ele continuará sendo criado em segundo plano para estar disponível na próxima vez.</string>
     <string name="discord_canvas_idle">O progresso da criação do GIF aparecerá aqui</string>
     <string name="discord_canvas_making">Criando o GIF de %1$s</string>
     <string name="discord_canvas_ready">GIF de %1$s pronto</string>
@@ -197,11 +197,11 @@
     <string name="discord_target_spotify">Spotify</string>
     <string name="discord_target_apple_music">Apple Music</string>
     <string name="discord_target_tidal">Tidal</string>
-    <string name="discord_target_mochy">Mochy no GitHub</string>
+    <string name="discord_target_mochy">Vibe no GitHub</string>
     <string name="discord_ph_name">Nome da música</string>
     <string name="discord_ph_artist">Nome do artista</string>
     <string name="discord_ph_album">Álbum</string>
-    <string name="discord_ph_app">Mochy</string>
+    <string name="discord_ph_app">Vibe</string>
     <string name="discord_ph_quality">Formato e taxa de bits, como OPUS · 160 kbps</string>
     <string name="discord_ph_apple">Logotipo da Apple (somente dispositivos Apple podem exibi-lo)</string>
     <string name="discord_enable_rich_presence">Ativar Presença Avançada</string>

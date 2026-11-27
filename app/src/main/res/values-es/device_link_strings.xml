@@ -14,7 +14,7 @@
     <string name="devices_status_controlling">Controlándolo desde aquí</string>
     <string name="devices_status_connected_detail">Pueden controlarse mutuamente</string>
     <string name="devices_stay_reachable">Permanecer accesible en segundo plano</string>
-    <string name="devices_stay_reachable_detail">Tus dispositivos pueden sincronizar y controlar incluso al cerrar Mochy.</string>
+    <string name="devices_stay_reachable_detail">Tus dispositivos pueden sincronizar y controlar incluso al cerrar Vibe.</string>
     <string name="devices_in_player_menu">Mostrar mis dispositivos en el menú del reproductor</string>
     <string name="devices_in_player_menu_detail">Reproducir en ellos o controlarlos desde el menú del reproductor</string>
     <string name="devices_notification_title">Tus dispositivos pueden acceder a este teléfono</string>
@@ -29,7 +29,7 @@
     <string name="devices_remote_control_tv_detail">Reproducir, saltar y cambiar ajustes desde este teléfono</string>
     <string name="devices_remote_control_phone_detail">Reproducir, saltar y cambiar ajustes mutuamente</string>
     <string name="devices_auto_control">Tomar control al conectar</string>
-    <string name="devices_auto_control_detail">Tan pronto como Mochy se abra en él, este teléfono será su control remoto</string>
+    <string name="devices_auto_control_detail">Tan pronto como Vibe se abra en él, este teléfono será su control remoto</string>
     <string name="devices_stream_local">Transmitir archivos locales desde este dispositivo</string>
     <string name="devices_stream_local_detail">Tus descargas y archivos locales se reproducirán directamente</string>
     <string name="devices_override_library">Sobrescribir biblioteca del dispositivo</string>
@@ -42,7 +42,7 @@
     <string name="devices_pairing_code">Código de modo vinculación</string>
     <string name="devices_detected">Detectado</string>
     <string name="devices_looking">Buscando dispositivos…</string>
-    <string name="devices_looking_detail">Abre Añadir dispositivo en tu otro teléfono o en la app de Mochy en tu TV</string>
+    <string name="devices_looking_detail">Abre Añadir dispositivo en tu otro teléfono o en la app de Vibe en tu TV</string>
     <string name="devices_connect">Conectar</string>
     <string name="devices_or">O</string>
     <string name="devices_enter_code">Ingresar código</string>
@@ -52,14 +52,14 @@
     <string name="devices_wrong_code">El código no coincide. Revisa la otra pantalla e inténtalo de nuevo.</string>
     <string name="devices_pair_full">Uno de los dispositivos alcanzó el límite de 10. Desvincula uno primero.</string>
     <string name="devices_pair_failed">No se pudo acceder. Asegúrate de estar en la misma red Wi-Fi.</string>
-    <string name="devices_pair_outdated">Ese dispositivo ejecuta una versión anterior de Mochy. Actualízalo.</string>
+    <string name="devices_pair_outdated">Ese dispositivo ejecuta una versión anterior de Vibe. Actualízalo.</string>
 
     <string name="remote_controlling">Controlando %1$s</string>
     <string name="remote_stop">Detener control</string>
     <string name="remote_playing">Reproduciendo</string>
     <string name="remote_paused">En pausa</string>
     <string name="remote_connecting">Consultando reproducción…</string>
-    <string name="remote_unreachable">No accesible en este momento. ¿Mochy está abierto allí?</string>
+    <string name="remote_unreachable">No accesible en este momento. ¿Vibe está abierto allí?</string>
     <string name="remote_up_next">A continuación</string>
     <string name="remote_hand_over">Reproducir la cola de este teléfono en %1$s</string>
     <string name="remote_queued_on">Añadido a la cola en %1$s</string>
@@ -71,7 +71,7 @@
     <string name="remote_remove_from_queue">Quitar de la cola</string>
     <string name="remote_settings_on">Ajustes en %1$s</string>
     <string name="remote_settings_loading">Obteniendo sus ajustes…</string>
-    <string name="remote_settings_failed">No se pudieron obtener sus ajustes. Asegúrate de que Mochy esté abierto allí.</string>
+    <string name="remote_settings_failed">No se pudieron obtener sus ajustes. Asegúrate de que Vibe esté abierto allí.</string>
     <string name="remote_settings_retry">Reintentar</string>
     <string name="remote_setting_failed">No se pudo cambiar eso en %1$s</string>
     <string name="remote_seconds">%1$d s</string>

@@ -142,7 +142,7 @@
     <string name="modules_file_not_signed">This module runs its own code, so it has to be signed with the same key as your Vibe, and this copy isn\'t. Get the one made for your build of Vibe.</string>
     <string name="modules_code_broken">This module\'s code didn\'t start. It may be made for a different version of Vibe.</string>
     <string name="modules_github_no_release">That GitHub project hasn\'t published a release yet. Ask whoever made it to publish one with the module\'s .zip attached.</string>
-    <string name="modules_github_no_module">The newest release has no module in it. Vibe looks for a .zip with \"mochyymodule\" in its name, like glass.mochyymodule.zip.</string>
+    <string name="modules_github_no_module">The newest release has no module in it. Vibe looks for a .zip with \"Vibeymodule\" in its name, like glass.Vibeymodule.zip.</string>
     <string name="skin_customise_row">Customise %1$s</string>
     <string name="skin_customise_title">Customise</string>
     <string name="skin_audio_lossy">Lossy</string>

@@ -167,7 +167,7 @@ fun TopPlaylistScreen(
         searchPlaceholder = "Search your top songs",
         onBackClick = { navController.navigateUp() },
         onBackLongClick = { navController.backToMain() },
-        creator = "mochy",
+        creator = "vibe",
         onMoreClick = {
             menuState.show {
                 TopPlaylistMenu(

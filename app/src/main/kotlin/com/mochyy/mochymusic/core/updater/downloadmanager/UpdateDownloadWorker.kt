@@ -33,7 +33,7 @@ class UpdateDownloadWorker(private val context: Context, workerParams: WorkerPar
             }
 
             val downloadDir = ApkVerifier.updatesDir(context)
-            val downloadFile = if (isZip) File(downloadDir, "mochy_temp.zip") else File(downloadDir, "mochy.apk")
+            val downloadFile = if (isZip) File(downloadDir, "vibe_temp.zip") else File(downloadDir, "vibe.apk")
             if (downloadFile.exists()) downloadFile.delete()
 
             try {
@@ -70,7 +70,7 @@ class UpdateDownloadWorker(private val context: Context, workerParams: WorkerPar
             }
 
             val finalFile = if (isZip) {
-                val targetApkFile = File(downloadDir, "mochy.apk")
+                val targetApkFile = File(downloadDir, "vibe.apk")
                 if (targetApkFile.exists()) targetApkFile.delete()
                 var extracted = false
                 try {

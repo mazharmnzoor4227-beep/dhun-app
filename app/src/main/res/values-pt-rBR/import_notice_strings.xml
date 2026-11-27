@@ -25,6 +25,6 @@
     <string name="import_notice_many_failed">Não foi possível sincronizar %1$s novamente</string>
     <string name="import_notice_preview_failed">Falha ao visualizar o arquivo CSV</string>
     <string name="media_info_copied">%1$s copiado</string>
-    <string name="update_notice_available">O Mochy %1$s está disponível</string>
+    <string name="update_notice_available">O Vibe %1$s está disponível</string>
     <string name="update_notice_details">Toque para ver as novidades.</string>
 </resources>

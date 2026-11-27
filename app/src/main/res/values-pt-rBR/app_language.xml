@@ -31,7 +31,7 @@
     <string name="settings_seconds_short">%1$d s</string>
     <string name="settings_youtube_plays">Contabilizar reproduções no YouTube</string>
     <string name="settings_youtube_plays_desc">As músicas que você ouve contam como reproduções no YouTube</string>
-    <string name="settings_youtube_plays_detail">Quando uma música toca pelo tempo necessário para entrar no seu histórico, o Mochy informa isso ao YouTube, assim como o aplicativo YouTube Music. Quando você está conectado, a reprodução também aparece no seu histórico do YouTube. Músicas puladas, arquivos locais e qualquer conteúdo reproduzido off-line nunca são enviados</string>
+    <string name="settings_youtube_plays_detail">Quando uma música toca pelo tempo necessário para entrar no seu histórico, o Vibe informa isso ao YouTube, assim como o aplicativo YouTube Music. Quando você está conectado, a reprodução também aparece no seu histórico do YouTube. Músicas puladas, arquivos locais e qualquer conteúdo reproduzido off-line nunca são enviados</string>
     <string name="settings_playback_category">Reprodução</string>
     <string name="settings_customisation_category">Personalização</string>
     <string name="settings_audio_lab_category">Laboratório de áudio</string>

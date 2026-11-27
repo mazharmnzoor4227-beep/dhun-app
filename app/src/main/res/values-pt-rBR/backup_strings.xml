@@ -16,7 +16,7 @@
     <string name="backup_waiting_browser">Conclua o login no navegador</string>
     <string name="backup_finishing_sign_in">Entrando…</string>
     <string name="backup_no_browser">Este celular não tem um navegador para fazer login.</string>
-    <string name="backup_dropbox_notice">O backup pelo Dropbox ainda está em testes. Apenas as primeiras 500 pessoas podem se conectar, e o Dropbox pode interromper novos logins antes disso, até aprovar o Mochy. Se o Dropbox não permitir seu acesso, o WebDAV não tem limite.</string>
+    <string name="backup_dropbox_notice">O backup pelo Dropbox ainda está em testes. Apenas as primeiras 500 pessoas podem se conectar, e o Dropbox pode interromper novos logins antes disso, até aprovar o Vibe. Se o Dropbox não permitir seu acesso, o WebDAV não tem limite.</string>
     <string name="backup_disconnect">Desconectar</string>
     <string name="backup_disconnect_desc">Parar de fazer backup em %1$s. Os backups que já estão lá serão mantidos.</string>
     <string name="backup_connected_toast">Conectado. Seus backups serão enviados para %1$s.</string>
@@ -31,7 +31,7 @@
     <string name="backup_uploading">Enviando… %1$d%%</string>
     <string name="backup_downloading">Baixando… %1$d%%</string>
     <string name="backup_unpacking">Extraindo… %1$d%%</string>
-    <string name="backup_restored">Restaurado. O Mochy está reiniciando…</string>
+    <string name="backup_restored">Restaurado. O Vibe está reiniciando…</string>
     <string name="backup_done_toast">Backup enviado para %1$s</string>
     <string name="backup_last_failed">O último backup automático não foi concluído. %1$s</string>
     <string name="backup_restore_title">Restaurar um backup</string>
@@ -65,7 +65,7 @@
     </plurals>
 
     <!-- the restore sheet -->
-    <string name="backup_restore_body">Escolha um backup. Sua biblioteca, estatísticas e configurações serão substituídas pelas dele, e o Mochy será reiniciado. As músicas baixadas permanecerão como estão.</string>
+    <string name="backup_restore_body">Escolha um backup. Sua biblioteca, estatísticas e configurações serão substituídas pelas dele, e o Vibe será reiniciado. As músicas baixadas permanecerão como estão.</string>
     <string name="backup_restore_loading">Procurando na sua nuvem…</string>
     <string name="backup_restore_empty">Ainda não há backups.</string>
     <string name="backup_restore_item">%1$s · %2$s</string>
@@ -74,7 +74,7 @@
 
     <!-- the webdav sheet -->
     <string name="webdav_title">Conectar a um servidor WebDAV</string>
-    <string name="webdav_body">Os backups serão salvos em uma pasta Mochy Backups neste endereço. Sua senha permanece neste celular e nunca é incluída em um backup.</string>
+    <string name="webdav_body">Os backups serão salvos em uma pasta Vibe Backups neste endereço. Sua senha permanece neste celular e nunca é incluída em um backup.</string>
     <string name="webdav_address">Endereço do servidor</string>
     <string name="webdav_address_hint">https://cloud.example.com/remote.php/dav/files/you/</string>
     <string name="webdav_username_hint">Seu nome de usuário</string>
@@ -84,7 +84,7 @@
 
     <!-- what went wrong -->
     <string name="cloud_problem_offline">Não foi possível acessar a nuvem. Verifique sua conexão e tente novamente.</string>
-    <string name="cloud_problem_signed_out">O Mochy não está mais conectado a esse serviço. Entre novamente para continuar fazendo backups.</string>
+    <string name="cloud_problem_signed_out">O Vibe não está mais conectado a esse serviço. Entre novamente para continuar fazendo backups.</string>
     <string name="cloud_problem_wrong_login">O servidor rejeitou esse nome de usuário ou senha.</string>
     <string name="cloud_problem_bad_address">Esse endereço não parece ser de um servidor.</string>
     <string name="cloud_problem_not_found">Não foi possível encontrar essa pasta no servidor. Confira o endereço.</string>

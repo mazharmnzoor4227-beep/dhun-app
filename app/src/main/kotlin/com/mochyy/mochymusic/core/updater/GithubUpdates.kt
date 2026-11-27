@@ -18,10 +18,6 @@ const val GithubRepo = "dhun-app"
 const val GithubProfileUrl = "https://github.com/$GithubOwner"
 const val GithubRepoUrl = "https://github.com/$GithubOwner/$GithubRepo"
 const val InstagramUrl = "https://www.instagram.com/mazhar_ansari34"
-// Threads names follow the Instagram one
-const val ThreadsUrl = "https://www.threads.net/@furfurrfoxx"
-// dev spaces hides the discord row while this is blank
-const val DiscordUrl = "https://discord.gg/NTmqVphbRY"
 
 private const val ReleasesApi =
     "https://api.github.com/repos/$GithubOwner/$GithubRepo/releases?per_page=20"
@@ -85,7 +81,7 @@ fun parseFullVersion(text: String): FullVersion {
 private const val CacheTtlMillis = 15L * 60L * 1000L
 
 // older releases in this repo are the app under its old id, so "downgrade" to one would add a second app instead
-private val FirstReleaseWithThisId = FullVersion(major = 8, minor = 2, patch = 3)
+private val FirstReleaseWithThisId = FullVersion(major = 1, minor = 0, patch = 0)
 
 /** A release with the version it was parsed to, so it can be compared without parsing again. */
 private class ParsedRelease(val version: FullVersion, val release: GithubRelease)
@@ -152,7 +148,7 @@ private suspend fun fetchReleases(): Result<List<ParsedRelease>> = withContext(D
             connectTimeout = 12_000
             readTimeout = 12_000
             setRequestProperty("Accept", "application/vnd.github+json")
-            setRequestProperty("User-Agent", "mochy-android")
+            setRequestProperty("User-Agent", "vibe-android")
         }
         val json = connection.inputStream.bufferedReader().use { it.readText() }
         val releases = JSONArray(json)

@@ -170,7 +170,7 @@ import com.mochyy.mochymusic.ui.screens.recap.recapBarcodeCaption
 import com.mochyy.mochymusic.ui.screens.recap.recapBarcodePayload
 import com.mochyy.mochymusic.ui.screens.recap.recapDots
 import com.mochyy.mochymusic.ui.screens.recap.rememberRecapTime
-import com.mochyy.mochymusic.core.updater.DiscordUrl
+import com.mochyy.mochymusic.core.updater.InstagramUrl
 import com.mochyy.mochymusic.ui.screens.settings.devspace.DevAvatar
 import com.mochyy.mochymusic.ui.screens.settings.devspace.DevPeople
 import com.mochyy.mochymusic.ui.screens.settings.devspace.openDevUrl
@@ -310,7 +310,7 @@ fun ProfileScreen(navController: NavController) {
     val time = rememberRecapTime(running = !storyCovering, held = { profile.holdsPage || obscured.value })
     val measurer = rememberTextMeasurer()
     val giant = remember {
-        GiantTextState("MOCHY", filledRows = 0..0).apply { color = { lerp(HeaderText, StoryTextDark, expand) } }
+        GiantTextState("VIBE", filledRows = 0..0).apply { color = { lerp(HeaderText, StoryTextDark, expand) } }
     }
 
     // whether there's a recap waiting, so the pull hint can say so now and then
@@ -810,7 +810,7 @@ fun ProfileScreen(navController: NavController) {
                         Spacer(Modifier.height(16.dp))
                         DeveloperCard(onClick = { navController.navigate("developer_space") })
                         Spacer(Modifier.height(16.dp))
-                        DiscordCard(onClick = { context.openDevUrl(DiscordUrl) })
+                        InstagramCard(onClick = { context.openDevUrl(InstagramUrl) })
                         Spacer(Modifier.height(28.dp))
                         Text(stringResource(R.string.profile_settings_title), style = PageTitle.copy(fontSize = 15.sp), modifier = Modifier.padding(start = 2.dp, bottom = 10.dp))
                         OpenSettingsRow(onClick = { navController.navigate("mochy_settings") })
@@ -862,7 +862,7 @@ fun ProfileScreen(navController: NavController) {
             // ---- logo, and the greeting sliding into the bar beside it ----
             Icon(
                 painter = painterResource(R.drawable.ic_mochy_mark),
-                contentDescription = "Mochy",
+                contentDescription = "Vibe",
                 tint = Color.White,
                 modifier = Modifier
                     .padding(start = HomeContentInset, top = statusBarTop + TopBarLogoTop)
@@ -1233,7 +1233,7 @@ private fun DeveloperCard(onClick: () -> Unit) {
 }
 
 @Composable
-private fun DiscordCard(onClick: () -> Unit) {
+private fun InstagramCard(onClick: () -> Unit) {
     val face = 30.dp
     Row(
         verticalAlignment = Alignment.CenterVertically,
@@ -1245,8 +1245,8 @@ private fun DiscordCard(onClick: () -> Unit) {
             .padding(horizontal = 16.dp, vertical = 12.dp),
     ) {
         Image(
-            painter = rememberResourcePainter(R.drawable.mochy_discord),
-            contentDescription = stringResource(R.string.profile_discord_cd),
+            painter = rememberResourcePainter(R.drawable.vibe_logo),
+            contentDescription = stringResource(R.string.profile_instagram_cd),
             contentScale = ContentScale.Crop,
             modifier = Modifier
                 .size(face)
@@ -1255,7 +1255,7 @@ private fun DiscordCard(onClick: () -> Unit) {
         )
         Spacer(Modifier.width(12.dp))
         Text(
-            stringResource(R.string.profile_join_discord),
+            stringResource(R.string.profile_follow_instagram),
             style = TextStyle(fontFamily = InterFontFamily, fontWeight = FontWeight.Bold, fontSize = 15.sp, letterSpacing = (-0.6).sp, color = Color.White),
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,

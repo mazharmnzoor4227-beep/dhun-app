@@ -29,14 +29,12 @@
 
     <!-- Comunidad y Ajustes -->
     <string name="profile_meet_dev_contributors">conoce al dev y colaboradores :3</string>
-    <string name="profile_join_discord">¡Únete al servidor de Discord de Mochy!</string>
-    <string name="profile_discord_cd">Discord</string>
     <string name="profile_settings_title">Ajustes</string>
     <string name="profile_open_settings">Abrir ajustes</string>
 
     <!-- Editar perfil -->
     <string name="profile_edit_title">Editar perfil</string>
-    <string name="profile_data_privacy_hint">¡Mochy nunca guardará tus datos en línea!</string>
+    <string name="profile_data_privacy_hint">¡Vibe nunca guardará tus datos en línea!</string>
     <string name="profile_done">Listo</string>
     <string name="profile_username_label">nombre de usuario</string>
     <string name="profile_username_placeholder">usuario</string>

@@ -50,7 +50,7 @@
     <string name="lib_manage_imports_pill">Gestionar importaciones</string>
     <string name="lib_manage_local_pill">Gestionar archivos locales</string>
     <string name="lib_local_or">O</string>
-    <string name="lib_local_let_read">Permitir a Mochy leer tu almacenamiento para encontrar todas tus canciones</string>
+    <string name="lib_local_let_read">Permitir a Vibe leer tu almacenamiento para encontrar todas tus canciones</string>
     <string name="lib_local_import_here">Importa tu música local aquí</string>
     <string name="lib_local_imported_from_local">Importado desde almacenamiento local</string>
 
@@ -64,7 +64,7 @@
     <string name="lib_import_still_running">Una importación está en curso. Vuelve a intentarlo cuando termine.</string>
 
     <!-- Importación local -->
-    <string name="lib_local_no_access">Mochy no puede ver tu música sin permisos de acceso</string>
+    <string name="lib_local_no_access">Vibe no puede ver tu música sin permisos de acceso</string>
     <string name="lib_local_no_new_songs">No hay canciones nuevas en tus carpetas de música</string>
     <plurals name="lib_local_repaired">
         <item quantity="one">Se corrigió el nombre, letra o portada de %1$d canción</item>

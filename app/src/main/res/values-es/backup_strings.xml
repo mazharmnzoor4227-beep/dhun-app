@@ -31,7 +31,7 @@
     <string name="backup_uploading">Subiendo… %1$d%%</string>
     <string name="backup_downloading">Descargando… %1$d%%</string>
     <string name="backup_unpacking">Desempaquetando… %1$d%%</string>
-    <string name="backup_restored">Restaurado con éxito. Mochy se está reiniciando…</string>
+    <string name="backup_restored">Restaurado con éxito. Vibe se está reiniciando…</string>
     <string name="backup_done_toast">Copia de seguridad guardada en %1$s</string>
     <string name="backup_last_failed">La última copia automática no pudo completarse. %1$s</string>
     <string name="backup_restore_title">Restaurar una copia de seguridad</string>
@@ -79,7 +79,7 @@
 
     <!-- hoja webdav -->
     <string name="webdav_title">Conectar un servidor WebDAV</string>
-    <string name="webdav_body">Las copias irán a una carpeta Mochy Backups en esta dirección.</string>
+    <string name="webdav_body">Las copias irán a una carpeta Vibe Backups en esta dirección.</string>
     <string name="webdav_address">Dirección del servidor</string>
     <string name="webdav_address_hint">https://cloud.ejemplo.com/remote.php/dav/files/usuario/</string>
     <string name="webdav_username_hint">Tu usuario</string>
@@ -89,7 +89,7 @@
 
     <!-- errores -->
     <string name="cloud_problem_offline">No se pudo acceder a la nube. Revisa tu conexión.</string>
-    <string name="cloud_problem_signed_out">Mochy ya no tiene la sesión iniciada allí.</string>
+    <string name="cloud_problem_signed_out">Vibe ya no tiene la sesión iniciada allí.</string>
     <string name="cloud_problem_wrong_login">El servidor rechazó ese usuario o contraseña.</string>
     <string name="cloud_problem_bad_address">Esa dirección no parece válida.</string>
     <string name="cloud_problem_not_found">No se pudo encontrar la carpeta en el servidor.</string>

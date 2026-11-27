@@ -260,7 +260,7 @@
     <string name="enable_scrobbling">Omogoči beleženje</string>
     <string name="lastfm_now_playing">Pošlji status trenutnega predvajanja</string>
     <string name="last_fm_send_likes">Pošlji všečke/nevšečke</string>
-    <string name="last_fm_send_likes_description">Dodaj/odstrani pesmi med priljubljenimi na Last.fm, ko jih všečkaš/odvšečkaš v mochyu</string>
+    <string name="last_fm_send_likes_description">Dodaj/odstrani pesmi med priljubljenimi na Last.fm, ko jih všečkaš/odvšečkaš v Vibeu</string>
     <string name="logging_in">Prijavljanje…</string>
     <string name="scrobbling_configuration">Nastavitve beleženja</string>
     <string name="scrobble_min_track_duration">Beleži pesmi, daljše od</string>
@@ -319,6 +319,6 @@
     <string name="wrapped_total_artists_subtitle">različnih izvajalcev</string>
     <string name="casting_to">Predvajanje na %s</string>
     <string name="progress_percent">Napredek: %s%%</string>
-    <string name="listening_to_mochy">Poslušaš mochy</string>
+    <string name="listening_to_mochy">Poslušaš Vibe</string>
     <string name="listen_on_youtube_music">Poslušaj v YouTube Music</string>
 </resources>

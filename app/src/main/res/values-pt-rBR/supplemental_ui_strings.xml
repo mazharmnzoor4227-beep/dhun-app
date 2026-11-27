@@ -1,9 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="supplemental_support_enjoying">Está gostando do Mochy Music?</string>
-    <string name="supplemental_support_title">Apoie o desenvolvimento do Mochy!</string>
-    <string name="supplemental_support_body">obrigado por experimentar! Ah, e o Mochy Music sempre será gratuito, para sempre! &lt;3\n\nSeria muito útil se você apoiasse o desenvolvedor, não importa o valor!! &lt;3\nDeixar uma estrela no repositório do Mochy já ajuda bastante. E obrigado novamente!</string>
-    <string name="supplemental_support_donate">Faça uma doação!</string>
+    <string name="supplemental_support_enjoying">Está gostando do Vibe?</string>
+    <string name="supplemental_support_title">Apoie o desenvolvimento do Vibe!</string>
+    <string name="supplemental_support_body">obrigado por experimentar! Ah, e o Vibe sempre será gratuito, para sempre! &lt;3\n\nSeria muito útil se você apoiasse o desenvolvedor, não importa o valor!! &lt;3\nDeixar uma estrela no repositório do Vibe já ajuda bastante. E obrigado novamente!</string>
     <string name="supplemental_support_star">Deixe uma estrela no repositório!</string>
     <string name="supplemental_support_dismiss">Tirem esses pedintes daqui, não!</string>
     <string name="supplemental_coming_soon">Em breve</string>
@@ -26,7 +25,7 @@
     <string name="supplemental_install_here">Instalar aqui</string>
     <string name="supplemental_update_open_web">Abrir página na web</string>
     <string name="supplemental_update_snooze">não, obrigado; lembre-me em 24 horas</string>
-    <string name="supplemental_install_permission">Permita \"Instalar apps desconhecidos\" para o Mochy e toque em Instalar aqui novamente.</string>
+    <string name="supplemental_install_permission">Permita \"Instalar apps desconhecidos\" para o Vibe e toque em Instalar aqui novamente.</string>
     <string name="supplemental_featured_playlist">Playlist em destaque</string>
     <string name="supplemental_featured_songs">Músicas em destaque</string>
     <string name="supplemental_artist_new_releases">Novidades deste artista</string>

@@ -48,7 +48,7 @@
     <string name="song_edit_year">Año</string>
     <string name="song_edit_year_hint">Año de lanzamiento</string>
     <string name="song_edit_video">Video</string>
-    <string name="song_edit_video_auto">Encontrado por Mochy</string>
+    <string name="song_edit_video_auto">Encontrado por Vibe</string>
     <string name="song_edit_video_picked">Elegido por ti</string>
     <string name="song_edit_video_none">Sin video</string>
     <string name="song_edit_saving">Guardando…</string>
@@ -63,7 +63,7 @@
     <string name="video_pick_title">Seleccionar video</string>
     <string name="video_pick_subtitle">¿Video incorrecto o sin video?</string>
     <string name="video_pick_search">Buscar videos en YouTube</string>
-    <string name="video_pick_auto">Dejar que Mochy lo encuentre</string>
+    <string name="video_pick_auto">Dejar que Vibe lo encuentre</string>
     <string name="video_pick_auto_desc">El video oficial cuando exista</string>
     <string name="video_pick_none">Sin video</string>
     <string name="video_pick_none_desc">Esta canción solo mostrará su portada</string>

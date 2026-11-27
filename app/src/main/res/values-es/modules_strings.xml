@@ -25,14 +25,14 @@
     <string name="module_remove_short">Eliminar</string>
     <string name="module_remove_title">¿Eliminar %1$s?</string>
     <string name="module_remove_body">Sus ajustes y todo lo que añadiste se eliminarán con él. Puedes volver a añadirlo cuando quieras.</string>
-    <string name="modules_find_more_body">Un módulo es un servicio administrado por terceros. Mochy solo le solicita canciones, letras o apariencia, y no puede acceder a nada más en la app.</string>
+    <string name="modules_find_more_body">Un módulo es un servicio administrado por terceros. Vibe solo le solicita canciones, letras o apariencia, y no puede acceder a nada más en la app.</string>
     <string name="modules_add_from_link">Añadir desde un enlace</string>
     <string name="modules_link_hint">https://… o un proyecto de GitHub</string>
     <string name="modules_link_check">Comprobar enlace</string>
     <string name="modules_link_checking">Comprobando…</string>
     <string name="modules_link_not_a_link">Eso no parece un enlace válido. Debería comenzar con https://</string>
     <string name="modules_link_unreachable">No se pudo acceder al enlace. Revisa tu conexión e inténtalo de nuevo.</string>
-    <string name="modules_link_not_a_module">El enlace respondió, pero no es un módulo compatible con Mochy.</string>
+    <string name="modules_link_not_a_module">El enlace respondió, pero no es un módulo compatible con Vibe.</string>
     <string name="modules_link_website">Es un sitio web, no un módulo.</string>
     <string name="modules_add_from_file">Añadir desde un archivo</string>
     <string name="modules_add_from_file_body">Un módulo que alguien te envió como .zip.</string>
@@ -80,7 +80,7 @@
     <string name="module_info_version">Versión</string>
     <string name="module_info_author">Autor</string>
     <string name="module_info_status">Estado</string>
-    <string name="module_info_built_in">Integrado en Mochy</string>
+    <string name="module_info_built_in">Integrado en Vibe</string>
     <string name="module_shader_problem">Uno de sus sombreadores no se cargó: %1$s</string>
     <string name="module_shader_needs_13">Los sombreadores del reproductor requieren Android 13.</string>
     <string name="module_glass_problem">El efecto cristal no se cargó: %1$s</string>
@@ -153,7 +153,7 @@
     <string name="module_update_to">Actualizar a %1$s</string>
     <string name="module_update_now">Actualizar ahora</string>
     <string name="module_update_none">Tienes la versión más reciente. Comprobado %1$s.</string>
-    <string name="module_update_never">Mochy busca actualizaciones varias veces al día.</string>
+    <string name="module_update_never">Vibe busca actualizaciones varias veces al día.</string>
     <string name="module_update_from">Desde %1$s</string>
     <string name="module_update_check">Buscar actualizaciones</string>
     <string name="module_updated">%1$s está actualizado ahora.</string>
@@ -171,13 +171,13 @@
     <string name="module_browser_by_version">por %1$s · %2$s</string>
     <string name="module_browser_account">Sesión iniciada como %1$s</string>
     <string name="module_browser_sign_in_title">Iniciar sesión con Discord</string>
-    <string name="module_browser_sign_in_body">Estos módulos provienen de Mochy\'s Bar en Discord. Inicia sesión para verlos.</string>
+    <string name="module_browser_sign_in_body">Estos módulos provienen de Vibe\'s Bar en Discord. Inicia sesión para verlos.</string>
     <string name="module_browser_sign_in">Iniciar sesión con Discord</string>
     <string name="module_browser_no_browser">No se encontró un navegador para iniciar sesión.</string>
-    <string name="module_browser_join_title">Únete primero a Mochy\'s Bar</string>
-    <string name="module_browser_join_body">Aún no estás en el servidor Mochy\'s Bar.</string>
-    <string name="module_browser_join_body_named">Sesión iniciada como %1$s, pero no estás en el servidor Mochy\'s Bar.</string>
-    <string name="module_browser_join">Unirse a Mochy\'s Bar</string>
+    <string name="module_browser_join_title">Únete primero a Vibe\'s Bar</string>
+    <string name="module_browser_join_body">Aún no estás en el servidor Vibe\'s Bar.</string>
+    <string name="module_browser_join_body_named">Sesión iniciada como %1$s, pero no estás en el servidor Vibe\'s Bar.</string>
+    <string name="module_browser_join">Unirse a Vibe\'s Bar</string>
     <string name="module_browser_check_again">Ya me uní, comprobar de nuevo</string>
     <string name="module_browser_warming">Cargando la tienda de módulos por primera vez…</string>
     <string name="module_browser_offline">No se pudo conectar a la tienda de módulos.</string>
@@ -185,7 +185,7 @@
     <string name="module_browser_not_set_up">La tienda de módulos no está disponible en esta versión.</string>
     <string name="module_browser_nothing">Nada por aquí coincide aún.</string>
     <string name="module_browser_fetch_failed">No se pudo descargar %1$s.</string>
-    <string name="module_browser_locked_note">%1$s es un módulo especial. Consíguelo en Mochy\'s Bar.</string>
+    <string name="module_browser_locked_note">%1$s es un módulo especial. Consíguelo en Vibe\'s Bar.</string>
     <string name="module_browser_sign_out">Cerrar sesión en la tienda</string>
     <string name="module_store_best">Lo mejor de la comunidad</string>
     <string name="module_store_categories">Categorías</string>
@@ -198,29 +198,29 @@
     <string name="module_store_terms_intro">Al usar la Tienda de Módulos, aceptas lo siguiente.</string>
     <string-array name="module_store_terms">
         <item>Lo que solicitamos de tu cuenta de Discord</item>
-        <item>Al iniciar sesión, solicitamos tu ID de usuario, nombre, avatar y tu presencia en Mochy\'s Bar. Nunca accedemos a tus mensajes ni contraseñas.</item>
+        <item>Al iniciar sesión, solicitamos tu ID de usuario, nombre, avatar y tu presencia en Vibe\'s Bar. Nunca accedemos a tus mensajes ni contraseñas.</item>
         <item>Lo que almacenamos</item>
         <item>El servidor verifica tu sesión periódicamente. Puedes cerrar sesión cuando quieras.</item>
-        <item>Permanecer en Mochy\'s Bar</item>
+        <item>Permanecer en Vibe\'s Bar</item>
         <item>Si abandonas el servidor, perderás el acceso a la tienda. Los módulos ya añadidos seguirán funcionando.</item>
         <item>Módulos de la comunidad</item>
         <item>Los módulos son creados por usuarios de la comunidad. Instala únicamente módulos de confianza.</item>
         <item>Módulos de pago</item>
         <item>Los módulos de pago se adquieren a través de sus creadores en Discord.</item>
         <item>Versiones oficiales</item>
-        <item>La tienda solo está disponible en compilaciones oficiales de Mochy.</item>
+        <item>La tienda solo está disponible en compilaciones oficiales de Vibe.</item>
         <item>Cambios</item>
         <item>Estos términos pueden actualizarse en el futuro.</item>
     </string-array>
     <string name="module_store_next">Siguiente</string>
     <string name="module_store_read_first">Lee hasta el final para continuar</string>
     <string name="module_store_fork_title">Estás usando un fork</string>
-    <string name="module_store_fork_body">Esta versión de Mochy no es una compilación oficial.</string>
+    <string name="module_store_fork_body">Esta versión de Vibe no es una compilación oficial.</string>
     <string name="module_store_fork_users_title">Lo que esto significa para ti</string>
     <string name="module_store_fork_users">No puedes abrir la Tienda de Módulos en esta versión. Todo lo demás funciona normalmente.</string>
-    <string name="module_store_fork_devs_title">¿Creando tu propia versión de Mochy?</string>
+    <string name="module_store_fork_devs_title">¿Creando tu propia versión de Vibe?</string>
     <string name="module_store_fork_devs">La tienda solo responde a compilaciones oficiales con firmas autorizadas.</string>
-    <string name="module_store_fork_get">Obtener Mochy oficial</string>
+    <string name="module_store_fork_get">Obtener Vibe oficial</string>
     <string name="experimental_simulate_fork_title">Simular ser un fork</string>
     <string name="experimental_simulate_fork_desc">La tienda tratará este dispositivo como un fork para pruebas.</string>
     <string name="module_store_update_title">Hay una actualización</string>
@@ -242,7 +242,7 @@
 
     <string name="module_page_play">Reproducir</string>
     <string name="module_page_shuffle">Aleatorio</string>
-    <string name="module_page_original">Abrir página de Mochy</string>
+    <string name="module_page_original">Abrir página de Vibe</string>
     <string name="module_page_use_player">Usar este reproductor</string>
     <string name="module_page_more_songs">Mostrar más</string>
     <string name="module_page_no_player">Activa este módulo para ver su reproductor aquí.</string>

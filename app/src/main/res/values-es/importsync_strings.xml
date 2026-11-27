@@ -23,9 +23,9 @@
     <string name="import_sync_tunemymusic_desc">Amazon Music, SoundCloud, Deezer y más</string>
     <string name="import_sync_tunemymusic_detail">Cualquier otro servicio, como bibliotecas de Amazon Music, SoundCloud o Deezer</string>
     <string name="import_sync_backup_title">Copia de seguridad</string>
-    <string name="import_sync_export_csv_title">Exportar a Mochy CSV</string>
+    <string name="import_sync_export_csv_title">Exportar a Vibe CSV</string>
     <string name="import_sync_export_csv_desc">Canciones que te gustan y listas de reproducción</string>
-    <string name="import_sync_export_csv_detail">Exporta tus canciones y listas para recuperarlas desde Importar → Copia de seguridad de Mochy</string>
+    <string name="import_sync_export_csv_detail">Exporta tus canciones y listas para recuperarlas desde Importar → Copia de seguridad de Vibe</string>
     <string name="import_sync_exporting">Exportando…</string>
     <string name="import_sync_btn_ok">Aceptar</string>
 
@@ -43,14 +43,14 @@
     <string name="yt_sync_report_plays_title">Enviar reproducciones al historial de YouTube</string>
     <string name="yt_sync_report_plays_desc">Las canciones escuchadas aquí aparecerán en tu historial de YouTube</string>
     <string name="yt_sync_pull_history_title">Copiar historial de YouTube aquí</string>
-    <string name="yt_sync_pull_history_desc">Las reproducciones de otros dispositivos se unen al historial de Mochy</string>
+    <string name="yt_sync_pull_history_desc">Las reproducciones de otros dispositivos se unen al historial de Vibe</string>
     <string name="yt_sync_other_apps_header">Otras aplicaciones</string>
     <string name="yt_sync_now_header">Ahora</string>
     <string name="yt_sync_now_title">Sincronizar ahora</string>
     <string name="yt_sync_now_desc_history">Biblioteca, listas de reproducción e historial</string>
     <string name="yt_sync_now_desc_no_history">Biblioteca y listas de reproducción</string>
     <string name="yt_sync_pull_history_now_title">Copiar historial de YouTube ahora</string>
-    <string name="yt_sync_pull_history_now_desc">Solo añade reproducciones que Mochy no tenga aún</string>
+    <string name="yt_sync_pull_history_now_desc">Solo añade reproducciones que Vibe no tenga aún</string>
     <string name="yt_sync_upload_playlists_title">Subir listas locales a YouTube</string>
     <string name="yt_sync_upload_playlists_desc">Copiar listas de reproducción locales a YouTube</string>
     <string name="yt_sync_upload_playlists_detail">Crea una copia privada en YouTube de cada lista que solo exista localmente</string>
@@ -59,12 +59,12 @@
     <string name="yt_sync_dialog_sign_out_body">Todo lo que ya esté en tu biblioteca se conservará. La sincronización se detendrá hasta que inicies sesión de nuevo.</string>
     <string name="yt_sync_dialog_upload_title">¿Subir listas locales a YouTube?</string>
     <string name="yt_sync_dialog_upload_create">Crear</string>
-    <string name="yt_sync_dialog_upload_body">Cada lista existente únicamente en Mochy obtendrá una copia privada en tu cuenta de YouTube.</string>
+    <string name="yt_sync_dialog_upload_body">Cada lista existente únicamente en Vibe obtendrá una copia privada en tu cuenta de YouTube.</string>
     <string name="yt_sync_cancel">Cancelar</string>
 
     <!-- Iniciar sesión en YouTube -->
     <string name="yt_login_title">Iniciar sesión en YouTube</string>
-    <string name="yt_login_subtitle">Página oficial de inicio de sesión de Google. Mochy nunca ve tu contraseña.</string>
+    <string name="yt_login_subtitle">Página oficial de inicio de sesión de Google. Vibe nunca ve tu contraseña.</string>
     <string name="yt_login_signed_in_as">Sesión iniciada como %1$s</string>
     <string name="yt_login_signed_in_general">Sesión iniciada en YouTube</string>
     <string name="yt_login_failed">No se pudo completar el inicio de sesión. Inténtalo de nuevo.</string>
@@ -95,8 +95,8 @@
     <string name="import_link_youtube_desc">Listas de reproducción y álbumes de canciones exactas</string>
     <string name="import_link_soundcloud_desc">Listas públicas y álbumes</string>
     <string name="import_providers_file_header">Desde un archivo</string>
-    <string name="import_mochy_backup_title">Copia de seguridad de Mochy</string>
-    <string name="import_mochy_backup_desc">Archivo CSV generado al exportar a Mochy CSV. Restaura canciones exactas</string>
+    <string name="import_mochy_backup_title">Copia de seguridad de Vibe</string>
+    <string name="import_mochy_backup_desc">Archivo CSV generado al exportar a Vibe CSV. Restaura canciones exactas</string>
     <string name="import_tunemymusic_csv_desc">Listas privadas, canciones que te gustan y cualquier otro servicio</string>
     <string name="import_providers_other_header">Otros servicios</string>
     <string name="import_other_services_title">Amazon Music, SoundCloud, Pandora…</string>
@@ -107,8 +107,8 @@
     <string name="account_resync_looking">Buscando nuevas canciones en %1$s…</string>
     <string name="account_resync_missing"> No se pudo encontrar %1$s allí.</string>
     <string name="account_import_signin_title">Iniciar sesión en %1$s</string>
-    <string name="account_import_resync_subtitle">Página oficial de %1$s. Mochy solo lee la lista que estás resincronizando</string>
-    <string name="account_import_signin_subtitle">Página oficial de %1$s. Mochy solo lee tus listas de reproducción</string>
+    <string name="account_import_resync_subtitle">Página oficial de %1$s. Vibe solo lee la lista que estás resincronizando</string>
+    <string name="account_import_signin_subtitle">Página oficial de %1$s. Vibe solo lee tus listas de reproducción</string>
     <string name="account_import_ytm_needs_signin">La importación de YouTube Music usa la cuenta conectada. Inicia sesión y luego elige tus listas.</string>
     <string name="account_import_reading_count">(%1$d de %2$d)</string>
     <string name="account_import_stop">Detener</string>

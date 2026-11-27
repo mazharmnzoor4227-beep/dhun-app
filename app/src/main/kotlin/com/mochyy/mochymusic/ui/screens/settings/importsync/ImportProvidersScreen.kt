@@ -36,7 +36,7 @@ fun ImportProvidersScreen(
     // some file managers label .csv as text/plain or octet-stream, so don't filter too hard
     val backupPicker =
         rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
-            if (uri != null) viewModel.loadFile(uri, sourceLabel = "Mochy backup")
+            if (uri != null) viewModel.loadFile(uri, sourceLabel = "Vibe backup")
         }
 
     SubSettingsScaffold(
@@ -98,7 +98,7 @@ fun ImportProvidersScreen(
                 listOf(
                     SettingsItem(
                         title = { Text(stringResource(R.string.import_mochy_backup_title)) },
-                        highlightKey = "Mochy backup",
+                        highlightKey = "Vibe backup",
                         descriptionText = stringResource(R.string.import_mochy_backup_desc),
                         icon = painterResource(R.drawable.backup),
                         iconShape = CircleShape,

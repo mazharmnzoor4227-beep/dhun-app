@@ -134,6 +134,9 @@ class HomeViewModel @Inject constructor(
         .flowOn(Dispatchers.Default)
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000L), emptyList())
     val homePage = MutableStateFlow<HomePage?>(null)
+
+    /** false while a load's network phase is still out, so the hero keeps its bones instead of settling empty */
+    val networkSettled = MutableStateFlow(false)
     val explorePage = MutableStateFlow<ExplorePage?>(null)
     val communityPlaylists = MutableStateFlow<List<CommunityPlaylistItem>?>(null)
     val selectedChip = MutableStateFlow<HomePage.Chip?>(null)
@@ -989,6 +992,7 @@ class HomeViewModel @Inject constructor(
 
     private suspend fun loadOnce() {
         isLoading.value = true
+        networkSettled.value = false
         signals.markRefreshed()
         artistPages.clear()
 
@@ -1009,6 +1013,7 @@ class HomeViewModel @Inject constructor(
                 starterSongs.value = emptyList()
             }
         } finally {
+            networkSettled.value = true
             // drop raw artist pages once the rows built from them are published
             artistPages.clear()
         }

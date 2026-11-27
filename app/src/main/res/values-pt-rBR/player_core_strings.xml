@@ -123,7 +123,7 @@
     <string name="pc_resync_open_playlist">Abra a playlist e sincronize-a novamente pelo menu dela.</string>
     <string name="pc_resync_busy">Ainda há uma importação em andamento. Tente novamente quando ela terminar.</string>
     <string name="pc_resync_nothing">Nenhuma das suas playlists veio de um serviço de música, então não há nada para sincronizar novamente.</string>
-    <string name="pc_resync_link_hint">Esta playlist foi importada antes de o Mochy salvar sua origem. O link permite que a sincronização a encontre novamente.</string>
+    <string name="pc_resync_link_hint">Esta playlist foi importada antes de o Vibe salvar sua origem. O link permite que a sincronização a encontre novamente.</string>
     <string name="pc_search_playlist_songs">Pesquisar qualquer música na playlist</string>
     <string name="pc_search_songs_here">Pesquisar qualquer música aqui</string>
     <string name="pc_lock_order">Bloquear ordem</string>
@@ -184,7 +184,7 @@
     <string name="pc_stat_speed">Velocidade</string>
     <string name="pc_stat_pitch">Tom</string>
     <string name="pc_stat_semitones">%1$s semitons</string>
-    <string name="pc_stat_rs_mochy">Mochy Hi-Fi, janela sinc (Kaiser)</string>
+    <string name="pc_stat_rs_mochy">Vibe Hi-Fi, janela sinc (Kaiser)</string>
     <string name="pc_stat_passband">Banda de passagem</string>
     <string name="pc_stat_flat_to">plano até %1$s</string>
     <string name="pc_stat_stopband">Faixa de rejeição de −%1$d dB, ponto flutuante de 32 bits</string>

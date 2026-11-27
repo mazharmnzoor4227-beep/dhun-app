@@ -57,7 +57,7 @@ internal object ScriptSecurityScanner {
             findings += ScriptFinding(FindingKind.PlainHttp, false, link, "uses unencrypted http://")
         }
         if (SecretGuard.containsSecret(link)) {
-            findings += ScriptFinding(FindingKind.SecretAccess, true, link, "carries a Mochy secret")
+            findings += ScriptFinding(FindingKind.SecretAccess, true, link, "carries a Vibe secret")
         }
         return resultOf(listOf(link.substringAfter("://").take(60)), findings)
     }
@@ -191,10 +191,10 @@ internal object ScriptSecurityScanner {
     // stuff a legit music script has zero damn business touching
     private val BlockedSecretRules = listOf(
         Regex("""innerTubeCookie|SAPISID|PAPISID|__Secure-3PSID""", RegexOption.IGNORE_CASE) to "references YouTube login cookies",
-        Regex("""cloud_backup_account|\.vault_k|mochy_secrets|SecretVault|SecretPreferences""", RegexOption.IGNORE_CASE) to "targets Mochy secret storage",
+        Regex("""cloud_backup_account|\.vault_k|mochy_secrets|SecretVault|SecretPreferences""", RegexOption.IGNORE_CASE) to "targets Vibe secret storage",
         Regex("""webdav[_-]?(pass|pwd|password|user|auth)|proxyPassword|discordAccessToken|discordRefreshToken""", RegexOption.IGNORE_CASE) to "targets saved account passwords/tokens",
         Regex("""settings\.preferences_pb|/data/data/|/data/user/|shared_prefs|no_backup""", RegexOption.IGNORE_CASE) to "probes private app files",
-        Regex("""mochy-module-feed\.mochyy\.workers\.dev""", RegexOption.IGNORE_CASE) to "targets Mochy's own module store API",
+        Regex("""mochy-module-feed\.mochyy\.workers\.dev""", RegexOption.IGNORE_CASE) to "targets Vibe's own module store API",
     )
 
     private val BlockedLocalRules = listOf(

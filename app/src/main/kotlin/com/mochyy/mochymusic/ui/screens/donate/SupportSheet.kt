@@ -1,7 +1,8 @@
-// the "support mochy's development" sheet: the auto prompt, help us! on the version sheet, and support me on about app all open this
+// the "support Vibe's development" sheet: the auto prompt, help us! on the version sheet, and support me on about app all open this
 
 package com.mochyy.mochymusic.ui.screens.donate
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
@@ -10,6 +11,8 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Text
@@ -17,10 +20,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.layout
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Constraints
@@ -28,14 +34,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.mochyy.mochymusic.R
 import com.mochyy.mochymusic.core.updater.GithubRepoUrl
+import com.mochyy.mochymusic.core.updater.InstagramUrl
 import com.mochyy.mochymusic.ui.component.PopupSheetHandleHeight
 import com.mochyy.mochymusic.ui.component.PopupSheetState
 import com.mochyy.mochymusic.ui.screens.update.openUrl
 
-// the band ends around her chest, above where her fade starts (56%), or the letters show through her
-private const val BandEndsOnCharacter = 0.53f
-
-/** shows the support sheet, donate us! pushes the donate sheet on top of it */
+/** shows the support sheet with the GitHub star and Instagram follow actions */
 fun PopupSheetState.showSupportSheet() {
     val popup = this
     show(fullBleed = true, topFade = false, buttonBar = { SupportButtons(popup) }) {
@@ -47,8 +51,7 @@ fun PopupSheetState.showSupportSheet() {
 private fun SupportSheetContent() {
     val scroll = rememberScrollState()
     BoxWithConstraints(Modifier.fillMaxWidth()) {
-        val characterWidth = characterWidth(maxWidth, maxHeight)
-        val bandHeight = PopupSheetHandleHeight + CharacterTop + characterWidth * CharacterAspect * BandEndsOnCharacter
+        val bandHeight = PopupSheetHandleHeight + 170.dp
 
         NameMarquee(
             modifier = Modifier
@@ -68,8 +71,13 @@ private fun SupportSheetContent() {
                 .verticalScroll(scroll)
                 .padding(horizontal = 26.dp),
         ) {
-            Spacer(Modifier.height(CharacterTop))
-            DonateCharacter(width = characterWidth)
+            Spacer(Modifier.height(96.dp))
+            Image(
+                painter = painterResource(R.drawable.vibe_logo),
+                contentDescription = null,
+                contentScale = ContentScale.Crop,
+                modifier = Modifier.size(112.dp).clip(RoundedCornerShape(26.dp)),
+            )
             Spacer(Modifier.height(14.dp))
             Text(
                 text = stringResource(R.string.supplemental_support_enjoying),
@@ -107,8 +115,8 @@ private fun SupportButtons(popup: PopupSheetState) {
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             DonatePillButton(
-                text = stringResource(R.string.supplemental_support_donate),
-                onClick = { popup.showDonateSheet() },
+                text = stringResource(R.string.supplemental_support_instagram),
+                onClick = { context.openUrl(InstagramUrl) },
                 modifier = Modifier.weight(1f),
             )
             DonatePillButton(
@@ -118,7 +126,7 @@ private fun SupportButtons(popup: PopupSheetState) {
             )
         }
         DonatePillButton(
-            text = stringResource(R.string.supplemental_support_dismiss),
+            text = stringResource(R.string.supplemental_support_later),
             onClick = popup::dismiss,
             quiet = true,
         )

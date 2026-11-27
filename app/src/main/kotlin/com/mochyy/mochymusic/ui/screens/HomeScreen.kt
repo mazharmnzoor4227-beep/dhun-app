@@ -542,7 +542,7 @@ private fun HomeShell() {
         ) {
             Icon(
                 painter = painterResource(R.drawable.ic_mochy_mark),
-                contentDescription = "Mochy",
+                contentDescription = "Vibe",
                 tint = Color.White,
                 modifier = Modifier
                     .launchMarkTarget()
@@ -684,6 +684,7 @@ fun HomeScreen(
         }
     }
     val homePage by viewModel.homePage.collectAsState()
+    val networkSettled by viewModel.networkSettled.collectAsState()
     val dailyDiscover by viewModel.dailyDiscover.collectAsState()
     val similarRecommendations by viewModel.similarRecommendations.collectAsState()
     val communityPlaylists by viewModel.communityPlaylists.collectAsState()
@@ -724,6 +725,26 @@ fun HomeScreen(
         }
             .filter { !it.thumbnailUrl.isNullOrEmpty() }
             .distinctBy { it.id }
+    }
+
+    // network picks for the hero when local history and starter songs have nothing to put forward
+    val networkHeroItems = remember(homePage, allTimeHits) {
+        buildList {
+            homePage?.sections.orEmpty().forEach { section -> addAll(section.items) }
+            allTimeHits.orEmpty().forEach { add(it) }
+        }
+            .filter { !it.thumbnail.isNullOrEmpty() }
+            .distinctBy { it.id }
+            .take(5)
+            .map { item ->
+                com.mochyy.mochymusic.ui.component.RelatedPickItem(
+                    recommendation = item,
+                    reason = com.mochyy.mochymusic.ui.component.HeroLabel(
+                        "You may also like",
+                        textRes = R.string.pc_hero_you_may_like,
+                    ),
+                )
+            }
     }
 
     val startListeningGridState = rememberTrackGridState()
@@ -1362,7 +1383,7 @@ fun HomeScreen(
                                 playerConnection = playerConnection,
                                 navController = navController,
                                 heroScrollProgressProvider = heroScrollProgressProvider,
-                                isLoading = isFirstLoad || starterSongs == null,
+                                isLoading = isFirstLoad || starterSongs == null || !networkSettled,
                                 hold = launchHold,
                                 gachaPool = gachaPool,
                                 starterItems = starterItems,
@@ -1372,6 +1393,7 @@ fun HomeScreen(
                                 forgottenFavorites = forgottenFavorites,
                                 speedDialCovers = speedDialCovers,
                                 onSummonSpeedDial = openSpeedDial,
+                                networkItems = networkHeroItems,
                                 modifier = Modifier.launchRise(order = 1),
                             )
                         }
@@ -1843,7 +1865,7 @@ fun HomeScreen(
                     Box(contentAlignment = Alignment.CenterStart) {
                         Icon(
                             painter = painterResource(R.drawable.ic_mochy_mark),
-                            contentDescription = "Mochy",
+                            contentDescription = "Vibe",
                             tint = Color.White,
                             modifier = Modifier
                                 .launchMarkTarget()

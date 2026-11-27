@@ -126,7 +126,7 @@
 
     <!-- Historia del recap -->
     <string name="rc_story_hey">¡hola, %1$s!</string>
-    <string name="rc_story_journey_started">%1$s comenzaste tu camino en Mochy el</string>
+    <string name="rc_story_journey_started">%1$s comenzaste tu camino en Vibe el</string>
     <string name="rc_story_journey_listening">y has estado escuchando música por un tiempo total de</string>
     <string name="rc_story_journey_bye">¡hasta pronto!</string>
     <string name="rc_story_tap">¡TOCA!</string>

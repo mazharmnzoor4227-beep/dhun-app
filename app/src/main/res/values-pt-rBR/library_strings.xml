@@ -48,7 +48,7 @@
     <string name="lib_manage_imports_pill">Gerenciar importações</string>
     <string name="lib_manage_local_pill">Gerenciar arquivos locais</string>
     <string name="lib_local_or">Ou</string>
-    <string name="lib_local_let_read">Permita que o Mochy acesse seu armazenamento para encontrar todas as suas músicas</string>
+    <string name="lib_local_let_read">Permita que o Vibe acesse seu armazenamento para encontrar todas as suas músicas</string>
     <string name="lib_local_import_here">Importe suas músicas locais aqui</string>
     <string name="lib_local_imported_from_local">Importado de arquivos locais</string>
 
@@ -62,7 +62,7 @@
     <string name="lib_import_still_running">Já existe uma importação em andamento. Tente novamente quando ela terminar.</string>
 
     <!-- Local import -->
-    <string name="lib_local_no_access">O Mochy não consegue acessar suas músicas sem permissão</string>
+    <string name="lib_local_no_access">O Vibe não consegue acessar suas músicas sem permissão</string>
     <string name="lib_local_no_new_songs">Nenhuma música nova nas suas pastas de música</string>
     <plurals name="lib_local_repaired">
         <item quantity="one">Nome, letra ou capa de %1$d música corrigido</item>

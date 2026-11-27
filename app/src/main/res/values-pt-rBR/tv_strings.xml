@@ -3,9 +3,9 @@
     <!-- the tv app -->
     <string name="tv_hii">oi!</string>
     <string name="tv_tap_anything">Pressione qualquer botão para continuar</string>
-    <string name="tv_welcome">boas-vindas\nao Mochy Music</string>
+    <string name="tv_welcome">boas-vindas\nao Vibe</string>
     <string name="tv_lets_sync">Vamos sincronizar com seu celular</string>
-    <string name="tv_skip_phone">Usar o Mochy sem celular</string>
+    <string name="tv_skip_phone">Usar o Vibe sem celular</string>
     <string name="tv_whats_your_name">Como devemos chamar você?</string>
     <string name="tv_continue">Continuar</string>
     <string name="tv_whos_listening">Quem está ouvindo?</string>
@@ -71,7 +71,7 @@
 
     <string name="tv_sync_from_phone">Sincronizar do celular</string>
     <string name="tv_same_wifi">Verifique se seu celular está na mesma rede Wi-Fi que esta TV</string>
-    <string name="tv_pair_step_open">Abra o Mochy no celular e acesse Configurações → Integração entre dispositivos → Adicionar dispositivo</string>
+    <string name="tv_pair_step_open">Abra o Vibe no celular e acesse Configurações → Integração entre dispositivos → Adicionar dispositivo</string>
     <string name="tv_pair_step_pick">Escolha %1$s na lista</string>
     <string name="tv_pair_step_code">Digite o código acima</string>
     <string name="tv_from_phone">De %1$s</string>
@@ -81,9 +81,9 @@
     <string name="tv_controlled_from">Controlado por %1$s</string>
     <string name="tv_sync_looking">Procurando seu celular…</string>
     <string name="tv_sync_syncing">Sincronizando sua biblioteca…</string>
-    <string name="tv_sync_away">Seu celular não está por perto. Abra o Mochy nele, na mesma rede Wi-Fi.</string>
+    <string name="tv_sync_away">Seu celular não está por perto. Abra o Vibe nele, na mesma rede Wi-Fi.</string>
     <string name="tv_sync_unlinked">Seu celular desconectou esta TV. A biblioteca continuará aqui.</string>
-    <string name="tv_sync_failed">Não foi possível sincronizar. Verifique se o Mochy está atualizado nos dois dispositivos e tente novamente.</string>
+    <string name="tv_sync_failed">Não foi possível sincronizar. Verifique se o Vibe está atualizado nos dois dispositivos e tente novamente.</string>
     <string name="tv_sync_no_phone">Nenhum celular conectado</string>
     <string name="tv_sync_just_now">Sincronizado agora mesmo</string>
     <plurals name="tv_sync_minutes_ago">
@@ -96,7 +96,7 @@
     </plurals>
 
     <!-- the phone side of the tv link -->
-    <string name="tv_link_title">Mochy na sua TV</string>
+    <string name="tv_link_title">Vibe na sua TV</string>
     <string name="tv_link_tap_to_unlink">Conectado. Toque para desconectar.</string>
     <string name="tv_link_found">TVs nesta rede Wi-Fi</string>
     <string name="tv_link_enter_code">Digite o código exibido em %1$s</string>
@@ -106,14 +106,14 @@
     <string name="tv_link_channel">Conexão com a TV</string>
 
     <!-- the tv's mochy page -->
-    <string name="tv_mochy">Mochy</string>
+    <string name="tv_mochy">Vibe</string>
     <string name="tv_mochy_version">Versão %1$s</string>
     <string name="tv_mochy_link_phone">Conecte seu celular para transferir sua biblioteca</string>
     <string name="tv_mochy_phone_control">O celular pode controlar esta TV</string>
     <string name="tv_on">Ativado</string>
     <string name="tv_off">Desativado</string>
     <string name="tv_mochy_updates">Atualizações</string>
-    <string name="tv_mochy_support">Apoiar o Mochy</string>
+    <string name="tv_mochy_support">Apoiar o Vibe</string>
     <string name="tv_mochy_support_detail">Ajude a manter o projeto</string>
 
     <!-- playing next, up in the tv's player -->
@@ -130,7 +130,7 @@
     <string name="tv_menu_control">Controlar %1$s</string>
     <string name="tv_menu_sent">Reproduzindo em %1$s</string>
     <string name="tv_menu_next_sent">Adicionado à fila de %1$s</string>
-    <string name="tv_menu_unreachable">Não foi possível acessar %1$s. Verifique se o Mochy está aberto nele.</string>
+    <string name="tv_menu_unreachable">Não foi possível acessar %1$s. Verifique se o Vibe está aberto nele.</string>
     <string name="tv_menu_nothing_on">Nada sendo reproduzido</string>
     <string name="tv_link_open_now">Aberto agora. Toque para desconectar.</string>
     <string name="tv_link_control_title">Abrir agora</string>
@@ -142,7 +142,7 @@
     <string name="tv_link_status_open">Aberto agora</string>
     <string name="tv_link_status_open_synced">Aberto agora · sincronizado %1$s</string>
     <string name="tv_link_status_seen">Última vez aberto %1$s</string>
-    <string name="tv_link_status_waiting">Aguardando o Mochy abrir nele</string>
+    <string name="tv_link_status_waiting">Aguardando o Vibe abrir nele</string>
     <string name="tv_link_status_connected">Conectado a %1$s</string>
     <string name="tv_link_status_connected_detail">Sua biblioteca está sincronizada</string>
     <string name="tv_link_status_streaming">Transmitindo para %1$s</string>

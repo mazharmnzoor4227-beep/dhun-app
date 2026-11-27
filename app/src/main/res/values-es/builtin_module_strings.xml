@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="builtin_module_apple_description">Reproduce tu suscripción de Apple Music en Mochy, en AAC 256, con todos los efectos de Audio Lab</string>
+    <string name="builtin_module_apple_description">Reproduce tu suscripción de Apple Music en Vibe, en AAC 256, con todos los efectos de Audio Lab</string>
     <string name="builtin_module_monochrome_description">FLAC sin pérdida para cada canción que Monochrome disponga, sin necesidad de cuenta</string>
     <string name="builtin_module_jiosaavn_description">Catálogo de JioSaavn en AAC hasta 320 kbps, sin necesidad de cuenta</string>
     <string name="builtin_module_stream">Transmisión</string>

@@ -20,7 +20,7 @@
     <string name="installing_system_update">Instalando atualização\ndo sistema…</string>
     <string name="making_update_ready">Preparando a atualização; isso pode levar algum tempo</string>
     <string name="your_app_getting_better">Seu app está ficando ainda melhor…</string>
-    <string name="update_includes_features">Esta atualização inclui novos recursos e novidades do mochy-music %1$s, deixando seu app ainda melhor. Saiba mais em %2$s.</string>
+    <string name="update_includes_features">Esta atualização inclui novos recursos e novidades do Vibe %1$s, deixando seu app ainda melhor. Saiba mais em %2$s.</string>
     <string name="whats_new">Novidades?</string>
     <string name="update_available">Atualizar</string>
     <string name="checking_for_updates">Verificando atualizações…</string>
@@ -35,7 +35,7 @@
     <string name="mobile_network_warning">Baixar atualizações usando a rede móvel ou em roaming pode gerar custos adicionais.</string>
     <string name="update_size">Tamanho da atualização: %1$s MB</string>
     <string name="check_internet_connection">Verifique sua conexão com a internet e tente novamente.</string>
-    <string name="mochy_music_version">Versão %1$s do mochy MUSIC</string>
+    <string name="mochy_music_version">Versão %1$s do Vibe MUSIC</string>
     <string name="last_checked">Última verificação: %1$s</string>
     <string name="install">Instalar</string>
     <string name="check_for_update">Verificar atualizações</string>
@@ -53,12 +53,12 @@
     <string name="later">Mais tarde</string>
 
 
-    <string name="mochy_music_title">mochy MUSIC</string>
+    <string name="mochy_music_title">Vibe MUSIC</string>
     <string name="developer_section">DESENVOLVEDOR</string>
     <string name="collaborator_section">COLABORADOR</string>
     <string name="app_info_section">INFORMAÇÕES DO APP</string>
     <string name="community_section">COMUNIDADE</string>
-    <string name="developer_name">mochyDH P ASHOKAN</string>
+    <string name="developer_name">VibeDH P ASHOKAN</string>
     <string name="app_developer">Desenvolvedor principal</string>
     <string name="website">Site</string>
     <string name="collaborator_tboyke">T-Boyke</string>
@@ -94,5 +94,5 @@
     <string name="channel_release_warning">Você receberá a próxima versão estável como atualização, e as versões nightly deixarão de aparecer.</string>
     <string name="channel_yes">Sim</string>
     <string name="channel_no">Não</string>
-    <string name="update_allow_unknown_apps">Permita que o Mochy instale apps desconhecidos nas Configurações e volte aqui para tocar em Instalar novamente.</string>
+    <string name="update_allow_unknown_apps">Permita que o Vibe instale apps desconhecidos nas Configurações e volte aqui para tocar em Instalar novamente.</string>
 </resources>

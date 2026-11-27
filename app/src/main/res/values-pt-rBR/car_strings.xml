@@ -32,7 +32,7 @@
     <string name="car_pair_code">Código de pareamento</string>
     <string name="car_pair_status">Status</string>
     <string name="car_pair_how">Como parear</string>
-    <string name="car_pair_steps">No outro celular, abra o Mochy e vá para Configurações › Integração de dispositivos › Adicionar dispositivo. Em seguida, digite este código. Os dois celulares precisam estar na mesma rede Wi-Fi.</string>
+    <string name="car_pair_steps">No outro celular, abra o Vibe e vá para Configurações › Integração de dispositivos › Adicionar dispositivo. Em seguida, digite este código. Os dois celulares precisam estar na mesma rede Wi-Fi.</string>
     <string name="car_pair_waiting">Não conectado. Aguardando o pareamento com um celular.</string>
     <string name="car_pair_connected">Conectado a %1$s</string>
     <plurals name="car_pair_connected_more">

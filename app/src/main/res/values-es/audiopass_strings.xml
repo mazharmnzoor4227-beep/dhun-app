@@ -8,7 +8,7 @@
 
     <string name="audiopass_status_label">estado</string>
     <string name="audiopass_status_connected">Conectado</string>
-    <string name="audiopass_status_driven">Gestionado por Mochy</string>
+    <string name="audiopass_status_driven">Gestionado por Vibe</string>
     <string name="audiopass_status_bluetooth">Bluetooth</string>
     <string name="audiopass_status_wired">Audífonos</string>
     <string name="audiopass_status_none">No conectado</string>
@@ -56,14 +56,14 @@
     <string name="audiopass_bt_open_developer">Abrir Opciones de desarrollador</string>
     <string name="audiopass_bt_developer_off">Activa primero las Opciones de desarrollador tocando 7 veces el Número de compilación en Acerca del teléfono.</string>
     <string name="audiopass_bt_permission">Mostrar códec</string>
-    <string name="audiopass_bt_permission_hint">Mochy necesita permiso de Dispositivos cercanos para detectar el códec en uso.</string>
+    <string name="audiopass_bt_permission_hint">Vibe necesita permiso de Dispositivos cercanos para detectar el códec en uso.</string>
     <string name="audiopass_bt_unknown_hint">Este dispositivo mostrará el códec tan pronto como cambie.</string>
 
     <string name="audiopass_options">Opciones</string>
     <string name="audiopass_prefer_usb">Usar el DAC al conectar</string>
     <string name="audiopass_hires">Salida de alta resolución (32-bit)</string>
     <string name="audiopass_exclusive">Modo exclusivo</string>
-    <string name="audiopass_resampler">Resampleador Hi-Fi propio de Mochy</string>
+    <string name="audiopass_resampler">Resampleador Hi-Fi propio de Vibe</string>
     <string name="audiopass_resampler_desc">Solo para altavoces y conector de audífonos. Procesa el audio con un filtro más limpio que el mezclador de Android.</string>
     <string name="audiopass_passthrough">Pasarela Bit-perfect (Passthrough)</string>
     <string name="audiopass_passthrough_desc">El audio llega al DAC tal como es, sin mezclas ni resampleos de Android.</string>
@@ -73,11 +73,11 @@
     <string name="audiopass_mode_bit_perfect">Bit-perfect</string>
     <string name="audiopass_mode_bit_perfect_desc">Android entrega cada pista sin pérdida al DAC totalmente intacta.</string>
     <string name="audiopass_mode_direct_usb">USB directo</string>
-    <string name="audiopass_mode_direct_usb_desc">Mochy gestiona directamente el DAC USB en Android y ajusta el volumen en el hardware.</string>
+    <string name="audiopass_mode_direct_usb_desc">Vibe gestiona directamente el DAC USB en Android y ajusta el volumen en el hardware.</string>
     <string name="audiopass_mode_exclusive_usb">USB exclusivo</string>
-    <string name="audiopass_mode_exclusive_usb_desc">El DAC se abre exclusivamente para Mochy a la frecuencia de la canción.</string>
+    <string name="audiopass_mode_exclusive_usb_desc">El DAC se abre exclusivamente para Vibe a la frecuencia de la canción.</string>
     <string name="audiopass_mode_exclusive_dac">DAC integrado</string>
-    <string name="audiopass_mode_exclusive_dac_desc">Para reproductores con DAC propio: la salida de audífonos se abre exclusivamente para Mochy.</string>
+    <string name="audiopass_mode_exclusive_dac_desc">Para reproductores con DAC propio: la salida de audífonos se abre exclusivamente para Vibe.</string>
     <string name="audiopass_mode_needs">Requiere Android %1$s</string>
 
     <string name="audiopass_blockers_title">Bit-perfect esperará a que estos ajustes se desactivan</string>
@@ -99,7 +99,7 @@
     <string name="audiopass_usb_title">USB directo</string>
     <string name="audiopass_usb_permission">Permitir acceso USB</string>
     <string name="audiopass_usb_permission_hint">Android solicitará confirmación al conectar el DAC USB.</string>
-    <string name="audiopass_usb_no_dac">Conecta un DAC USB y Mochy tomará el control.</string>
+    <string name="audiopass_usb_no_dac">Conecta un DAC USB y Vibe tomará el control.</string>
     <string name="audiopass_fixed_volume">DACs sin control de volumen propio</string>
     <string name="audiopass_fixed_volume_desc">Reproduce a escala completa. Ten cuidado al usar audífonos de alta sensibilidad.</string>
     <string name="audiopass_dac_volume">Volumen del DAC</string>
@@ -120,7 +120,7 @@
     <string name="audiopass_stat_skip_decoded_16">La canción inició antes de activar la pasarela. La siguiente irá directa al DAC</string>
     <string name="audiopass_stat_skip_fell">La frecuencia y bits no pudieron abrir el DAC previamente</string>
     <string name="audiopass_stat_skip_no_dac">No se encontró DAC para este modo. Conéctalo o cambia de modo</string>
-    <string name="audiopass_stat_skip_no_access">Mochy no tiene acceso al DAC todavía. Toca Permitir acceso USB en Audio Pass</string>
+    <string name="audiopass_stat_skip_no_access">Vibe no tiene acceso al DAC todavía. Toca Permitir acceso USB en Audio Pass</string>
     <string name="audiopass_stat_skip_dac_cant">Tu DAC no admite la frecuencia o profundidad de bits de esta canción</string>
     <string name="audiopass_stat_unknown">Activado, pero esta canción se reprodujo del modo estándar</string>
 

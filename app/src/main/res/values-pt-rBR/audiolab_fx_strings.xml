@@ -35,7 +35,7 @@
     <string name="fx_mono_sub">Os dois ouvidos recebem a mixagem completa: útil para um único fone ou para quem escuta com apenas um ouvido</string>
 
     <string name="fx_atmos_title">Dolby Atmos e surround</string>
-    <string name="fx_atmos_sub">Reproduz trilhas 5.1, 7.1 e Atmos como som 3D em qualquer fone, usando o modelo de cabeça do Mochy, em vez de convertê-las para estéreo. A partir da próxima música.</string>
+    <string name="fx_atmos_sub">Reproduz trilhas 5.1, 7.1 e Atmos como som 3D em qualquer fone, usando o modelo de cabeça do Vibe, em vez de convertê-las para estéreo. A partir da próxima música.</string>
     <string name="fx_atmos_decoder">Decodificador Atmos</string>
     <string name="fx_atmos_spatializer">Espacializador do Android</string>
     <string name="fx_atmos_yes">Sim</string>
@@ -67,7 +67,7 @@
     <string name="fx_curve_steep">Íngreme</string>
     <string name="fx_curve">Curva</string>
     <string name="fx_volume_limit">Limite de volume</string>
-    <string name="fx_volume_note">Controla o volume próprio do Mochy (controle do player, fades e redução automática). O limite restringe o volume máximo que o app pode reproduzir.</string>
+    <string name="fx_volume_note">Controla o volume próprio do Vibe (controle do player, fades e redução automática). O limite restringe o volume máximo que o app pode reproduzir.</string>
 
     <string name="fx_reverb_title">Reverberação</string>
     <string name="fx_reverb_sub">Adicionar reverberação à música</string>

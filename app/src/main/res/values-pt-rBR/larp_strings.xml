@@ -58,7 +58,7 @@
 
     <string name="larp_sixty_seven_title">Ostentador 67</string>
     <string name="larp_sixty_seven_dac">Chord Mojo 2</string>
-    <string name="larp_sixty_seven_lead">DAC portátil, diretamente do Mochy</string>
+    <string name="larp_sixty_seven_lead">DAC portátil, diretamente do Vibe</string>
     <string name="larp_sixty_seven_power">600 mW</string>
     <string name="larp_sixty_seven_channels">Estéreo, fase alinhada</string>
     <string name="larp_sixty_seven_source">Master próprio da gravadora em alta resolução</string>
@@ -66,7 +66,7 @@
     <string name="larp_sixty_seven_runs">Um núcleo de áudio dedicado</string>
     <string name="larp_sixty_seven_effects">Nenhum, nem mesmo fade</string>
     <string name="larp_sixty_seven_hires">Ponto flutuante de 32 bits, passagem direta</string>
-    <string name="larp_sixty_seven_route">Mochy para o DAC por USB assíncrono</string>
+    <string name="larp_sixty_seven_route">Vibe para o DAC por USB assíncrono</string>
     <string name="larp_sixty_seven_jitter">12 ps</string>
     <string name="larp_sixty_seven_buffer">10 ms</string>
 
@@ -76,25 +76,25 @@
     <string name="larp_brainrot_power">18 W</string>
     <string name="larp_brainrot_channels">Estéreo, ajustado de ouvido</string>
     <string name="larp_brainrot_source">Mesa de mixagem, ao vivo</string>
-    <string name="larp_brainrot_decoder">Nenhum, o Mochy lê FLAC fluentemente</string>
+    <string name="larp_brainrot_decoder">Nenhum, o Vibe lê FLAC fluentemente</string>
     <string name="larp_brainrot_runs">Brainrot</string>
     <string name="larp_brainrot_effects">Nenhum, o artista aprovou cada bit</string>
     <string name="larp_brainrot_hires">Ponto flutuante de 64 bits, banhado a ouro</string>
-    <string name="larp_brainrot_route">Mochy para o DAC por um cabo de prata</string>
+    <string name="larp_brainrot_route">Vibe para o DAC por um cabo de prata</string>
     <string name="larp_brainrot_jitter">1 ps</string>
     <string name="larp_brainrot_buffer">1 ms</string>
 
     <string name="larp_maxxing_title">Ostentador supremo</string>
     <string name="larp_maxxing_dac">Wadax Atlantis Reference</string>
-    <string name="larp_maxxing_lead">Direto do Mochy, sem decodificador</string>
+    <string name="larp_maxxing_lead">Direto do Vibe, sem decodificador</string>
     <string name="larp_maxxing_power">1.000.000 W</string>
     <string name="larp_maxxing_channels">Estéreo, ajustado manualmente</string>
     <string name="larp_maxxing_source">A própria fita master do estúdio</string>
-    <string name="larp_maxxing_decoder">Nenhum, o Mochy transmite os dados brutos</string>
+    <string name="larp_maxxing_decoder">Nenhum, o Vibe transmite os dados brutos</string>
     <string name="larp_maxxing_runs">Dopamina pura</string>
     <string name="larp_maxxing_effects">Nenhum, cada bit chega como o artista imaginou</string>
     <string name="larp_maxxing_hires">Ponto flutuante de 64 bits, passagem direta</string>
-    <string name="larp_maxxing_route">Mochy para o DAC, sem decodificador intermediário</string>
+    <string name="larp_maxxing_route">Vibe para o DAC, sem decodificador intermediário</string>
     <string name="larp_maxxing_jitter">0 ps</string>
     <string name="larp_maxxing_buffer">0 ms, começa a tocar antes de você apertar reproduzir</string>
 </resources>

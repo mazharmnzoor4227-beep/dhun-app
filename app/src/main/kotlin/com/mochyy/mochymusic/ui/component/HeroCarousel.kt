@@ -376,6 +376,7 @@ internal fun heroCarouselItems(
     starterItems: List<HeroCarouselItem>,
     showGacha: Boolean,
     speedDial: SpeedDialHeroItem? = null,
+    networkItems: List<HeroCarouselItem> = emptyList(),
 ): List<HeroCarouselItem> = buildList {
     lastPlayedSong?.let { add(KeepListeningItem(it, isLastPlayed = true)) }
 
@@ -405,6 +406,16 @@ internal fun heroCarouselItems(
             ?.forEach { song ->
                 add(KeepListeningItem(song.toMediaMetadata(), isLastPlayed = false))
             }
+    }
+
+    // a fresh install with no history or starter picks still gets a hero: the network rows
+    // Home already loaded (home feed, charts) fill the empty slots
+    val regularAfterLocal = count { !it.isSpecialCard }
+    if (regularAfterLocal < 5) {
+        networkItems
+            .filter { item -> item.mediaId == null || none { it.mediaId == item.mediaId } }
+            .take(5 - regularAfterLocal)
+            .forEach(::add)
     }
 
     // nothing played yet: start from the imported playlists or the picked artists' songs
@@ -598,6 +609,7 @@ fun HeroCarousel(
     forgottenFavorites: List<com.mochyy.mochymusic.db.entities.Song>? = null,
     speedDialCovers: List<String> = emptyList(),
     onSummonSpeedDial: () -> Unit = {},
+    networkItems: List<HeroCarouselItem> = emptyList(),
 ) {
     val showGacha = gachaPool.size >= GachaMinPool
     val speedDial = remember(speedDialCovers) { speedDialCovers.takeIf { it.isNotEmpty() }?.let(::SpeedDialHeroItem) }
@@ -608,8 +620,8 @@ fun HeroCarousel(
         onRepeat?.firstOrNull()?.id,
         forgottenFavorites?.firstOrNull()?.id,
     ) { extraHeroPicks(similarRecommendations, onRepeat, forgottenFavorites) }
-    val carouselItems = remember(keepListening, lastPlayedSong, dailyDiscover, showGacha, starterItems, playlistPicks, extras, speedDial) {
-        heroCarouselItems(lastPlayedSong, dailyDiscover, extras, playlistPicks, keepListening, starterItems, showGacha, speedDial)
+    val carouselItems = remember(keepListening, lastPlayedSong, dailyDiscover, showGacha, starterItems, playlistPicks, extras, speedDial, networkItems) {
+        heroCarouselItems(lastPlayedSong, dailyDiscover, extras, playlistPicks, keepListening, starterItems, showGacha, speedDial, networkItems)
     }
 
     val heroHeight = heroHeight()

@@ -3,9 +3,9 @@
     <!-- app para TV -->
     <string name="tv_hii">¡Hola!</string>
     <string name="tv_tap_anything">Presiona cualquier botón para continuar</string>
-    <string name="tv_welcome">Bienvenido a\nMochy Music</string>
+    <string name="tv_welcome">Bienvenido a\nVibe</string>
     <string name="tv_lets_sync">Sincronicemos con tu teléfono</string>
-    <string name="tv_skip_phone">Usar Mochy sin teléfono</string>
+    <string name="tv_skip_phone">Usar Vibe sin teléfono</string>
     <string name="tv_whats_your_name">¿Cómo te llamamos?</string>
     <string name="tv_continue">Continuar</string>
     <string name="tv_whos_listening">¿Quién está escuchando?</string>
@@ -74,7 +74,7 @@
 
     <string name="tv_sync_from_phone">Sincronizar desde teléfono</string>
     <string name="tv_same_wifi">Asegúrate de que tu teléfono esté en la misma red Wi-Fi que esta TV</string>
-    <string name="tv_pair_step_open">Abre Mochy en tu teléfono y ve a Ajustes → Integración de dispositivos → Añadir dispositivo</string>
+    <string name="tv_pair_step_open">Abre Vibe en tu teléfono y ve a Ajustes → Integración de dispositivos → Añadir dispositivo</string>
     <string name="tv_pair_step_pick">Elige %1$s de la lista</string>
     <string name="tv_pair_step_code">Ingresa el código mostrado arriba</string>
     <string name="tv_from_phone">Desde %1$s</string>
@@ -84,9 +84,9 @@
     <string name="tv_controlled_from">Controlado desde %1$s</string>
     <string name="tv_sync_looking">Buscando tu teléfono…</string>
     <string name="tv_sync_syncing">Sincronizando tu biblioteca…</string>
-    <string name="tv_sync_away">Tu teléfono no está cerca. Abre Mochy en él con la misma red Wi-Fi.</string>
+    <string name="tv_sync_away">Tu teléfono no está cerca. Abre Vibe en él con la misma red Wi-Fi.</string>
     <string name="tv_sync_unlinked">Tu teléfono desvinculó esta TV. La biblioteca permanecerá aquí.</string>
-    <string name="tv_sync_failed">No se pudo sincronizar. Asegúrate de tener Mochy actualizado en ambos.</string>
+    <string name="tv_sync_failed">No se pudo sincronizar. Asegúrate de tener Vibe actualizado en ambos.</string>
     <string name="tv_sync_no_phone">Sin teléfono vinculado</string>
     <string name="tv_sync_just_now">Sincronizado justo ahora</string>
     <plurals name="tv_sync_minutes_ago">
@@ -101,7 +101,7 @@
     </plurals>
 
     <!-- vinculo de la app -->
-    <string name="tv_link_title">Mochy en tu TV</string>
+    <string name="tv_link_title">Vibe en tu TV</string>
     <string name="tv_link_tap_to_unlink">Vinculado. Toca para desvincular.</string>
     <string name="tv_link_found">TVs en esta red Wi-Fi</string>
     <string name="tv_link_enter_code">Ingresa el código de %1$s</string>
@@ -110,14 +110,14 @@
     <string name="tv_link_pairing">Vinculando…</string>
     <string name="tv_link_channel">Enlace de TV</string>
 
-    <string name="tv_mochy">Mochy</string>
+    <string name="tv_mochy">Vibe</string>
     <string name="tv_mochy_version">Versión %1$s</string>
     <string name="tv_mochy_link_phone">Vincular tu teléfono para traer tu biblioteca</string>
     <string name="tv_mochy_phone_control">El teléfono puede controlar esta TV</string>
     <string name="tv_on">Activado</string>
     <string name="tv_off">Desactivado</string>
     <string name="tv_mochy_updates">Actualizaciones</string>
-    <string name="tv_mochy_support">Apoyar a Mochy</string>
+    <string name="tv_mochy_support">Apoyar a Vibe</string>
     <string name="tv_mochy_support_detail">Ayuda a mantener el proyecto</string>
 
     <string name="tv_playing_next">A continuación</string>
@@ -143,7 +143,7 @@
     <string name="tv_link_status_open">Abierto ahora</string>
     <string name="tv_link_status_open_synced">Abierto ahora · sincronizado %1$s</string>
     <string name="tv_link_status_seen">Última apertura %1$s</string>
-    <string name="tv_link_status_waiting">Esperando a que Mochy se abra en la TV</string>
+    <string name="tv_link_status_waiting">Esperando a que Vibe se abra en la TV</string>
     <string name="tv_link_status_connected">Conectado a %1$s</string>
     <string name="tv_link_status_connected_detail">Tu biblioteca está al día</string>
     <string name="tv_link_status_streaming">Transmitiendo a %1$s</string>

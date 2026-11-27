@@ -54,7 +54,7 @@ class TransferImporter @Inject constructor(
         val externalDownloadsRoot = chooseDownloadsRoot(needed)
         val downloadsStage = externalDownloadsRoot?.let { File(it, TransferRestore.DownloadsStagingName) }
         if (externalDownloadsRoot == null && context.dataDir.usableSpace < needed) {
-            throw TransferException("Not enough free space. Mochy needs about ${needed / 1_000_000} MB free to import this.")
+            throw TransferException("Not enough free space. Vibe needs about ${needed / 1_000_000} MB free to import this.")
         }
         if (externalDownloadsRoot != null && context.dataDir.usableSpace < SpareBytes) {
             throw TransferException("Not enough free space on this phone for your library database.")
@@ -119,11 +119,11 @@ class TransferImporter @Inject constructor(
         }
         val manifest = TransferManifest.fromJson(json) ?: throw NotAnExport()
         if (manifest.formatVersion > TransferArchive.FormatVersion || manifest.databaseVersion > MusicDatabaseVersion) {
-            throw TransferException("This export comes from a newer Mochy. Update Mochy first, then import it again.")
+            throw TransferException("This export comes from a newer Vibe. Update Vibe first, then import it again.")
         }
         // without a path room would fall back to an empty library, so refuse before touching anything
         if (!hasMigrationPath(manifest.databaseVersion, MusicDatabaseVersion)) {
-            throw TransferException("This export is too old for Mochy to read. Update your old app, export again and import that.")
+            throw TransferException("This export is too old for Vibe to read. Update your old app, export again and import that.")
         }
         return manifest
     }
@@ -327,7 +327,7 @@ class TransferImporter @Inject constructor(
     private fun Result<TransferManifest>.friendly(): Result<TransferManifest> = recoverCatching { error ->
         throw when (error) {
             is TransferException -> error
-            is NotAnExport -> TransferException("That isn't a Mochy export. Pick the .zip you exported from your old app.")
+            is NotAnExport -> TransferException("That isn't a Vibe export. Pick the .zip you exported from your old app.")
             else -> TransferException("Couldn't import that file. Make sure there's free space and try again.", error)
         }
     }

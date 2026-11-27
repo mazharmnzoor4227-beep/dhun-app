@@ -319,7 +319,7 @@ fun UpdateScreen(navController: NavHostController) {
                                                 }
                                             }
                                         } else {
-                                            val urlToDownload = currentStatus.apkUrl ?: "https://github.com/realidkroo/Mochy-Music/releases/download/${currentStatus.version}/mochy.apk"
+                                            val urlToDownload = currentStatus.apkUrl ?: "https://github.com/mazharmnzoor4227-beep/dhun-app/releases/download/${currentStatus.version}/Vibe.apk"
                                             val downloadRequest = OneTimeWorkRequestBuilder<UpdateDownloadWorker>()
                                                 .setInputData(workDataOf("apk_url" to urlToDownload, "version" to currentStatus.version, "file_size" to currentStatus.size))
                                                 .addTag("update_download")
@@ -641,77 +641,12 @@ suspend fun checkForUpdate(
 ) {
     withContext(Dispatchers.IO) {
         try {
-            val url = URL("https://api.github.com/repos/realidkroo/Mochy-Music/releases")
+            val url = URL("https://api.github.com/repos/mazharmnzoor4227-beep/dhun-app/releases")
             val json = url.openStream().bufferedReader().use { it.readText() }
             val releases = JSONArray(json)
 
             val currentVersion = BuildConfig.VERSION_NAME
             val betaEnabled = getBetaUpdatesSetting(context)
-
-            var isNightlyUpdate = false
-            var nightlyRunObject: JSONObject? = null
-
-            if (betaEnabled) {
-                try {
-                    val nightlyUrl = URL("https://api.github.com/repos/realidkroo/Mochy-Music/actions/workflows/nightly.yml/runs?status=success&per_page=1")
-                    val nightlyJson = nightlyUrl.openStream().bufferedReader().use { it.readText() }
-                    val nightlyData = JSONObject(nightlyJson)
-                    val runs = nightlyData.optJSONArray("workflow_runs")
-                    if (runs != null && runs.length() > 0) {
-                        val firstRun = runs.getJSONObject(0)
-                        val runUpdatedAt = firstRun.getString("updated_at")
-                        val githubFormatter = java.time.format.DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'")
-                        val runTime = java.time.LocalDateTime.parse(runUpdatedAt, githubFormatter)
-                        val runTimeEpoch = runTime.toInstant(java.time.ZoneOffset.UTC).toEpochMilli()
-
-                        val packageInfo = context.packageManager.getPackageInfo(context.packageName, 0)
-                        val currentAppInstallTime = packageInfo.lastUpdateTime
-
-                        val sharedPreferences = context.getSharedPreferences("update_settings", Context.MODE_PRIVATE)
-                        if (!BuildConfig.IS_NIGHTLY) {
-                            sharedPreferences.edit().remove("last_installed_nightly_run").apply()
-                        }
-                        val lastInstalledRun = sharedPreferences.getInt("last_installed_nightly_run", -1)
-                        val runNumber = firstRun.getInt("run_number")
-
-                        val isNewer = if (lastInstalledRun != -1) {
-                            runNumber > lastInstalledRun
-                        } else if (!BuildConfig.IS_NIGHTLY) {
-                            true
-                        } else {
-                            runTimeEpoch > (currentAppInstallTime + 300_000)
-                        }
-
-                        if (isNewer) {
-                            isNightlyUpdate = true
-                            nightlyRunObject = firstRun
-                        }
-                    }
-                } catch (e: Exception) {
-                    Log.e("UpdateCheck", "Error checking nightly updates: ${e.message}", e)
-                }
-            }
-
-            if (isNightlyUpdate && nightlyRunObject != null) {
-                val runNumber = nightlyRunObject.getInt("run_number")
-                val runUpdatedAt = nightlyRunObject.getString("updated_at")
-                val displayTag = "nightly-r$runNumber"
-
-                val changelogList = mutableListOf<ChangelogSection>()
-                val headCommit = nightlyRunObject.optJSONObject("head_commit")
-                val commitMessage = headCommit?.optString("message") ?: "New features and bug fixes"
-
-                val subjectLine = commitMessage.lineSequence().firstOrNull { it.isNotBlank() } ?: commitMessage
-                changelogList.add(ChangelogSection(context.getString(R.string.changelog), listOf(subjectLine)))
-
-                val formattedReleaseDate = formatGitHubDate(runUpdatedAt)
-                val apkDownloadUrl = "https://nightly.link/realidkroo/Mochy-Music/workflows/nightly.yml/main/mochy-gms-nightly.zip"
-
-                withContext(Dispatchers.Main) {
-                    onSuccess(displayTag, true, changelogList, "~30", formattedReleaseDate, "Bleeding-edge nightly build from main branch.", null, apkDownloadUrl)
-                }
-                return@withContext
-            }
 
             var bestStableRelease: JSONObject? = null
             var bestOverallRelease: JSONObject? = null
@@ -765,7 +700,7 @@ suspend fun checkForUpdate(
                     var imageUrl: String? = null
                     try {
                         val changelogUrl =
-                            URL("https://github.com/realidkroo/Mochy-Music/releases/download/$tagWithPrefix/changelog.json")
+                            URL("https://github.com/mazharmnzoor4227-beep/dhun-app/releases/download/$tagWithPrefix/changelog.json")
                         val changelogJson = changelogUrl.openStream().bufferedReader().use { it.readText() }
                         val changelogData = JSONObject(changelogJson)
 
@@ -799,7 +734,7 @@ suspend fun checkForUpdate(
                     for (j in 0 until assets.length()) {
                         val asset = assets.getJSONObject(j)
                         val assetName = asset.getString("name")
-                        if (assetName == "mochy.apk") {
+                        if (assetName.endsWith(".apk", ignoreCase = true)) {
                             val apkSizeInBytes = asset.getLong("size")
                             apkSizeInMB = String.format("%.1f", apkSizeInBytes / (1024.0 * 1024.0))
                             apkDownloadUrl = asset.getString("browser_download_url")

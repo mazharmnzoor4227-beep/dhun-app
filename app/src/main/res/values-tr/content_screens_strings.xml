@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="about_app">Uygulama hakkında</string>
-    <string name="about_mochy_music_version">Mochy Music | %1$s</string>
-    <string name="about_app_description">Mochy Music bir müzik uygulaması ama\nbiraz da havalı.</string>
+    <string name="about_mochy_music_version">Vibe | %1$s</string>
+    <string name="about_app_description">Vibe bir müzik uygulaması ama\nbiraz da havalı.</string>
     <string name="about_actions">Eylemler</string>
     <string name="about_support_me">Lütfen beni destekle :3 →</string>
-    <string name="about_github">Mochy Music github →</string>
+    <string name="about_github">Vibe github →</string>
     <string name="about_meet_lead_dev">Baş geliştiriciyle tanış</string>
     <string name="about_we_wont_exist">Onlar olmasaydı var olamazdık</string>
     <string name="about_and_more">Ve daha fazlası →</string>
@@ -28,7 +28,7 @@
     <string name="update_status_failed">Güncellemeler denetlenemedi</string>
     <string name="update_status_offline">Çevrimdışı mı?</string>
     <string name="update_action_try_again">TEKRAR DENE</string>
-    <string name="update_install_permission_error">mochy için \"Bilinmeyen uygulamaları yükle\" iznini ver, sonra buradaki Yükle\'ye tekrar dokun.</string>
+    <string name="update_install_permission_error">Vibe için \"Bilinmeyen uygulamaları yükle\" iznini ver, sonra buradaki Yükle\'ye tekrar dokun.</string>
     <string name="update_back_desc">Geri</string>
     <string name="update_changelog">Değişiklikler</string>
     <string name="update_to_be_installed">Yüklenecek -</string>
@@ -86,14 +86,6 @@
     <string name="suggestion_system_default">Sistem varsayılanı</string>
     <string name="suggestion_countries_regions">Ülkeler ve bölgeler</string>
     <string name="suggestion_selected_desc">Seçili</string>
-    <string name="donate_dismiss_button">ne yani istemiyorum ki</string>
-    <string name="donate_thank_you_title">Arigatou! :3</string>
-    <string name="donate_subtitle">Bize destek olmanın ve bağış yapmanın bir yolu!</string>
-    <string name="donate_kofi">Ko-fi\'da bizi destekle</string>
-    <string name="donate_sociabuzz">SociaBuzz\'da bizi destekle</string>
-    <string name="donate_sociabuzz_desc">Bazı Güneydoğu Asya ve Latin Amerika ülkeleri için önerilir</string>
-    <string name="donate_buymeacoffee">Buy Me a Coffee\'da bizi destekle</string>
-    <string name="donate_note">bağışın, ne kadar küçük olursa olsun, bizim için her zaman çok çok faydalı olacak :3</string>
     <string name="album_more_by_artist">%1$s tarafından daha fazla</string>
     <string name="album_more_by_this_artist">Bu sanatçıdan daha fazla</string>
     <string name="album_other_versions">Diğer sürümler</string>

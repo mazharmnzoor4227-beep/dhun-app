@@ -38,7 +38,7 @@
     <string name="spotify_canvas_row_off">Desativado</string>
     <string name="spotify_canvas_subtitle">Vídeos dos artistas ao fundo das suas músicas</string>
     <string name="spotify_canvas_what_title">O que é isso?</string>
-    <string name="spotify_canvas_what">O Spotify Canvas é um vídeo curto em loop que os artistas adicionam às músicas. Entre no Spotify e o Mochy também poderá procurá-lo lá, na posição definida para o Spotify em Ordem do Canvas. Músicas sem Canvas continuam exibindo a própria capa.</string>
+    <string name="spotify_canvas_what">O Spotify Canvas é um vídeo curto em loop que os artistas adicionam às músicas. Entre no Spotify e o Vibe também poderá procurá-lo lá, na posição definida para o Spotify em Ordem do Canvas. Músicas sem Canvas continuam exibindo a própria capa.</string>
     <string name="spotify_canvas_use">Usar Spotify Canvas</string>
     <string name="spotify_canvas_use_desc">Procurar Canvas também no Spotify</string>
     <string name="spotify_canvas_account">Conta</string>
@@ -46,8 +46,8 @@
     <string name="spotify_canvas_signed_out">Não conectado</string>
     <string name="spotify_canvas_sign_in">Entrar no Spotify</string>
     <string name="spotify_canvas_sign_out">Sair</string>
-    <string name="spotify_canvas_sign_in_subtitle">Na própria página do Spotify. O Mochy usa o acesso apenas para encontrar Canvas.</string>
-    <string name="spotify_canvas_note">Seu login permanece no Mochy neste celular, e a importação do Spotify usa a mesma sessão. O Spotify não permite oficialmente esse uso, então utilize por sua conta e risco.</string>
+    <string name="spotify_canvas_sign_in_subtitle">Na própria página do Spotify. O Vibe usa o acesso apenas para encontrar Canvas.</string>
+    <string name="spotify_canvas_note">Seu login permanece no Vibe neste celular, e a importação do Spotify usa a mesma sessão. O Spotify não permite oficialmente esse uso, então utilize por sua conta e risco.</string>
     <string name="appearance_global">Aparência geral</string>
     <string name="appearance_blur">Desfoque</string>
     <string name="appearance_blur_desc">Desfoque de vidro no reprodutor e na navegação</string>
@@ -66,7 +66,7 @@
     <string name="playback_keep_playing_detail">Continuar a reprodução em segundo plano quando o aplicativo for removido da tela de recentes</string>
     <string name="playback_mix_other_apps">Reproduzir junto com outros aplicativos</string>
     <string name="playback_mix_other_apps_desc">Continuar reproduzindo quando outro aplicativo emitir som</string>
-    <string name="playback_mix_other_apps_detail">O Mochy não pausará quando um vídeo, jogo ou outro aplicativo de música começar a reproduzir áudio, e também não pausará esses aplicativos. Chamadas telefônicas ainda pausam a música, que é retomada quando a chamada termina.</string>
+    <string name="playback_mix_other_apps_detail">O Vibe não pausará quando um vídeo, jogo ou outro aplicativo de música começar a reproduzir áudio, e também não pausará esses aplicativos. Chamadas telefônicas ainda pausam a música, que é retomada quando a chamada termina.</string>
     <string name="playback_resume_bluetooth">Retomar ao conectar Bluetooth</string>
     <string name="playback_resume_bluetooth_desc">Continuar uma música pausada quando fones de ouvido ou o carro forem conectados</string>
     <string name="pause_music_when_muted_desc">Pausar quando o volume chegar a zero e retomar quando ele aumentar</string>
@@ -75,11 +75,11 @@
     <string name="playback_save_state_detail">Desativar esta opção remove as músicas que você já ouviu quando fechar o aplicativo</string>
     <string name="settings_albums_from_likes">Álbuns das músicas curtidas</string>
     <string name="settings_albums_from_likes_desc">Curtir uma música também adiciona o álbum</string>
-    <string name="settings_albums_from_likes_detail">Era assim que o Mochy funcionava: cada música curtida adicionava seu álbum à seção Álbuns. Quando desativado, Álbuns funciona como no Apple Music e mostra os álbuns que você salvou, além daqueles das músicas que adicionou, importou ou mantém neste celular.</string>
+    <string name="settings_albums_from_likes_detail">Era assim que o Vibe funcionava: cada música curtida adicionava seu álbum à seção Álbuns. Quando desativado, Álbuns funciona como no Apple Music e mostra os álbuns que você salvou, além daqueles das músicas que adicionou, importou ou mantém neste celular.</string>
     <string name="settings_pause_search_history_desc">Parar de salvar suas pesquisas</string>
     <string name="proxy_status_off">Desativado</string>
     <string name="proxy_status_on">Ativado, por %1$s</string>
-    <string name="proxy_intro">Encaminha o tráfego do YouTube do Mochy por outro servidor. Isso ajuda quando o YouTube bloqueia sua rede ou quando o YouTube Music não está disponível onde você mora.</string>
+    <string name="proxy_intro">Encaminha o tráfego do YouTube do Vibe por outro servidor. Isso ajuda quando o YouTube bloqueia sua rede ou quando o YouTube Music não está disponível onde você mora.</string>
     <string name="proxy_use">Usar proxy</string>
     <string name="proxy_use_desc">Músicas, vídeos, downloads e solicitações ao YouTube passam por ele</string>
     <string name="proxy_use_needs_address">Adicione primeiro o endereço do proxy</string>
@@ -157,10 +157,10 @@
     <string name="customise_cover_rounding">Arredondamento
 da capa</string>
     <string name="customise_icons">Ícones</string>
-    <string name="customise_icons_caption">A tela inicial pode levar alguns segundos para exibir o novo ícone. Abrir o Mochy por ele também fará com que o aplicativo inicie com esse ícone.</string>
-    <string name="app_icon_family_mark">Mochy</string>
-    <string name="app_icon_family_outline">Mochy contornado</string>
-    <string name="app_icon_family_anime">Mochy anime</string>
+    <string name="customise_icons_caption">A tela inicial pode levar alguns segundos para exibir o novo ícone. Abrir o Vibe por ele também fará com que o aplicativo inicie com esse ícone.</string>
+    <string name="app_icon_family_mark">Vibe</string>
+    <string name="app_icon_family_outline">Vibe contornado</string>
+    <string name="app_icon_family_anime">Vibe anime</string>
     <string name="app_icon_default">Padrão</string>
     <string name="app_icon_white">Branco</string>
     <string name="app_icon_black">Preto</string>
@@ -171,10 +171,10 @@ da capa</string>
     <string name="app_icon_outline_black">Preto</string>
     <string name="app_icon_outline_material">Material U</string>
     <string name="app_icon_outline_transparent">Transparente</string>
-    <string name="app_icon_anime_white">Mochy branco</string>
-    <string name="app_icon_anime_dark">Mochy escuro</string>
-    <string name="app_icon_anime_material">Mochy Material U</string>
-    <string name="app_icon_anime_transparent">Mochy transparente</string>
+    <string name="app_icon_anime_white">Vibe branco</string>
+    <string name="app_icon_anime_dark">Vibe escuro</string>
+    <string name="app_icon_anime_material">Vibe Material U</string>
+    <string name="app_icon_anime_transparent">Vibe transparente</string>
     <string name="customise_icons_show_all">Mostrar todos os ícones</string>
     <string name="customise_icons_show_less">Mostrar menos ícones</string>
     <string name="app_icon_customize">Personalizar</string>
@@ -240,5 +240,5 @@ das letras</string>
     <string name="customise_lyrics_preview_translation">si je suis une pierre</string>
     <string name="settings_floating_lyrics">Letras flutuantes</string>
     <string name="settings_floating_lyrics_desc">Manter a linha que está sendo cantada em uma pequena bolha sobre outros aplicativos</string>
-    <string name="settings_floating_lyrics_detail">Toque na capa para reproduzir ou pausar, ou mantenha-a pressionada para abrir o Mochy. Arraste-a; ela se ajustará à borda mais próxima. Solte sobre Fechar para ocultá-la até voltar ao Mochy ou sobre Não mostrar novamente para desativá-la.</string>
+    <string name="settings_floating_lyrics_detail">Toque na capa para reproduzir ou pausar, ou mantenha-a pressionada para abrir o Vibe. Arraste-a; ela se ajustará à borda mais próxima. Solte sobre Fechar para ocultá-la até voltar ao Vibe ou sobre Não mostrar novamente para desativá-la.</string>
 </resources>

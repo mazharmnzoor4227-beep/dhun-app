@@ -2,11 +2,11 @@
 <resources>
     <!-- Hoja de información / Acerca de -->
     <string name="about_app">Acerca de la app</string>
-    <string name="about_mochy_music_version">Mochy Music | %1$s</string>
-    <string name="about_app_description">Mochy Music es una app de música,\npero genial.</string>
+    <string name="about_mochy_music_version">Vibe | %1$s</string>
+    <string name="about_app_description">Vibe es una app de música,\npero genial.</string>
     <string name="about_actions">Acciones</string>
     <string name="about_support_me">¡Apóyame por favor! :3 \u2192</string>
-    <string name="about_github">GitHub de Mochy Music \u2192</string>
+    <string name="about_github">GitHub de Vibe \u2192</string>
     <string name="about_meet_lead_dev">Conoce al desarrollador principal</string>
     <string name="about_we_wont_exist">No existiríamos sin estas increíbles personas</string>
     <string name="about_and_more">Y más \u2192</string>
@@ -31,7 +31,7 @@
     <string name="update_status_failed">No se pudieron buscar actualizaciones</string>
     <string name="update_status_offline">¿Sin conexión?</string>
     <string name="update_action_try_again">REINTENTAR</string>
-    <string name="update_install_permission_error">Permite \"Instalar aplicaciones desconocidas\" para Mochy y luego toca Instalar aquí de nuevo.</string>
+    <string name="update_install_permission_error">Permite \"Instalar aplicaciones desconocidas\" para Vibe y luego toca Instalar aquí de nuevo.</string>
     <string name="update_back_desc">Atrás</string>
     <string name="update_changelog">Registro de cambios</string>
     <string name="update_to_be_installed">Por instalar -</string>
@@ -99,14 +99,6 @@
     <string name="suggestion_selected_desc">Seleccionado</string>
 
     <!-- Hoja de donaciones -->
-    <string name="donate_dismiss_button">No, gracias</string>
-    <string name="donate_thank_you_title">¡Arigatou! :3</string>
-    <string name="donate_subtitle">¡Aquí tienes una forma de apoyarnos y donar!</string>
-    <string name="donate_kofi">Apóyanos en Ko-fi</string>
-    <string name="donate_sociabuzz">Apóyanos en SociaBuzz</string>
-    <string name="donate_sociabuzz_desc">Recomendado para países de Sudamérica y Latinoamérica</string>
-    <string name="donate_buymeacoffee">Apóyanos en Buy Me a Coffee</string>
-    <string name="donate_note">Tu donación, sin importar cuán pequeña sea, ¡siempre nos será de gran ayuda! :3</string>
 
     <!-- Pantalla de Álbum -->
     <string name="album_more_by_artist">Más de %1$s</string>

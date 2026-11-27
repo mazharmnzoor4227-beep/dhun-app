@@ -730,7 +730,7 @@ class ModuleRegistry @Inject constructor(
             val pkg = service.packageName
             val entry = service.metaData?.getString(EntryMetaKey) ?: return@mapNotNull null
             if (pm.checkSignatures(context.packageName, pkg) != PackageManager.SIGNATURE_MATCH) {
-                Timber.tag(Tag).w("Skipping module $pkg: not signed like Mochy")
+                Timber.tag(Tag).w("Skipping module $pkg: not signed like Vibe")
                 return@mapNotNull null
             }
             runCatching {
@@ -739,7 +739,7 @@ class ModuleRegistry @Inject constructor(
                 val loader = PathClassLoader(app.sourceDir, app.nativeLibraryDir, ApiOnlyParent(javaClass.classLoader!!))
                 val module = loader.loadClass(entry).getDeclaredConstructor().newInstance() as MochyModule
                 if (module.info.apiVersion != MODULE_API_VERSION) {
-                    Timber.tag(Tag).w("Skipping module $pkg: built for API ${module.info.apiVersion}, Mochy has $MODULE_API_VERSION")
+                    Timber.tag(Tag).w("Skipping module $pkg: built for API ${module.info.apiVersion}, Vibe has $MODULE_API_VERSION")
                     null
                 } else if (!ModuleSanitizer.isValidModuleId(module.info.id)) {
                     Timber.tag(Tag).w("Skipping module $pkg: bad id ${module.info.id}")

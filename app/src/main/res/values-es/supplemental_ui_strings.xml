@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="supplemental_support_enjoying">¿Disfrutas Mochy Music?</string>
-    <string name="supplemental_support_title">¡Apoya el desarrollo de Mochy!</string>
-    <string name="supplemental_support_body">¡Gracias por probar la app! Mochy Music siempre será gratuita. Sería de gran ayuda si apoyas al desarrollador. Con darle una estrella al repositorio de Mochy es más que suficiente. ¡Gracias de nuevo!</string>
-    <string name="supplemental_support_donate">¡Dónanos!</string>
+    <string name="supplemental_support_enjoying">¿Disfrutas Vibe?</string>
+    <string name="supplemental_support_title">¡Apoya el desarrollo de Vibe!</string>
+    <string name="supplemental_support_body">¡Gracias por probar la app! Vibe siempre será gratuita. Sería de gran ayuda si apoyas al desarrollador. Con darle una estrella al repositorio de Vibe es más que suficiente. ¡Gracias de nuevo!</string>
     <string name="supplemental_support_star">¡Dar estrella al repo!</string>
     <string name="supplemental_support_dismiss">¡Ahora no!</string>
     <string name="supplemental_coming_soon">Próximamente</string>
@@ -26,7 +25,7 @@
     <string name="supplemental_install_here">Instalar aquí</string>
     <string name="supplemental_update_open_web">Abrir la web</string>
     <string name="supplemental_update_snooze">recordarme en 24 horas</string>
-    <string name="supplemental_install_permission">Permite \"Instalar aplicaciones desconocidas\" para Mochy.</string>
+    <string name="supplemental_install_permission">Permite \"Instalar aplicaciones desconocidas\" para Vibe.</string>
     <string name="supplemental_featured_playlist">Lista destacada</string>
     <string name="supplemental_featured_songs">Canciones destacadas</string>
     <string name="supplemental_artist_new_releases">Lo nuevo de sus artistas</string>

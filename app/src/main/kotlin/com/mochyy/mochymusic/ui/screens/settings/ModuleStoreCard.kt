@@ -45,9 +45,9 @@ internal fun ModuleStoreCard(onClick: () -> Unit, modifier: Modifier = Modifier)
     ) {
         // the drawing ends at her jacket, so sitting on the card's bottom edge cuts her off there like the design
         Image(
-            rememberResourcePainter(R.drawable.modules_bar_mochy), null,
+            rememberResourcePainter(R.drawable.vibe_logo), null,
             contentScale = ContentScale.Fit,
-            modifier = Modifier.align(Alignment.Bottom).padding(top = 10.dp).fillMaxHeight(),
+            modifier = Modifier.padding(vertical = 18.dp).fillMaxHeight().clip(RoundedCornerShape(18.dp)),
         )
         Spacer(Modifier.width(22.dp))
         Text(

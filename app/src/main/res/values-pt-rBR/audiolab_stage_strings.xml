@@ -67,9 +67,9 @@
     <string name="stage_output_hdmi">TV ou HDMI</string>
     <string name="stage_kind_headphones">Fones de ouvido</string>
     <string name="stage_kind_speaker">Alto-falante</string>
-    <string name="stage_output_guessed">O Mochy identificou esta saída pelo dispositivo. Está errado? Escolha a opção correta.</string>
+    <string name="stage_output_guessed">O Vibe identificou esta saída pelo dispositivo. Está errado? Escolha a opção correta.</string>
     <string name="stage_output_set">Você escolheu esta saída para o dispositivo.</string>
-    <string name="stage_output_reset">Deixar o Mochy identificar</string>
+    <string name="stage_output_reset">Deixar o Vibe identificar</string>
     <string name="stage_on_speakers">Em alto-falantes</string>
     <string name="stage_speakers_off">Desativado</string>
     <string name="stage_speakers_stereo">Estéreo simples</string>

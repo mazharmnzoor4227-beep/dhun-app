@@ -36,9 +36,10 @@ enum class CloudProblem { Offline, SignedOut, WrongLogin, BadAddress, NotFound, 
 
 class CloudException(val problem: CloudProblem, cause: Throwable? = null) : Exception(problem.name, cause)
 
-/** how backups are named: mochy-backup-<phone>-<date>-<time>.zip, so each phone keeps and trims only its own */
+/** how backups are named: vibe-backup-<phone>-<date>-<time>.zip, so each phone keeps and trims only its own */
 object BackupNames {
-    private const val Prefix = "mochy-backup-"
+    private const val Prefix = "vibe-backup-"
+    private const val LegacyPrefix = "mochy-backup-"
     private const val Suffix = ".zip"
     private val Stamp = Regex("-\\d{8}-\\d{6}$")
 
@@ -48,11 +49,12 @@ object BackupNames {
 
     fun newName(device: String, stamp: String): String = "$Prefix$device-$stamp$Suffix"
 
-    /** true for any mochy backup, whichever phone made it */
-    fun isBackup(name: String): Boolean = name.startsWith(Prefix) && name.endsWith(Suffix) && Stamp.containsMatchIn(name.removeSuffix(Suffix))
+    /** true for any Vibe backup (including ones named by older builds), whichever phone made it */
+    fun isBackup(name: String): Boolean =
+        (name.startsWith(Prefix) || name.startsWith(LegacyPrefix)) && name.endsWith(Suffix) && Stamp.containsMatchIn(name.removeSuffix(Suffix))
 
     /** true for a backup this phone made, the only ones it ever deletes */
     fun isFrom(name: String, device: String): Boolean = isBackup(name) && deviceOf(name) == device
 
-    fun deviceOf(name: String): String = name.removePrefix(Prefix).removeSuffix(Suffix).replace(Stamp, "")
+    fun deviceOf(name: String): String = name.removePrefix(Prefix).removePrefix(LegacyPrefix).removeSuffix(Suffix).replace(Stamp, "")
 }

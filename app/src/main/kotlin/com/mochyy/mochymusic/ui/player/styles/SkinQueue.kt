@@ -196,7 +196,7 @@ private fun QueueRow(
 // a small made-up queue for the style picker's still preview, so up-next cards aren't blank there
 private val PreviewQueue = QueueState(
     items = listOf(
-        QueueItemData(uid = 0, mediaId = "preview-0", title = "Now Playing", artist = "Mochy", artworkUri = null, duration = 214_000L),
+        QueueItemData(uid = 0, mediaId = "preview-0", title = "Now Playing", artist = "Vibe", artworkUri = null, duration = 214_000L),
         QueueItemData(uid = 1, mediaId = "preview-1", title = "Midnight Walk", artist = "Luna Tape", artworkUri = null, duration = 198_000L),
         QueueItemData(uid = 2, mediaId = "preview-2", title = "Rain on Glass", artist = "Soft Static", artworkUri = null, duration = 242_000L),
         QueueItemData(uid = 3, mediaId = "preview-3", title = "Late Train", artist = "Koto", artworkUri = null, duration = 185_000L),

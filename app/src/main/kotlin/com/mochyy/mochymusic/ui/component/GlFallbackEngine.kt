@@ -170,7 +170,7 @@ internal object GlFallbackEngine {
     @Synchronized
     private fun ensureHandler(): Handler {
         handler?.let { return it }
-        val t = HandlerThread("MochyGlFallback", android.os.Process.THREAD_PRIORITY_DISPLAY).apply { start() }
+        val t = HandlerThread("VibeGlFallback", android.os.Process.THREAD_PRIORITY_DISPLAY).apply { start() }
         thread = t
         return Handler(t.looper).also { handler = it }
     }
