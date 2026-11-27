@@ -15,8 +15,14 @@ jobs:
           distribution: 'temurin'
       - name: Set Up Gradle
         uses: gradle/actions/setup-gradle@v4
-        with:
-          cache-disabled: true
+      - name: Add swap and show resources
+        run: |
+          sudo fallocate -l 6G /swapfile || sudo dd if=/dev/zero of=/swapfile bs=1M count=6144
+          sudo chmod 600 /swapfile
+          sudo mkswap /swapfile
+          sudo swapon /swapfile
+          free -h
+          df -h
       - name: Decode signing keystore
         env:
           KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
