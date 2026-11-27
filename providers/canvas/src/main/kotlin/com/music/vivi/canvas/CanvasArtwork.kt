@@ -1,4 +1,4 @@
-package com.mazharansari.vibe.canvas
+package com.mochyy.mochymusic.canvas
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

@@ -20,7 +20,7 @@ plugins {
 }
 
 extensions.configure<ApplicationExtension> {
-    namespace = "com.mazharansari.vibe"
+    namespace = "com.mochyy.mochymusic"
     compileSdk = 37
     ndkVersion = "27.0.12077973"
 
@@ -28,8 +28,8 @@ extensions.configure<ApplicationExtension> {
         applicationId = "com.mazharansari.vibe"
         minSdk = 24
         targetSdk = 37
-        versionCode = 100
-        versionName = "1.0.0"
+        versionCode = 101
+        versionName = "1.0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -124,14 +124,14 @@ extensions.configure<ApplicationExtension> {
         buildConfigField("String", "LIBREFM_API_KEY", "\"$libreFmKey\"")
         buildConfigField("String", "LIBREFM_SECRET", "\"$libreFmSecret\"")
 
-        // The Discord app Dhun signs in through (Developer Portal → your app → Application ID).
+        // The Discord app Mochy signs in through (Developer Portal → your app → Application ID).
         // Discord sends the login back to discord-<id>:/authorize/callback, so the manifest needs it too.
         // Without one, the Discord page says so instead of opening a login that can't come back.
         val discordClientId = localProperties.getProperty("DISCORD_CLIENT_ID")
             ?: System.getenv("DISCORD_CLIENT_ID") ?: ""
         buildConfigField("String", "DISCORD_CLIENT_ID", "\"$discordClientId\"")
         manifestPlaceholders["discordRedirectScheme"] =
-            if (discordClientId.isNotBlank()) "discord-$discordClientId" else "dhun-discord-unset"
+            if (discordClientId.isNotBlank()) "discord-$discordClientId" else "mochy-discord-unset"
 
         // the dropbox and microsoft apps cloud backups sign in through (setup in docs/notes/backup.md), a blank one shows "not set up"
         val dropboxAppKey = localProperties.getProperty("DROPBOX_APP_KEY") ?: System.getenv("DROPBOX_APP_KEY") ?: ""
@@ -217,7 +217,7 @@ extensions.configure<ApplicationExtension> {
     val hasReleaseSigning = System.getenv("STORE_PASSWORD") != null &&
         System.getenv("KEY_ALIAS") != null &&
         System.getenv("KEY_PASSWORD") != null &&
-        rootProject.file("keystore/vibe.jks").exists()
+        file("keystore/release.keystore").exists()
 
     signingConfigs {
         create("persistentDebug") {
@@ -228,7 +228,7 @@ extensions.configure<ApplicationExtension> {
         }
         if (hasReleaseSigning) {
             create("release") {
-                storeFile = rootProject.file("keystore/vibe.jks")
+                storeFile = file("keystore/release.keystore")
                 storePassword = System.getenv("STORE_PASSWORD")
                 keyAlias = System.getenv("KEY_ALIAS")
                 keyPassword = System.getenv("KEY_PASSWORD")

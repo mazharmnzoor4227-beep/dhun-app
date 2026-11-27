@@ -395,7 +395,7 @@
     <string name="restore_failed">Falha ao restaurar o backup</string>
 
     <string name="discord_integration">Integração com o Discord</string>
-    <string name="discord_information">O Vibe usa a biblioteca KizzyRPC para atualizar o status da sua conta do Discord. Isso envolve o uso da conexão Discord Gateway, o que pode ser considerado uma violação dos Termos de Serviço do Discord. No entanto, não há casos conhecidos de contas suspensas por esse motivo. Use por sua conta e risco.\nO Vibe extrai apenas seu token; todo o restante é armazenado localmente.</string>
+    <string name="discord_information">O Mochy usa a biblioteca KizzyRPC para atualizar o status da sua conta do Discord. Isso envolve o uso da conexão Discord Gateway, o que pode ser considerado uma violação dos Termos de Serviço do Discord. No entanto, não há casos conhecidos de contas suspensas por esse motivo. Use por sua conta e risco.\nO Mochy extrai apenas seu token; todo o restante é armazenado localmente.</string>
     <string name="dismiss">Dispensar</string>
     <string name="options">Opções</string>
     <string name="preview">Prévia</string>

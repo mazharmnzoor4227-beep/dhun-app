@@ -308,14 +308,14 @@
     <string name="scrobble_account">Tài khoản</string>
     <string name="scrobble_sign_in_title">Đăng nhập vào %1$s</string>
     <string name="scrobble_sign_in_desc">Lưu lịch sử nghe, thống kê và gợi ý của bạn tại đó</string>
-    <string name="scrobble_not_set_up">Chưa được thiết lập trong bản Vibe này</string>
+    <string name="scrobble_not_set_up">Chưa được thiết lập trong bản Mochy này</string>
     <string name="scrobble_to">Scrobble tới %1$s</string>
     <string name="scrobble_signed_in_as">Đã đăng nhập với tên %1$s</string>
     <string name="scrobble_paused_signed_in_as">Đã tạm dừng. Đã đăng nhập với tên %1$s</string>
     <string name="scrobble_open_profile">Mở hồ sơ của bạn</string>
     <string name="scrobble_open_profile_desc">Lượt scrobble và thống kê của bạn trên %1$s</string>
     <string name="scrobble_sign_out">Đăng xuất</string>
-    <string name="scrobble_sign_out_desc">Vibe sẽ ngừng scrobble tới %1$s</string>
+    <string name="scrobble_sign_out_desc">Mochy sẽ ngừng scrobble tới %1$s</string>
     <string name="scrobble_while_listening">Khi bạn nghe nhạc</string>
     <string name="scrobble_now_playing">Đang phát</string>
     <string name="scrobble_now_playing_desc">Hiện bài hát bạn đang nghe lên hồ sơ</string>
@@ -326,10 +326,10 @@
     </plurals>
     <string name="scrobble_plays_waiting_desc">Chúng sẽ tự động được gửi khi bạn có mạng. Chạm để gửi ngay</string>
     <string name="scrobble_all_sent">Đã gửi hết</string>
-    <string name="scrobble_send_later">Chưa gửi được. Vibe sẽ thử lại mỗi khi bạn có mạng.</string>
+    <string name="scrobble_send_later">Chưa gửi được. Mochy sẽ thử lại mỗi khi bạn có mạng.</string>
     <string name="scrobble_signed_in">Đã đăng nhập vào %1$s với tên %2$s. Từ giờ các bài hát bạn nghe sẽ được scrobble.</string>
-    <string name="scrobble_signed_out">%1$s đã đăng xuất Vibe. Hãy đăng nhập lại trong Cài đặt → Tích hợp để tiếp tục scrobble.</string>
-    <string name="scrobble_sign_in_body">Dùng tên người dùng và mật khẩu %1$s của bạn. Vibe chỉ giữ khóa đăng nhập mà %1$s gửi về, không bao giờ lưu mật khẩu của bạn.</string>
+    <string name="scrobble_signed_out">%1$s đã đăng xuất Mochy. Hãy đăng nhập lại trong Cài đặt → Tích hợp để tiếp tục scrobble.</string>
+    <string name="scrobble_sign_in_body">Dùng tên người dùng và mật khẩu %1$s của bạn. Mochy chỉ giữ khóa đăng nhập mà %1$s gửi về, không bao giờ lưu mật khẩu của bạn.</string>
     <string name="scrobble_username_hint">Tên người dùng %1$s của bạn</string>
     <string name="scrobble_password_hint">Mật khẩu %1$s của bạn</string>
     <string name="scrobble_sign_in_button">Đăng nhập</string>
@@ -971,7 +971,7 @@
     <string name="speed_only_this_song_detail">%1$s giữ nguyên tốc độ và cao độ này. Các bài hát khác phát như bình thường.</string>
     <string name="discord_custom_pick">Chọn ảnh</string>
     <string name="discord_custom_change">Đổi ảnh</string>
-    <string name="discord_custom_note">Discord chỉ hiển thị ảnh từ web, nên Vibe sẽ đưa ảnh của bạn lên một nơi lưu trữ tệp miễn phí và hiển thị từ đó.</string>
+    <string name="discord_custom_note">Discord chỉ hiển thị ảnh từ web, nên Mochy sẽ đưa ảnh của bạn lên một nơi lưu trữ tệp miễn phí và hiển thị từ đó.</string>
     <string name="discord_custom_failed">Không dùng được ảnh đó. Hãy thử ảnh khác.</string>
     <string name="search_in_playlist">Tìm trong danh sách phát này…</string>
     <string name="search_in_album">Tìm trong album này…</string>

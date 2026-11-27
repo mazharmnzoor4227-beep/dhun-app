@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.mazharansari.vibe.artistvideo"
+    namespace = "com.mochyy.mochymusic.artistvideo"
     compileSdk = 37
 
     defaultConfig {

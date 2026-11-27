@@ -59,12 +59,12 @@ Se crearon 35 archivos XML en `app/src/main/res/values-es/` para igualar los rec
 * `voice_strings.xml`: Comandos de voz.
 
 #### 3. Refactorización en Código Kotlin
-* `app/src/main/kotlin/com/mazharansari/vibe/ui/screens/settings/ProfileScreen.kt`:
+* `app/src/main/kotlin/com/mochyy/mochymusic/ui/screens/settings/ProfileScreen.kt`:
   * Se reemplazó la cadena fija `"Update"` por `stringResource(R.string.profile_capsule_update)`.
   * Se vinculó el aviso descriptivo de estado del Recap con `comeBackText(context)`.
-* `app/src/main/kotlin/com/mazharansari/vibe/ui/screens/recap/IdCardBack.kt`:
+* `app/src/main/kotlin/com/mochyy/mochymusic/ui/screens/recap/IdCardBack.kt`:
   * Se conectaron los sellos `"VERIFIED"` y `"INVALID"` a los recursos `stringResource(R.string.recap_stamp_verified)` y `stringResource(R.string.recap_stamp_invalid)`.
-* `app/src/main/kotlin/com/mazharansari/vibe/ui/screens/recap/RecapData.kt`:
+* `app/src/main/kotlin/com/mochyy/mochymusic/ui/screens/recap/RecapData.kt`:
   * Se refactorizó `RecapAvailability.NotYet` para usar una función lambda `(Context) -> String` que evalúa dinámicamente los recursos XML traducibles según el idioma del dispositivo.
 
 ---

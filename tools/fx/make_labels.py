@@ -45,5 +45,5 @@ for t, n in entries.items():
     kt.append('        "' + t.replace('\\', '\\\\').replace('"', '\\"').replace('$', '\\$') + f'" to R.string.{n},')
 kt += ['    )', '', "    /** the string for a label the engine wrote, null for a module's or a script's own text */", '    @StringRes',
        '    fun of(english: String): Int? = strings[english]', '}', '']
-(root / 'app/src/main/kotlin/com/mazharansari/vibe/eq/mixer/MixerLabels.kt').write_text('\n'.join(kt))
+(root / 'app/src/main/kotlin/com/mochyy/mochymusic/eq/mixer/MixerLabels.kt').write_text('\n'.join(kt))
 print(len(entries), 'strings')

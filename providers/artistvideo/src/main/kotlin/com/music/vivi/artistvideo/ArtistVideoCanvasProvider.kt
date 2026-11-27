@@ -1,4 +1,4 @@
-package com.mazharansari.vibe.artistvideo
+package com.mochyy.mochymusic.artistvideo
 
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body

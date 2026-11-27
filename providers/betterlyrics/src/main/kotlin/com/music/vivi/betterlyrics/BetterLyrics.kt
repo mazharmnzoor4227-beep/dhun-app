@@ -1,6 +1,6 @@
-package com.mazharansari.vibe.betterlyrics
+package com.mochyy.mochymusic.betterlyrics
 
-import com.mazharansari.vibe.betterlyrics.models.TTMLResponse
+import com.mochyy.mochymusic.betterlyrics.models.TTMLResponse
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.engine.cio.CIO
